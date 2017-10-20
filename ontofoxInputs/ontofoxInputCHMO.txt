@@ -1,0 +1,72 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl
+
+[Source ontology]
+CHMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHMO_0000228 #spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000470 #mass spectrometry
+http://purl.obolibrary.org/obo/CHMO_0000575 #tandem mass spectrometry
+http://purl.obolibrary.org/obo/CHMO_0000571 #selected ion-monitoring
+http://purl.obolibrary.org/obo/CHMO_0002867 #selected reaction monitoring data acquisition
+http://purl.obolibrary.org/obo/CHMO_0000497 #gc-ms
+http://purl.obolibrary.org/obo/CHMO_0000524 #lc_ms
+http://purl.obolibrary.org/obo/CHMO_0000514 #stable isotope ratio mass spectrometry
+http://purl.obolibrary.org/obo/CHMO_0001215 #magnetic resonance method
+http://purl.obolibrary.org/obo/CHMO_0000591 #nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000613 #pulsed nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000592 #one-dimensional nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0002442 #one-dimensional 1H nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000598 #two-dimensional nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001215 #magnetic resonance method
+http://purl.obolibrary.org/obo/CHMO_0000591 #nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000613 #pulsed nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000592 #one-dimensional nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0002442 #one-dimensional 1H nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000598 #two-dimensional nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000606 #J-resolved NMR spectrometry
+http://purl.obolibrary.org/obo/CHMO_0000931 #heteronuclear two-dimensional nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0002060 #two-dimensional heteronuclear single quantum coherence-nuclear Overhauser effect spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000600 #heteronuclear correlation spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0002380 #1H--13C heteronuclear correlation spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001869 #TOSS pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001864 #solvent suppression pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0000605 #TOSCY nmr spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000593 #1H nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000595 #13C nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000607 #nuclear Overhauser enhancement spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001195 #Hadamard-encoded nuclear magnetic resonance spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001150 #1H--1H correlation spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0002301 #13C--13C correlation spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000599 #correlation spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001841 #nuclear magnetic resonance pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0000718 #Carr-Purcell-Meiboom-Gill pulse sequence (CPMG)
+http://purl.obolibrary.org/obo/CHMO_0000719 #quadrupolar Carr-Purcell-Meiboom-Gill pulse sequence 
+http://purl.obolibrary.org/obo/CHMO_0001868 #spin-echo pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001862 #flip-flop pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001869 #TOSS pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001864 #solvent suppression pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001865 #jump and return pulse sequence (JR sequence)
+http://purl.obolibrary.org/obo/CHMO_0001867 #water suppression through gradient tailored excitation (watergate)
+http://purl.obolibrary.org/obo/CHMO_0001866 #water elimination Fourier transform pulse sequence (WEFT)
+http://purl.obolibrary.org/obo/CHMO_0001863 #heteronuclear Hartmann Hahn pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001844 #decoupling pulse sequence
+http://purl.obolibrary.org/obo/CHMO_0001852 #magic angle spinning decoupling pulse sequence
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHMO_0000470 #mass spectrometry
+subClassOf http://purl.obolibrary.org/obo/CHMO_0000228 #spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000228 #spectroscopy
+subClassOf http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/CHMO_0001841 #nuclear magnetic resonance pulse sequence
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

@@ -1,0 +1,22 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/SIRMS/iao_import.owl
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000010 #software
+http://purl.obolibrary.org/obo/IAO_0000306 #table
+http://purl.obolibrary.org/obo/IAO_0000414 #mass measurement datum
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000010 #software
+subClassOf http://purl.obolibrary.org/obo/IAO_0000104
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
