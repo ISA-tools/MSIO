@@ -383,6 +383,203 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#dilution_factor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a dilution series sample is a material entity which is part of a collection of such materials, each defined by its dilution factor with respect to a stock solution of reference sample. Dilution series samples are used to assess the linearity of the signal acquisition by providing a set of expected and known quantities.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dilution series reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a pooled sample made from fractions from samples collected from large, study independent collection of samples with the purpose of serving as a reference for quality control purpose. Long Term Reference Samples maybe used in ring trials to check cross facility data acquisition consistency but also to enable data integration, irrespective of data acquisition platform or study context but providing a single point of reference against which to normalize.
+
+purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">H2020 PhenoMenal</obo:IAO_0000119>
+        <synonym xml:lang="en">LTR</synonym>
+        <synonym xml:lang="en">biological pool (inter) [CEA]</synonym>
+        <synonym xml:lang="en">biological pool [MASTR-MS]</synonym>
+        <synonym xml:lang="en">inter study QC</synonym>
+        <rdfs:label xml:lang="en">long term reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a reference compound is a chemical entity of know origin, formula and established spectral fingerprint added to a solution of unknown component in known quantities in order to provide a basis (hence the term reference) with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">pure standard</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference material</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reference compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#has_part"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MSI_AO000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a reference compound mix is a material entity which consists of composite solution of several molecular entities acting as reference compound and present in known quantity in the mixture, with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">pure standard mix</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference material mix</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reference compound mix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a material entity corresponding to a sample containing no biological sample, which undergoes all laboratory process of preparation as used for test samples and used as a negative control to evaluate contamination effect and artefacts caused by reactions occurring during the sample preparation steps of test samples.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">method blank</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">method reference</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">sample preparation blank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a material entity corresponding to ‘solvent’ (mobile phase in chromatography context) only, containing no biological sample and used as a negative control to evaluate carry over effect between injections of test samples.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">normal blank [Leiden]</obo:IAO_0000118>
+        <synonym xml:lang="en">solvent blank</synonym>
+        <rdfs:label xml:lang="en">solvent blank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSI_AO000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSI_AO000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a study reference sample is a pool made up of aliquots from all the sample collected in a given study. It is meant to be used to monitor intra study variability, also known as within study variability of the signal acquisition, for instance between batches of such data acquisition.</obo:IAO_0000115>
+        <obo:IAO_0000118>study reference</obo:IAO_0000118>
+        <synonym xml:lang="en">SR</synonym>
+        <synonym xml:lang="en">iQC - internal quality control [Imperial College London]</synonym>
+        <rdfs:label xml:lang="en">study reference material</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -562,19 +759,6 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#assessing_across_study_variability">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#long_term_reference_sample"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">assessing across study variability</rdfs:label>
     </owl:Class>
     
@@ -593,12 +777,6 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#assessing_study_batch_to_batch_variation">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#assessing_within_study_batch_variability"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#batch_termini_sample"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">assessing study batch to batch variation</rdfs:label>
     </owl:Class>
     
@@ -608,45 +786,7 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#assessing_within_study_batch_variability">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#long_term_reference_sample"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#internal_standard"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">assessing within study variability</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#batch_termini_sample -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#batch_termini_sample">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000118 xml:lang="en">batch termini</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">batch terminus reference</rdfs:label>
-        <owl:deprecated></owl:deprecated>
     </owl:Class>
     
 
@@ -661,8 +801,8 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#sample_preparation_blank"/>
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#solvent_blank"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSI_AO000014"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSI_AO000015"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -681,7 +821,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#dilution_series_sample"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSI_AO000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">linearity departure detection</obo:IAO_0000118>
@@ -697,7 +837,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#sample_preparation_blank"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSI_AO000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">sample degradatation detection</obo:IAO_0000118>
@@ -713,35 +853,6 @@
         <obo:IAO_0000115 xml:lang="en">dilution factor is a measurement data item which indicates in percentage the level of purity of a material in the context of dilution such as a dilution series.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label xml:lang="en">dilution factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#dilution_series_sample -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#dilution_series_sample">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#dilution_factor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a dilution series sample is a material entity which is part of a collection of such materials, each defined by its dilution factor with respect to a stock solution of reference sample. Dilution series samples are used to assess the linearity of the signal acquisition by providing a set of expected and known quantities.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">dilution series reference</rdfs:label>
     </owl:Class>
     
 
@@ -785,37 +896,6 @@ the source code is available from: https://github.com/seliv55/isodyn</obo:IAO_00
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#long_term_reference_sample -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#long_term_reference_sample">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a pooled sample made from fractions from samples collected from large, study independent collection of samples with the purpose of serving as a reference for quality control purpose. Long Term Reference Samples maybe used in ring trials to check cross facility data acquisition consistency but also to enable data integration, irrespective of data acquisition platform or study context but providing a single point of reference against which to normalize.
-
-purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">H2020 PhenoMenal</obo:IAO_0000119>
-        <synonym xml:lang="en">LTR</synonym>
-        <synonym xml:lang="en">biological pool (inter) [CEA]</synonym>
-        <synonym xml:lang="en">biological pool [MASTR-MS]</synonym>
-        <synonym xml:lang="en">inter study QC</synonym>
-        <rdfs:label xml:lang="en">long term reference</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#midcor -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#midcor">
@@ -839,82 +919,6 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Pedro de Atauri</dc:contributor>
         <dc:contributor xml:lang="en">Vitaly Selivanov</dc:contributor>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#sample_preparation_blank -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#sample_preparation_blank">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a material entity corresponding to a sample containing no biological sample, which undergoes all laboratory process of preparation as used for test samples and used as a negative control to evaluate contamination effect and artefacts caused by reactions occurring during the sample preparation steps of test samples.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">method blank</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">method reference</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">sample preparation blank</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#solvent_blank -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#solvent_blank">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a material entity corresponding to ‘solvent’ (mobile phase in chromatography context) only, containing no biological sample and used as a negative control to evaluate carry over effect between injections of test samples.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">normal blank [Leiden]</obo:IAO_0000118>
-        <synonym xml:lang="en">solvent blank</synonym>
-        <rdfs:label xml:lang="en">solvent blank</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#study_reference_sample -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#study_reference_sample">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a study reference sample is a pool made up of aliquots from all the sample collected in a given study. It is meant to be used to monitor intra study variability, also known as within study variability of the signal acquisition, for instance between batches of such data acquisition.</obo:IAO_0000115>
-        <obo:IAO_0000118>study reference</obo:IAO_0000118>
-        <synonym xml:lang="en">SR</synonym>
-        <synonym xml:lang="en">iQC - internal quality control [Imperial College London]</synonym>
-        <rdfs:label xml:lang="en">study reference material</rdfs:label>
     </owl:Class>
     
 
@@ -1653,30 +1657,6 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">external standard</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard_role -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#external_standard_role">
@@ -1908,30 +1888,6 @@ INCA is a software package that can perform both steady-state metabolic flux ana
         <obo:IAO_0000118 xml:lang="en">Isotopomer Network Compartmental Analysis</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.ncbi.nlm.nih.gov/pubmed/24413674</obo:IAO_0000119>
         <rdfs:label xml:lang="en">INCA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#internal_standard -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#internal_standard">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">internal standard</rdfs:label>
     </owl:Class>
     
 
@@ -2743,67 +2699,6 @@ http://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">reaction rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#reference_compound -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#reference_compound">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a reference compound is a chemical entity of know origin, formula and established spectral fingerprint added to a solution of unknown component in known quantities in order to provide a basis (hence the term reference) with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">pure standard</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">reference material</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">reference compound</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#reference_compound_mix -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#reference_compound_mix">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#is_specified_input_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#calibration"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#quality_control"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#has_part"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/Stable-Isotope-Resolved-Metabolomics.owl#reference_compound"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a reference compound mix is a material entity which consists of composite solution of several molecular entities acting as reference compound and present in known quantity in the mixture, with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">pure standard mix</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">reference material mix</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">reference compound mix</rdfs:label>
     </owl:Class>
     
 
