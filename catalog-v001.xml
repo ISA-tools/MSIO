@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="ontofoxOutputs/stato14pre.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="file:/Users/Philippe/Documents/git/stato-git/stato/dev/ontology/stato.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="ontofoxOutputs/stato14pre.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="file:/Users/Philippe/Documents/git/stato-git/stato/dev/ontology/stato.owl"/>
