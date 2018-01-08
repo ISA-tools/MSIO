@@ -522,7 +522,7 @@ extracts the real spectrum and the Im function extracts the imaginary spectrum f
     <!-- http://nmrML.org/nmrCV#NMR:1000014 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000014">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:label xml:lang="en">pre-acquisition solvent suppression</rdfs:label>
     </owl:Class>
     
@@ -2488,7 +2488,7 @@ The first two axis in the plot represent the ppms along the two acquisition nucl
     <!-- http://nmrML.org/nmrCV#NMR:1000221 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000221">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment>used to be labeled &apos;NMR spectrum simulation&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">data simulation</rdfs:label>
     </owl:Class>
@@ -3505,15 +3505,6 @@ The second one, nmrMLproc allows to add and fill in additional sections correspo
         <rdfs:comment xml:lang="en">Developed by Daniel Jacob, INRA Bordeaux</rdfs:comment>
         <rdfs:label xml:lang="en">NMRViewer software</rdfs:label>
         <skos:example xml:lang="en">http://services.cbib.u-bordeaux2.fr/SPECNMR/examples</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://nmrML.org/nmrCV#NMR:1000328 -->
-
-    <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000328">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
 
@@ -4660,7 +4651,7 @@ Whatever your application field ECZS can demonstrate its power.
     <!-- http://nmrML.org/nmrCV#NMR:1000530 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000530">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conversion of one file format to another.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1000530</oboInOwl:id>
@@ -6872,7 +6863,7 @@ http://purl.obolibrary.org/obo/CHMO_0001841</skos:editorialNote>
     <!-- http://nmrML.org/nmrCV#NMR:1400042 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400042">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">def: A data transformation that converts an NMR input data set into an output data set in a tracable and useful manner.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR data processing</rdfs:label>
     </owl:Class>
@@ -6986,18 +6977,6 @@ http://purl.obolibrary.org/obo/CHMO_0001841</skos:editorialNote>
    altdef: The set of variables dependent on a given pulse sequence that will be optimised in order to acquire a spectrum.
    synonym: NMR instrument acquisition parameter set</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR instrument acquisition parameter set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://nmrML.org/nmrCV#NMR:1400063 -->
-
-    <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method</oboInOwl:hasBroadSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defneed</rdfs:comment>
-        <rdfs:label xml:lang="en">data transformation</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altspcls: process ???</owl:versionInfo>
     </owl:Class>
     
 
@@ -7449,7 +7428,7 @@ Line sharpening can be optimized during data acquisition or performed during dat
     <!-- http://nmrML.org/nmrCV#NMR:1400116 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400116">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">def: The process of ensuring the quality of the raw data that results from an NMR analysis.
    synonym: NMR quality check</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR quality check</rdfs:label>
@@ -9090,6 +9069,27 @@ Line sharpening can be optimized during data acquisition or performed during dat
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method</oboInOwl:hasBroadSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defneed</rdfs:comment>
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altspcls: process ???</owl:versionInfo>
     </owl:Class>
 </rdf:RDF>
 
