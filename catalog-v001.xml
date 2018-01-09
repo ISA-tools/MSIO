@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl" uri="file:/Users/Philippe/Documents/owltools/consent.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/duo/releases/2017-10-16/duo.owl" uri="https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato14pre.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato14pre.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://nmrML.org/nmrCV" uri="nmr/nmrCV.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl" uri="ontofoxOutputs/MSI-AO-CHMO_imports.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://purl.obolibrary.org/obo/MSI_AO_ChEBI_imports.owl" uri="ontofoxOutputs/MSI_AO_ChEBI_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl" uri="ontofoxOutputs/MSI_AO_OBI_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://purl.obolibrary.org/obo/MSI_AO_PSIMS_imports.owl" uri="ontofoxOutputs/MSI_AO_PSIMS_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl" uri="ontofoxOutputs/MSI_AO_UO_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="duplicate:http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="duplicate:http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato14pre.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515520170965" name="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl" uri="MSI-AO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://nmrML.org/nmrCV" uri="nmr/nmrCV.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl" uri="ontofoxOutputs/MSI-AO-CHMO_imports.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://purl.obolibrary.org/obo/MSI_AO_ChEBI_imports.owl" uri="ontofoxOutputs/MSI_AO_ChEBI_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl" uri="ontofoxOutputs/MSI_AO_OBI_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://purl.obolibrary.org/obo/MSI_AO_PSIMS_imports.owl" uri="ontofoxOutputs/MSI_AO_PSIMS_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl" uri="ontofoxOutputs/MSI_AO_UO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="duplicate:http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="duplicate:http://purl.obolibrary.org/obo/stato.owl" uri="stato/stato14pre.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515534038298" name="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl" uri="MSI-AO.owl"/>
     </group>
 </catalog>

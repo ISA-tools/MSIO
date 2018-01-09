@@ -17,6 +17,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl">
         <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_DUO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl"/>
@@ -31,7 +32,6 @@
         <dc:contributor xml:lang="en">Pedro Ramon de Atauri Carulla</dc:contributor>
         <dc:contributor>Teresa Fan</dc:contributor>
         <dc:description xml:lang="en">an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies.</dc:description>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/duo/releases/2017-10-16/duo.owl"/>
         <dc:contributor xml:lang="en">Andrew Lane</dc:contributor>
         <dc:contributor xml:lang="en">Hunter Moseley</dc:contributor>
         <dc:contributor>Nicola Zamboni</dc:contributor>
@@ -1569,12 +1569,6 @@ last accessed: 2018-01-11</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a dilution series sample is a material entity which is part of a collection of such materials, each defined by its dilution factor with respect to a stock solution of reference sample. Dilution series samples are used to assess the linearity of the signal acquisition by providing a set of expected and known quantities.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1682,19 +1676,6 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MSIAO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000022">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">quality control material (qc material)  is a material entity which is used for the purpose to quality control processes such as assessing unwanted source of variations during signal acquisitions. Typically, these materials are known compounds or mixture of compounds introduced in known quantities into test samples or run as is, diluted from stock to provide reference measurements at fixed temporal intervals.</obo:IAO_0000115>
@@ -1710,19 +1691,6 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a reference compound is a chemical entity of know origin, formula and established spectral fingerprint added to a solution of unknown component in known quantities in order to provide a basis (hence the term reference) with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1740,22 +1708,8 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000023"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">NIST reference material:
@@ -2422,6 +2376,12 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">dilution factor is a measurement data item which indicates in percentage the level of purity of a material in the context of dilution such as a dilution series.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4295,23 +4255,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
 
     <!-- http://purl.obolibrary.org/obo/OBI_0100060 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100060">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000061"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000062"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000064"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000071"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100060"/>
     
 
 
