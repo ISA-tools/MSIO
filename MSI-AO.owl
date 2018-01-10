@@ -327,8 +327,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <!-- http://usefulinc.com/ns/doap#bug-database -->
 
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
-    
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>  
 
 
     <!-- http://usefulinc.com/ns/doap#file-release -->
@@ -4799,18 +4800,6 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <owl:NamedIndividual rdf:about="mailto:information-ontology@googlegroups.com"/>
     
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#bug-database">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </rdf:Description>
     
 
 

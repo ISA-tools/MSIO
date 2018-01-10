@@ -3,14 +3,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MSI_AO_DUO_imports.owl"/>  	
-
-   <owl:Ontology>
+    <owl:Ontology>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/duo/releases/2017-10-16/duo.owl"/>
     </owl:Ontology>
     
@@ -161,6 +160,80 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
+
+
+    <!-- http://usefulinc.com/ns/doap#bug-database -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#file-release -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#file-release">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#homepage -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#mailing-list -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#mailing-list">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#release -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#release">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#repository -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#repository">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#wiki -->
+
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#revision -->
+
+    <owl:DatatypeProperty rdf:about="http://usefulinc.com/ns/doap#revision">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:DatatypeProperty>
     
 
 
