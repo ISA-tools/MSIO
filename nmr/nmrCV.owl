@@ -111,23 +111,23 @@ Daniel Schober, Michael Wilson, Daniel Jacob, Joseph A. Cruz, Jason R. Grant, An
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catherine Deborde</dc:contributor>
         <dc:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear magnetic resonance (NMR) data annotation as required by the msi sanctioned open access nmrML XML format developed by the COSMOS EU project.</dc:coverage>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://groups.google.com/forum/?hl=en#!forum/nmrml/join</doap:mailing-list>
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Jacob</dc:contributor>
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reza Salek</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Wilson</dc:contributor>
+        <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nmrML/nmrML/issues
+
+Please label your CV issues in the git &apos;CVenhancement&apos; or add the &quot;CV:&quot; prefix into the subject line. For more general critisism and recommendations please use our nmrML email list.</doap:bug-database>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This artefact is an MSI-approved controlled vocabulary primarily developed under COSMOS WP2 governance. The nmrCV is supporting the nmrML XML format with standardized terms. Its primaly role is hence analogous to the mzCV for the PSI-approved mzML XML format. It currently uses BFO2.0 as its Top level.
 
  This CV was derived from two predecessors (The NMR CV from the David Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by Daniel Schober at the EBI.
  This simple taxonomy of terms (no DL semantics used, for a short overview on the differences of Cv, taxonomy and ontology look at http://infogrid.org/trac/wiki/Reference/PidcockArticle) serves the nuclear magnetic resonance markup language (nmrML) with meaningful descriptors to amend the nmrML xml. Metabolomics scientists are encouraged to use this CV to annotrate their raw and experimental context data, i.e. within nmrML. The approach to have an exchange syntax mixed of an xsd and CV stems from the PSI mzML effort. The reason to branch out from an xsd into a CV is, that in areas where the terminology is likely to change faster than the nmrML xsd could be updated and aligned, an externally and possably decentrallised maintained CV can accompensate for such dynamics in a more flexible way. A second reason for this set-up is that semantic validity of CV terms used in a valid nmrML XML instance (allowed CV terms, position/relation to each other, cardinality) can be validated by rule-based proprietary validators:
  By means of cardinality specifications and XPath expressions defined in an XML mapping file (an instances of the CvMappingRules.xsd ), one can define what ontology terms are allowed in a specific location of the data model.</obo:IAO_0000115>
-        <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nmrML/nmrML/issues
-
-Please label your CV issues in the git &apos;CVenhancement&apos; or add the &quot;CV:&quot; prefix into the subject line. For more general critisism and recommendations please use our nmrML email list.</doap:bug-database>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Wilson</dc:contributor>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COSMOS consortium</oboInOwl:created_by>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.2</oboInOwl:auto-generated-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This version (1.1.0) uses the Basic Formal Ontology (BFO) as its top level ontology.  We might at some point close the resulting semantic gap by using OBI and IAO as intermediate bridges.</rdfs:comment>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dschober</oboInOwl:saved-by>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://nmrml.org/cv/</foaf:homepage>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dschober</oboInOwl:saved-by>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Cruz</dc:contributor>
         <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL
 
@@ -522,7 +522,7 @@ extracts the real spectrum and the Im function extracts the imaginary spectrum f
     <!-- http://nmrML.org/nmrCV#NMR:1000014 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000014">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:label xml:lang="en">pre-acquisition solvent suppression</rdfs:label>
     </owl:Class>
     
@@ -2488,7 +2488,7 @@ The first two axis in the plot represent the ppms along the two acquisition nucl
     <!-- http://nmrML.org/nmrCV#NMR:1000221 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000221">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment>used to be labeled &apos;NMR spectrum simulation&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">data simulation</rdfs:label>
     </owl:Class>
@@ -2686,7 +2686,7 @@ The first two axis in the plot represent the ppms along the two acquisition nucl
     <!-- http://nmrML.org/nmrCV#NMR:1000242 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000242">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:label xml:lang="en">NMRLab software</rdfs:label>
     </owl:Class>
     
@@ -2695,7 +2695,7 @@ The first two axis in the plot represent the ppms along the two acquisition nucl
     <!-- http://nmrML.org/nmrCV#NMR:1000243 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000243">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:label xml:lang="en">Spinworks NMR software</rdfs:label>
     </owl:Class>
     
@@ -3505,15 +3505,6 @@ The second one, nmrMLproc allows to add and fill in additional sections correspo
         <rdfs:comment xml:lang="en">Developed by Daniel Jacob, INRA Bordeaux</rdfs:comment>
         <rdfs:label xml:lang="en">NMRViewer software</rdfs:label>
         <skos:example xml:lang="en">http://services.cbib.u-bordeaux2.fr/SPECNMR/examples</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://nmrML.org/nmrCV#NMR:1000328 -->
-
-    <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000328">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
 
@@ -4660,7 +4651,7 @@ Whatever your application field ECZS can demonstrate its power.
     <!-- http://nmrML.org/nmrCV#NMR:1000530 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000530">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conversion of one file format to another.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1000530</oboInOwl:id>
@@ -4670,24 +4661,6 @@ Whatever your application field ECZS can demonstrate its power.
         <owl:annotatedSource rdf:resource="http://nmrML.org/nmrCV#NMR:1000530"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conversion of one file format to another.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSI:NMR</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://nmrML.org/nmrCV#NMR:1000531 -->
-
-    <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000531">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software related to the recording or transformation of spectra.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1000531</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software related to the recording or transformation of spectra.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSI:NMR</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -5043,7 +5016,7 @@ Whatever your application field ECZS can demonstrate its power.
     <!-- http://nmrML.org/nmrCV#NMR:1000799 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1000799">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A software tool that has not yet been released. The value should describe the software. Please do not use this term for publicly available software - contact the MSI-NMR working group in order to have another CV term added.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
@@ -5868,7 +5841,7 @@ Whatever your application field ECZS can demonstrate its power.
     <!-- http://nmrML.org/nmrCV#NMR:1001456 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1001456">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis software.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1001456</oboInOwl:id>
@@ -5886,7 +5859,7 @@ Whatever your application field ECZS can demonstrate its power.
     <!-- http://nmrML.org/nmrCV#NMR:1001457 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1001457">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conversion software.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1001457</oboInOwl:id>
@@ -6890,7 +6863,7 @@ http://purl.obolibrary.org/obo/CHMO_0001841</skos:editorialNote>
     <!-- http://nmrML.org/nmrCV#NMR:1400042 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400042">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">def: A data transformation that converts an NMR input data set into an output data set in a tracable and useful manner.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR data processing</rdfs:label>
     </owl:Class>
@@ -7004,18 +6977,6 @@ http://purl.obolibrary.org/obo/CHMO_0001841</skos:editorialNote>
    altdef: The set of variables dependent on a given pulse sequence that will be optimised in order to acquire a spectrum.
    synonym: NMR instrument acquisition parameter set</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR instrument acquisition parameter set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://nmrML.org/nmrCV#NMR:1400063 -->
-
-    <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method</oboInOwl:hasBroadSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defneed</rdfs:comment>
-        <rdfs:label xml:lang="en">data transformation</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altspcls: process ???</owl:versionInfo>
     </owl:Class>
     
 
@@ -7467,7 +7428,7 @@ Line sharpening can be optimized during data acquisition or performed during dat
     <!-- http://nmrML.org/nmrCV#NMR:1400116 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400116">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">def: The process of ensuring the quality of the raw data that results from an NMR analysis.
    synonym: NMR quality check</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR quality check</rdfs:label>
@@ -8182,7 +8143,7 @@ Line sharpening can be optimized during data acquisition or performed during dat
     <!-- http://nmrML.org/nmrCV#NMR:1400213 -->
 
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400213">
-        <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1000531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defneed</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR software</rdfs:label>
     </owl:Class>
@@ -9066,6 +9027,69 @@ Line sharpening can be optimized during data acquisition or performed during dat
     <owl:Class rdf:about="http://nmrML.org/nmrCV#NMR:1400322">
         <rdfs:subClassOf rdf:resource="http://nmrML.org/nmrCV#NMR:1400255"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acdlabs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software related to the recording or transformation of spectra.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR:1000531</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software related to the recording or transformation of spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSI:NMR</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method</oboInOwl:hasBroadSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defneed</rdfs:comment>
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altspcls: process ???</owl:versionInfo>
     </owl:Class>
 </rdf:RDF>
 
