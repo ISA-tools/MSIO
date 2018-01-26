@@ -33,18 +33,19 @@ public class OntoFoxInputParser {
     private Set<IRI> sourceAnnotationURIs = null;
     private String sourceAnnotationSetting = null;
     private final String SOURCE_ANN_URIs_EXCLUDE_LINE = "[Source annotation URIs to be excluded]";
+    private String filenamePath = null;
 
     //[Source annotation URIs]
 
-    public OntoFoxInputParser(){
+    public OntoFoxInputParser(String fnp){
         lowerIRIs = new HashSet<>();
         upperIRIs = new HashSet<>();
         sourceAnnotationURIs = new HashSet<>();
+        filenamePath = fnp;
     }
 
-    public boolean parse(String filenamePath) throws IOException{
+    public boolean parse() throws IOException{
 
-        System.out.println(filenamePath);
         try (BufferedReader br = new BufferedReader(new FileReader(filenamePath))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -72,6 +73,7 @@ public class OntoFoxInputParser {
                     }
                 }
                 if (line.equals(UPPER_URIs_LINE)){
+                    //TODO add support for subClassOf
                     while(!(line = br.readLine()).equals(SOURCE_TERM_RETRIEVAL_LINE)){
                         if (line.trim().isEmpty())
                             continue;
