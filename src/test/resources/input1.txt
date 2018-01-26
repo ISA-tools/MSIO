@@ -1,0 +1,21 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/example.owl
+
+[Source ontology]
+#comment here
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo Sapiens (human)
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota
+subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym

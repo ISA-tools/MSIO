@@ -1,10 +1,13 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl
 
+
 [Source ontology]
+
 UO
 
 [Low level source term URIs]
+
 http://purl.obolibrary.org/obo/UO_0000228 #tesla
 http://purl.obolibrary.org/obo/UO_0000325 #megaHertz
 http://purl.obolibrary.org/obo/UO_0000021 #gram
@@ -14,6 +17,7 @@ http://purl.obolibrary.org/obo/UO_0000023 #microgram
 http://purl.obolibrary.org/obo/UO_0000098 #milliliter
 http://purl.obolibrary.org/obo/UO_0000101 #microliter
 http://purl.obolibrary.org/obo/UO_0000176 #milligram per milliliter
+
 http://purl.obolibrary.org/obo/UO_0000274 #microgram per milliliter
 http://purl.obolibrary.org/obo/UO_0000063 #millimolar
 http://purl.obolibrary.org/obo/UO_0000064 #micromolar

@@ -33,6 +33,40 @@ public class OntoFoxInputParserTest {
         parser.parse(getClass().getResource("/ontofoxInputUO.txt").getPath());
         assertTrue("paser.getLowerIRIs() should not be null", parser.getLowerIRIs() !=null );
         System.out.println(parser.getLowerIRIs().size());
-        assertTrue("paser.getSourceOntolgy() has specific value", parser.getLowerIRIs().size()==18 );
+        assertTrue("paser.getLowerIRIs() has specific value", parser.getLowerIRIs().size()==18 );
+    }
+
+    @Test
+    public void testParsingUpperRIs() throws IOException {
+        OntoFoxInputParser parser = new OntoFoxInputParser();
+        parser.parse(getClass().getResource("/ontofoxInputUO.txt").getPath());
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getUpperIRIs() !=null );
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getUpperIRIs().size()==1 );
+    }
+
+    @Test
+    public void testParsingSourceRetrievalSetting() throws IOException {
+        OntoFoxInputParser parser = new OntoFoxInputParser();
+        parser.parse(getClass().getResource("/ontofoxInputUO.txt").getPath());
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getSourceRetrievalSetting() !=null );
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getSourceRetrievalSetting().equals("includeNoIntermediates"));
+    }
+
+
+    @Test
+    public void testParsingSourceAnnotationURIs() throws IOException {
+        OntoFoxInputParser parser = new OntoFoxInputParser();
+        parser.parse(getClass().getResource("/ontofoxInputUO.txt").getPath());
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getSourceAnnotationURIs() !=null );
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getSourceAnnotationURIs().size()==0);
+    }
+
+    @Test
+    public void testParsingSourceAnnotationSetting() throws IOException {
+        OntoFoxInputParser parser = new OntoFoxInputParser();
+        parser.parse(getClass().getResource("/ontofoxInputUO.txt").getPath());
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getSourceAnnotationSetting() !=null );
+        System.out.println(parser.getSourceAnnotationURIs());
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getSourceAnnotationSetting().equals("includeAllAnnotationProperties"));
     }
 }
