@@ -1,3 +1,4 @@
+import com.google.common.collect.ImmutableList;
 import org.semanticweb.owlapi.model.IRI;
 
 import java.io.BufferedReader;
@@ -18,24 +19,48 @@ import java.util.Set;
  */
 public class OntoFoxInputParser {
 
+    private enum Headers {
+
+        URI_LINE(1, "[URI of the OWL(RDF/XML) output file]"),
+        SOURCE_ONTOLOGY_LINE(2,"[Source ontology]"),
+        LOWER_URIs_LINE(3, "[Low level source term URIs]");
+
+        Headers(int ordinal, String value){
+
+        }
+
+    }
+
     private final String URI_LINE = "[URI of the OWL(RDF/XML) output file]";
-    private String uri = null;
     private final String SOURCE_ONTOLOGY_LINE = "[Source ontology]";
-    private String sourceOntology = null;
     private final String LOWER_URIs_LINE = "[Low level source term URIs]";
-    private Set<IRI> lowerIRIs = null;
     private final String UPPER_URIs_LINE = "[Top level source term URIs and target direct superclass URIs]";
-    private Set<IRI> upperIRIs = null;
     private final String SOURCE_TERM_RETRIEVAL_LINE = "[Source term retrieval setting]";
-    private String sourceRetrievalSetting;
     private final String BRANCH_LINE = "[Branch extractions from source term URIs and target direct superclass URIs]";
     private final String SOURCE_ANN_URIs_LINE = "[Source annotation URIs]";
+    private final String SOURCE_ANN_URIs_EXCLUDE_LINE = "[Source annotation URIs to be excluded]";
+
+    private final ImmutableList<String> HEADERS = ImmutableList.of(
+            URI_LINE,
+            SOURCE_ONTOLOGY_LINE,
+            LOWER_URIs_LINE,
+            UPPER_URIs_LINE,
+            SOURCE_TERM_RETRIEVAL_LINE,
+            BRANCH_LINE,
+            SOURCE_ANN_URIs_LINE,
+            SOURCE_ANN_URIs_EXCLUDE_LINE
+            );
+
+
+    private String uri = null;
+    private String sourceOntology = null;
+    private Set<IRI> lowerIRIs = null;
+    private Set<IRI> upperIRIs = null;
+    private String sourceRetrievalSetting;
     private Set<IRI> sourceAnnotationURIs = null;
     private String sourceAnnotationSetting = null;
-    private final String SOURCE_ANN_URIs_EXCLUDE_LINE = "[Source annotation URIs to be excluded]";
     private String filenamePath = null;
 
-    //[Source annotation URIs]
 
     public OntoFoxInputParser(String fnp){
         lowerIRIs = new HashSet<>();
@@ -49,17 +74,17 @@ public class OntoFoxInputParser {
         try (BufferedReader br = new BufferedReader(new FileReader(filenamePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                if (line.trim().isEmpty())
+                if (line.trim().isEmpty() || line.startsWith("#"))
                     continue;
                 if (line.equals(URI_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.equals(LOWER_URIs_LINE)){
+                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)){
                         continue;
                     }
                     uri = line;
                     continue;
                 }
                 if (line.equals(SOURCE_ONTOLOGY_LINE)) {
-                    while((line = br.readLine()).trim().isEmpty() || line.equals(LOWER_URIs_LINE)){
+                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
                         continue;
                     }
                     sourceOntology = line;
@@ -67,7 +92,7 @@ public class OntoFoxInputParser {
                 }
                 if (line.equals(LOWER_URIs_LINE)){
                     while(!(line = br.readLine()).equals(UPPER_URIs_LINE)){
-                        if (line.trim().isEmpty())
+                        if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         lowerIRIs.add(IRI.create(line));
                     }
@@ -75,26 +100,27 @@ public class OntoFoxInputParser {
                 if (line.equals(UPPER_URIs_LINE)){
                     //TODO add support for subClassOf
                     while(!(line = br.readLine()).equals(SOURCE_TERM_RETRIEVAL_LINE)){
-                        if (line.trim().isEmpty())
+                        if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         upperIRIs.add(IRI.create(line));
                     }
                 }
                 if (line.equals(SOURCE_TERM_RETRIEVAL_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.equals(BRANCH_LINE)){
+                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
                         continue;
                     }
                     sourceRetrievalSetting = line;
                 }
                 if (line.equals(BRANCH_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.equals(SOURCE_ANN_URIs_LINE)){
+                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
                         continue;
                     }
 
                 }
                 if (line.equals(SOURCE_ANN_URIs_LINE)){
-                    while(!(line = br.readLine()).equals(SOURCE_ANN_URIs_EXCLUDE_LINE)){
-                        if (line.trim().isEmpty())
+                    while((line = br.readLine()).trim().isEmpty() || HEADERS.equals(SOURCE_ANN_URIs_EXCLUDE_LINE)){
+                        System.out.println(line);
+                        if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         try {
                             URL url = new URL(line);
