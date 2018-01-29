@@ -19,17 +19,6 @@ import java.util.Set;
  */
 public class OntoFoxInputParser {
 
-    private enum Headers {
-
-        URI_LINE(1, "[URI of the OWL(RDF/XML) output file]"),
-        SOURCE_ONTOLOGY_LINE(2,"[Source ontology]"),
-        LOWER_URIs_LINE(3, "[Low level source term URIs]");
-
-        Headers(int ordinal, String value){
-
-        }
-
-    }
 
     private final String URI_LINE = "[URI of the OWL(RDF/XML) output file]";
     private final String SOURCE_ONTOLOGY_LINE = "[Source ontology]";
@@ -110,6 +99,7 @@ public class OntoFoxInputParser {
                         continue;
                     }
                     sourceRetrievalSetting = line;
+                    continue;
                 }
                 if (line.equals(BRANCH_LINE)){
                     while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
