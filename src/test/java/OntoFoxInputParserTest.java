@@ -4,86 +4,125 @@
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.junit.Assert.assertTrue;
 
-
+@RunWith(Parameterized.class)
 public class OntoFoxInputParserTest {
 
-    private OntoFoxInputParser parser1 = null;
-    private OntoFoxInputParser parser2 = null;
+    private OntoFoxInputParser parser = null;
+
+    @Parameterized.Parameter
+    public String inputFilename = null;
+
+    @Parameterized.Parameter (value = 1)
+    public String uri = null;
+
+    @Parameterized.Parameter(value = 2)
+    public String sourceOntology = null;
+
+    @Parameterized.Parameter(value = 3)
+    public int lowerURIsSize;
+
+    @Parameterized.Parameter(value = 4)
+    public int upperURIsSize;
+
+    @Parameterized.Parameter(value = 5)
+    public String sourceRetrievalSetting = null;
+
+//    @Parameterized.Parameter(value = 6)
+//    public int sourceAnnotationURIsSize;
+//
+//    @Parameterized.Parameter(value =7)
+//    public String sourceAnnotationSetting = null;
+
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data() {
+        return Arrays.asList(
+                new Object[][] {
+                { "/ontofoxInputUO.txt",
+                        "http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl",
+                        "UO",
+                        18,
+                        1,
+                        "includeNoIntermediates" //,
+                 //       0,
+                 //       "includeAllAnnotationProperties"
+                },
+                { "/input1.txt",
+                        "http://purl.obolibrary.org/obo/example.owl",
+                        "NCBITaxon",
+                        1,
+                        2,
+                        "includeAllIntermediates" //,
+                     //   3,
+                     //   "includeAllAnnotationProperties"
+                },
+
+        });
+    }
 
 
     @Before
     public void setUp() throws IOException {
-        parser1 = new OntoFoxInputParser(getClass().getResource("/ontofoxInputUO.txt").getPath());
-        parser1.parse();
-        parser2 = new OntoFoxInputParser(getClass().getResource("/input1.txt").getPath());
-        parser2.parse();
+        parser = new OntoFoxInputParser(getClass().getResource(inputFilename).getPath());
+        parser.parse();
     }
 
     @Test
     public void testParsingURI(){
-        assertTrue("paser.getURI() should not be null", parser1.getURI() !=null );
-        assertTrue("paser.getURI() has specific value", parser1.getURI().equals("http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl") );
-        assertTrue("paser.getURI() should not be null", parser2.getURI() !=null );
-        assertTrue("paser.getURI() has specific value", parser2.getURI().equals("http://purl.obolibrary.org/obo/example.owl") );
+        assertTrue("paser.getURI() should not be null", parser.getURI() !=null );
+        assertTrue("paser.getURI() has specific value", parser.getURI().equals(uri) );
     }
 
     @Test
     public void testParsingSourceOntology() throws IOException {
-        assertTrue("paser.getSourceOntology() should not be null", parser1.getSourceOntology() !=null );
-        System.out.println(parser1.getSourceOntology());
-        assertTrue("paser.getSourceOntolgy() has specific value", parser1.getSourceOntology().equals("UO") );
-        assertTrue("paser.getSourceOntology() should not be null", parser2.getSourceOntology() !=null );
-        System.out.println(parser2.getSourceOntology());
-        assertTrue("paser.getSourceOntolgy() has specific value", parser2.getSourceOntology().equals("NCBITaxon") );
+        assertTrue("paser.getSourceOntology() should not be null", parser.getSourceOntology() !=null );
+        System.out.println(parser.getSourceOntology());
+        assertTrue("paser.getSourceOntolgy() has specific value", parser.getSourceOntology().equals(sourceOntology) );
     }
 
     @Test
     public void testParsingLowerIRIs() throws IOException {
-        assertTrue("paser.getLowerIRIs() should not be null", parser1.getLowerIRIs() !=null );
-        System.out.println(parser1.getLowerIRIs().size());
-        assertTrue("paser.getLowerIRIs() has specific value", parser1.getLowerIRIs().size()==18 );
-        assertTrue("paser.getLowerIRIs() should not be null", parser2.getLowerIRIs() !=null );
-        System.out.println(parser2.getLowerIRIs().size());
-        assertTrue("paser.getLowerIRIs() has specific value", parser2.getLowerIRIs().size()==1 );
+        assertTrue("paser.getLowerIRIs() should not be null", parser.getLowerIRIs() !=null );
+        System.out.println(parser.getLowerIRIs().size());
+        assertTrue("paser.getLowerIRIs() has specific value", parser.getLowerIRIs().size()==lowerURIsSize );
+
     }
 
     @Test
     public void testParsingUpperRIs() throws IOException {
-        assertTrue("paser.getUpperIRIs() should not be null", parser1.getUpperIRIs() !=null );
-        assertTrue("paser.getUpperIRIs() has specific value", parser1.getUpperIRIs().size()==1 );
-        assertTrue("paser.getUpperIRIs() should not be null", parser2.getUpperIRIs() !=null );
-        assertTrue("paser.getUpperIRIs() has specific value", parser2.getUpperIRIs().size()==2 );
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getUpperIRIs() !=null );
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getUpperIRIs().size()== upperURIsSize);
+
     }
 
     @Test
     public void testParsingSourceRetrievalSetting() throws IOException {
-        assertTrue("paser.getSourceRetrievalSetting() should not be null", parser1.getSourceRetrievalSetting() !=null );
-        assertTrue("paser.getSourceRetrievalSetting() has specific value", parser1.getSourceRetrievalSetting().equals("includeNoIntermediates"));
-        assertTrue("paser.getSourceRetrievalSetting() should not be null", parser2.getSourceRetrievalSetting() !=null );
-        assertTrue("paser.getSourceRetrievalSetting() has specific value", parser2.getSourceRetrievalSetting().equals("includeNoIntermediates"));
+        assertTrue("paser.getSourceRetrievalSetting() should not be null", parser.getSourceRetrievalSetting() !=null );
+        assertTrue("paser.getSourceRetrievalSetting() has specific value", parser.getSourceRetrievalSetting().equals(sourceRetrievalSetting));
     }
 
 
-    @Test
-    public void testParsingSourceAnnotationURIs() throws IOException {
-        assertTrue("paser.getSourceAnnotationURIs() should not be null", parser1.getSourceAnnotationURIs() !=null );
-        assertTrue("paser.getSourceAnnotationURIs() has specific value", parser1.getSourceAnnotationURIs().size()==0);
-        assertTrue("paser.getSourceAnnotationURIs() should not be null", parser2.getSourceAnnotationURIs() !=null );
-        assertTrue("paser.getSourceAnnotationURIs() has specific value", parser2.getSourceAnnotationURIs().size()==3);
-    }
-
-    @Test
-    public void testParsingSourceAnnotationSetting() throws IOException {
-        assertTrue("paser.getSourceAnnotationSetting() should not be null", parser1.getSourceAnnotationSetting() !=null );
-        System.out.println(parser1.getSourceAnnotationURIs());
-        assertTrue("paser.getSourceAnnotationSetting() has specific value", parser1.getSourceAnnotationSetting().equals("includeAllAnnotationProperties"));
-        assertTrue("paser.getSourceAnnotationSetting() should not be null", parser2.getSourceAnnotationSetting() ==null );
-        System.out.println(parser1.getSourceAnnotationURIs());
-    }
+//    @Test
+//    public void testParsingSourceAnnotationURIs() throws IOException {
+//        assertTrue("paser.getSourceAnnotationURIs() should not be null", parser.getSourceAnnotationURIs() !=null );
+//        assertTrue("paser.getSourceAnnotationURIs() has specific value", parser.getSourceAnnotationURIs().size()==sourceAnnotationURIsSize);
+//    }
+//
+//    @Test
+//    public void testParsingSourceAnnotationSetting() throws IOException {
+//        //assertTrue("paser.getSourceAnnotationSetting() should not be null", parser.getSourceAnnotationSetting() !=null );
+//        System.out.println(parser.getSourceAnnotationURIs());
+//        assertTrue("paser.getSourceAnnotationSetting() has specific value", parser.getSourceAnnotationSetting().equals(sourceAnnotationSetting));
+//
+//    }
 
 }

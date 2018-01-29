@@ -108,7 +108,7 @@ public class OntoFoxInputParser {
 
                 }
                 if (line.equals(SOURCE_ANN_URIs_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || HEADERS.equals(SOURCE_ANN_URIs_EXCLUDE_LINE)){
+                    while((line = br.readLine()).trim().isEmpty() ||  line.startsWith("#")  || HEADERS.contains(line)){
                         System.out.println(line);
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
