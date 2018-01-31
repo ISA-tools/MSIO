@@ -43,3 +43,12 @@ dependencies {
     //compile group: 'net.sourceforge.owlapi', name: 'owlapi-distribution', version:'4.2.6'
 }
 
+jar {
+    archiveName = "robot-plus.jar"
+    manifest {
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
