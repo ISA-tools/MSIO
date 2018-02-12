@@ -17,4 +17,7 @@ prepare_release:
 	cp ./build/libs/robot-plus.jar ./bin/
 	export PATH=$(PATH):$(PWD)/bin
 
-	$(ROBOT-PLUS) extract --method MIREOT -I "http://purl.obolibrary.org/obo/duo.owl" --upper-term "obo:DUO_0000001" --upper-term "obo:DUO_0000017" --lower-term "obo:DUO_0000001" --lower-term "obo:DUO_0000017" --output $(IMPORTSDIR)/duo_import.owl
+	$(ROBOT-PLUS) merge  -I "http://purl.obolibrary.org/obo/duo.owl" extract --method MIREOT \
+	          --upper-term "owl:Thing" --lower-term "obo:DUO_0000001" --lower-term "obo:DUO_0000017" \
+	          --branch-from-term "obo:DUO_0000001" --branch-from-term "obo:DUO_0000017" \
+	          --output $(IMPORTSDIR)/duo_import.owl
