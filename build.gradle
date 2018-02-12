@@ -46,6 +46,7 @@ dependencies {
 jar {
     archiveName = "robot-plus.jar"
     manifest {
+        attributes 'Main-Class': 'org.obolibrary.robot.CommandLineInterface'
     }
 
     from {
