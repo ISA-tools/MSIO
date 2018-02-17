@@ -243,9 +243,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000179 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000179 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000179">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIO_0000179">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a chemical entity is said to be an isotopomer of another one if it has the same number of each isotopic atom but differs in their positions. isotopomer is a contraction of isotopic isomer</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">CH2DCH=0 is isotopomer of CH3CD=0</obo:IAO_0000117>
@@ -255,9 +255,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000180 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000180 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000180">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIO_0000180">
         <obo:IAO_0000112 xml:lang="en">CH4 is isotopologue of CH3D which is isotopologue of CH2D2</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a molecular entity which differs only in isotopic composition (i.e the number of isotopic substitution differs but the overall chemical structure is unchanged) is said to be an isotologue</obo:IAO_0000115>
@@ -874,8 +874,8 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000115"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000117"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000115"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000117"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -884,7 +884,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1301,9 +1301,9 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000112>2H2O -&gt; 2H2+ O2</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a process which uses or consumes chemical/molecular entities to generate other molecular entities</obo:IAO_0000115>
@@ -1316,9 +1316,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">buffer role is a role played by a chemical solution to dampens pH variation</obo:IAO_0000115>
@@ -1329,9 +1329,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">derivatization agent role is a role played by a chemical entity involved in a chemical reaction known as derivatization whereby another chemical entity is augmented, but not altered otherwise, with groups specify to the chemical entity acting as a derivatization agent.</obo:IAO_0000115>
@@ -1342,10 +1342,10 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000004 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000008"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000008"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">external standard role is a role played by a material entity used as a reference point for signal acquisition. this is a type of positive control role</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1355,10 +1355,10 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000008"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000008"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">internal standard role is a role played by a chemical entity added in known amount to an analytical sample</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1368,9 +1368,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000006 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000006">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">long term reference role is a role played by a material entity known for its stability to provide the means to compare across sets of acquisitions</obo:IAO_0000115>
@@ -1381,9 +1381,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000007 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">positive control role is a role played by a material entity in the context of analytical work to provide no signal  or a signal as close to baseline as technically possible (within the limits of detection) thereby providing a reference point for the noise and indicative that the detectors and signal acquisition system operate nominally.</obo:IAO_0000115>
@@ -1394,9 +1394,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">positive control role is a role played by a material entity in the context of analytical work to provide a signal of known intensity indicative that the detectors and signal acquisition system operate nominally.</obo:IAO_0000115>
@@ -1407,9 +1407,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000009 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">solvent role is a role played by a chemical entity present in a solution and providing the solvatation activity to other compounds, the solutes.</obo:IAO_0000115>
@@ -1420,14 +1420,14 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000010 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1445,14 +1445,14 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000011 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1470,14 +1470,14 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1495,9 +1495,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000013 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">AbsoluteIDQ p400 kit is a reagent system manufactured by Biocrates AG, Austria which allows the targeted metabolite profiling of up to 400 distinct molecular entities with quantitative accuracy on human plasma samples.</obo:IAO_0000115>
@@ -1508,14 +1508,14 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000014 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1527,16 +1527,16 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000015 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000015">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1552,9 +1552,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000016 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1562,8 +1562,8 @@ last accessed: 2018-01-11</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1578,9 +1578,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000017 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000017">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Fetal bovine serum (FBS) or fetal calf serum (spelled foetal in Commonwealth English) is a material entity which correspsonds to the blood fraction remaining after the natural coagulation of blood, followed by centrifugation to remove any remaining red blood cells.</obo:IAO_0000115>
@@ -1592,14 +1592,14 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000018 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000018">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1611,9 +1611,9 @@ last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000019 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1621,8 +1621,8 @@ last accessed: 2018-01-11</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1643,9 +1643,9 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000020">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
         <rdfs:label xml:lang="en">organization</rdfs:label>
@@ -1653,14 +1653,14 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000021 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000021 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000021">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1673,9 +1673,9 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000022 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000022 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000022">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">quality control material (qc material)  is a material entity which is used for the purpose to quality control processes such as assessing unwanted source of variations during signal acquisitions. Typically, these materials are known compounds or mixture of compounds introduced in known quantities into test samples or run as is, diluted from stock to provide reference measurements at fixed temporal intervals.</obo:IAO_0000115>
@@ -1687,9 +1687,9 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000023 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000023">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a reference compound is a chemical entity of know origin, formula and established spectral fingerprint added to a solution of unknown component in known quantities in order to provide a basis (hence the term reference) with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry</obo:IAO_0000115>
@@ -1702,14 +1702,14 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000024 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000024 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000024">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000023"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">NIST reference material:
@@ -1725,9 +1725,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000025 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000025">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1735,8 +1735,8 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1751,9 +1751,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000026">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1761,8 +1761,8 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1777,9 +1777,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000027 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1787,8 +1787,8 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1804,9 +1804,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000028 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000028">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a carrier gas is a chemical entity in gaseous phase with is used for eluting chemical compound in a gas chromatography process.</obo:IAO_0000115>
@@ -1817,13 +1817,13 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000029 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000029">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000029">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000003"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
@@ -1837,10 +1837,10 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000029"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000029"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1851,13 +1851,13 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000031 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000031">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000031">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000118"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
@@ -1870,10 +1870,10 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000032 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a specificly labeled isotopic tracer is an isotopic tracer where only specific positions on the backbone have been replaced with an isotopic atom. Such molecules are often used in Fluxomics analysis and metabolic path elucidation experiments.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1883,10 +1883,10 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000033 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000033 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">uniformly labeled isotopic tracer is an isotopic tracer where all atoms of the backbone are replaced with the same isotope. Such molecules are often used in Fluxomics analysis and metabolic path elucidation experiments.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -1896,9 +1896,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000034 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">mass isotopologue is a set of chemical containing a known subsitution by isotopic element. mass isotologue encompass several isotopomers. Mass isotologue can be monitored using mass spectrometry but only NMR spectroscopy can discriminate between positional isotopomer.</obo:IAO_0000115>
@@ -1910,9 +1910,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000035 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000035">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
         <obo:IAO_0000116 xml:lang="en">import from  CHEBI (CHEBI:25212)</obo:IAO_0000116>
@@ -1922,9 +1922,9 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000036 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000036 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000036">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a mass isotopomer  (short for isotopic isomer) is a compound which differ from another one only by the position of an isotopic substitution in the molecular backbone.</obo:IAO_0000115>
@@ -1936,16 +1936,16 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000037 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000037 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000037">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000009"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000009"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1959,14 +1959,14 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000038 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000038 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000038">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000120"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
@@ -1981,9 +1981,9 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000039 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000039 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000039">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000116 xml:lang="en">should it be a relation or a class?</obo:IAO_0000116>
@@ -1993,14 +1993,14 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000040 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000040">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000150"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">metabolic flux unit is a measurement unit datum used to qualify a metabolic flux. It is therefore an amount of matter over a temporal interval.</obo:IAO_0000115>
@@ -2011,10 +2011,10 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000041 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000040"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">micromolar per milligram of protein per hour  is a unit used to report metabolic fluxes. it denotes a measurement indicative of an amount of material over a period of time and normalized to the amount of protein present in the cellular fraction under consideration</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra
 </obo:IAO_0000117>
@@ -2024,9 +2024,9 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000042 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000042">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">c13Fluc2 is a software suite of applications for the detailed quantification of intracellular (quasi) steady-state fluxes as explored by 13C-based metabolic flux analysis. The tool is developed and maintained by W. Wiechert at the Institute of Bio- and Geosciences, IBG-1: Biotechnology and JARA High Performance Computing, Forschungszentrum
@@ -2043,9 +2043,9 @@ doi: 10.1093/bioinformatics/bts646</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000043 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000043 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000043">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">C13 is a tool for quantification of in vivo metabolic fluxes, from carbon labelling experiments. The underlying approach is metabolic flux analysis based on stationary carbon isotope labelling experiments, using fractional enrichment data. The mathematical framework adopted herein is the one developed by Wiechert and de Graaf (1997).
@@ -2057,9 +2057,9 @@ It is developed and maintained at the Chalmers University of Technology, Departm
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000044 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000044 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000044">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An intuitive tool for quantitative investigations of intracellular metabolism by users that are not familiar with numerical methods or isotopic tracer experiments. The aim of this open source software is to enable non-specialists to adapt the software to their specific scientific interests, including other 13C-substrates, labeling mixtures, and organisms. FiatFlux is written in Matlab</obo:IAO_0000115>
@@ -2070,9 +2070,9 @@ It is developed and maintained at the Chalmers University of Technology, Departm
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000045 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000045 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000045">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">FIA is a software written in python, implementing the FIA (Fluxomer Iterative Algorithm) - a new effective method for 13C metabolic fluxes (tracer) experiments analysis. It is developed by Orr Srour, Jamey D. Young and Yonina C. Eldar at the Technion, Israel Institute of Technology</obo:IAO_0000115>
@@ -2083,9 +2083,9 @@ It is developed and maintained at the Chalmers University of Technology, Departm
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000046 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000046 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000046">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">iMAT is a software integrating transcriptomic and proteomic data with genome-scale metabolic network models to predict enzyme metabolic flux. The tool is developed by Tomer Shlomi at The Isreal Institute of Technology</obo:IAO_0000115>
@@ -2099,14 +2099,14 @@ doi: 10.1093/bioinformatics/btq602</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000047 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2120,9 +2120,9 @@ INCA is a software package that can perform both steady-state metabolic flux ana
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000048 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000048 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000048">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Iso2Flux is a Python-based flux analysis software that allows to perform 13C Metabolic Flux Analysis on a sub-network of a large scale model. Iso2flux uses constraint-based modelling to compute steady state fluxes across a large metabolic network and uses such flxues to predict 13C distribution across a subser of the newtork. Then, given a set of 13C data Iso2flux can iteratively find the steady state flux distributions that are most consistent with such fluxes.
@@ -2137,9 +2137,9 @@ the source code is available from: https://github.com/cfoguet/iso2flux</obo:IAO_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000049 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000049 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000049">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">“Isodyn” is a C++-program that performs an analysis of stable isotope tracer data to assess metabolic flux profiles in living cells. Isodyn simulates the dynamics of isotopic isomer (isotopomer) distribution in central metabolic pathways, and, by changing its parameters, which reflect the characteristics of corresponding biochemical reactions, fit the simulated dynamics of mass isotopomers to that observed experimentally. The simulated metabolic fluxes that correspond to the best fit are assumed to reproduce the real fluxes in the analyzed biological object and conditions. Isodyn contains tools that check the goodness of fit and perform a statistical analysis of obtained metabolic fluxes.
@@ -2154,9 +2154,9 @@ the source code is available from: https://github.com/seliv55/isodyn</obo:IAO_00
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000050 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000050 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000050">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
@@ -2167,9 +2167,9 @@ the source code is available from: https://github.com/seliv55/isodyn</obo:IAO_00
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000051 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000051 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000051">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Metran is a software for Metabolic Flux Analysis implementing the Elementary Metabolite Units.
@@ -2186,9 +2186,9 @@ The EMU decomposition algorithm is completely unsupervised and converges within 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000052 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000052 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000052">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>“midcor.R” is an “R”-program that performs a primary analysis of isotopic isomers (isotopomers) distribution obtained by Gas Chromatography coupled with Mass Spectrometry (GCMS). The aim of this analysis is to have a correct distribution of isotopes originated from substrates that are artificially enriched with specific isotopes (usually 13C). To this end the program performs a correction for natural occurring isotopes and also correction for “impurities” of the assay media that give peaks overlapping with the spectra of analyzed labeled metabolites. This program offers two ways of corrections of “impurities” resulted from overlapping the assayed mass isotopomer distribution with peaks produced either by unknown metabolites in the media, or by different fragments produced by the assayed metabolite.
@@ -2203,9 +2203,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000055 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000055 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000055">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">OpenMoebius is an integrated software for conventional 13C-Metabolic Flux Analysis and isotopically nonstationary 13C-Metabolic Flux Analysis (INST-13C-MFA). This work is partially supported by JST, Strategic International Collaborative Research Program, SICORP for JP-US Metabolomics.
@@ -2217,9 +2217,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000056 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000056 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000056">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>RaMID is a computer program designed to read the machine-generated files saved in netCDF format containing registered time course of m/z chromatograms. It evaluates the peaks of mass isotopomer distribution (MID) making them ready for further correction for natural isotope occurrence. RaMID is written in “R”, uses library “ncdf4” (it should be installed before the first use of RaMID) and contains several functions, located in the files “ramid.R” and &quot;libcdf.R,&quot; designed to read CDF files, and analyze and visualize the spectra that they contain.</obo:IAO_0000115>
@@ -2232,9 +2232,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000057 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000057 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000057">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a software produced by Nicolas Zamboni and colleagues for flux ratio estimation based on a 5 step workflow known as SUMOFLUX and which relies on surrogate modeling.</obo:IAO_0000115>
@@ -2245,9 +2245,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000058 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000058 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000058">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
@@ -2258,9 +2258,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000059 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000059 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000059">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
@@ -2271,14 +2271,14 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000060 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000060 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000060">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">CH4 + 2 O2 → CO2 + 2 H2O, the stoichiometric coefficient of CH4 is -1, the stoichiometric coefficient of O2 is -2, for CO2 it would be +1 and for H2O it is +2</obo:IAO_0000112>
@@ -2291,9 +2291,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000061 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000061 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000061">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2311,9 +2311,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000062 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000062 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000062">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2331,9 +2331,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000063 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000063 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000063">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2351,9 +2351,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000064 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000064 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000064">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2372,14 +2372,14 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000065 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000065 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000065">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2391,9 +2391,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000066 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000066 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000066">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2412,9 +2412,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000067 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000067 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000067">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2434,9 +2434,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000069 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000069 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000069">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the concentration of a molecular entity acting as metabolite and stated in standard concentration units, such molar, micromolar and so on</obo:IAO_0000115>
@@ -2448,9 +2448,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000070 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000070">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2458,8 +2458,8 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000035"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000059"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000035"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000059"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2478,9 +2478,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000071 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000071 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000071">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2499,9 +2499,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000072 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000072 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000072">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">ratio of protein content over a reference standard element (usually bovine serum albumin (BSA))</obo:IAO_0000115>
@@ -2513,9 +2513,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000073 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000073 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000073">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2539,9 +2539,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000074 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000074 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000074">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>signal intensity is a kind of measurement providing an estimate of the strength of a phenomena as it is recorded. For digital detector instrument, the signal intensity is usually a electric intensity or a field strength of the electromagnetic wave transmitting a signal.</obo:IAO_0000115>
@@ -2553,10 +2553,10 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000075 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000075 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000074"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Signal intensity of all m/z values at the maximum of the peak (also known as maximum signal intensity) and subtracting baseline.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -2568,9 +2568,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000076 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000076 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000076">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">total volume of cell culture is a measurement data item which denotes the volume occupied by a cell culture</obo:IAO_0000115>
@@ -2582,9 +2582,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000077 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000077 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000077">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
         <obo:IAO_0000112>https://github.com/ISA-tools/isa-matrix-datapackages/tree/master/src/sirm_datapkg</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2604,9 +2604,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000078 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000078 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000078">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>a metabolic flux rate matrix is an information content entity which is defined as a 2 dimensional table associating chemical species with uptake and excretion rate in the cell</obo:IAO_0000115>
@@ -2618,21 +2618,21 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000079 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000079 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000079">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000001"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2645,9 +2645,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000080 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000080 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000080">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000112 xml:lang="en">a CHEBI identifier for chemical or an HMDB identifier</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2659,9 +2659,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000081 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000081 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000081">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000112 xml:lang="en">a KEGG pathway identifier such as map00010 (http://www.genome.jp/dbget-bin/www_bget?map00010)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2673,9 +2673,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000082 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000082 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000082">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000112 xml:lang="en">a uniprot identifier such P20248 (http://www.uniprot.org/uniprot/P20248)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2687,9 +2687,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000083 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000083 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000083">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000112 xml:lang="en">a reactome identifier such as R-HSA-174054</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2701,9 +2701,9 @@ http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000084 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000084 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000084">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">calibration is a process which relies on comparison between measurements in order to estimate the reliability of the measurements performed on a particular device or instrument configuration. 
@@ -2719,9 +2719,9 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000085 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000085 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000085">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">quality control is a process which aims to ensure that procedures for producing a material or a measurement remain within established error tolerance margins. Quality control often relies on the use of references or standards against which readings are gauged. those standards can be &apos;negative control&apos; which should produce in an absence of signal or &apos;positive control&apos;, which should result in the presence of a signal of known quality and intensity.</obo:IAO_0000115>
@@ -2733,10 +2733,10 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000086 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000086 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000086">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">assessing across studies variability is a quality control process which aims at monitoring the consistency of signal acquisitions  between different studies (for instance in the context of meta-analysis and data integration) in order to detect unwanted causes of variation (i.e. variation that was not planned and that should be taken into account).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -2746,10 +2746,10 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000087 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000087 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000087">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">assessing instrument conditionning is a quality control process which aims at monitoring the stability of the analytical instrument prior to running data acquisition on specimen of interest by running a set of control runs.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -2759,10 +2759,10 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000088 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000088 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">assessing within study variability is a quality control process which aims at monitoring the consistency of signal acquisition throughout the course of a study in order to detect unwanted causes of variation (i.e. variation that was not planned and that should be taken into account).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -2772,10 +2772,10 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000089 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000089 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000089">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000088"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000088"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">assessing study batch-to-batch variation is a within study variably quality control which specifically looks at how batching of data acquisition contributes to adding unwanted noice and how to account for it.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -2785,18 +2785,18 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000090 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000090 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000025"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000025"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000026"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2812,14 +2812,14 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000091 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000091 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2832,14 +2832,14 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000092 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000092 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000085"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000085"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2852,17 +2852,17 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000094 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000094 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000094">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000094">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000100"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000101"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000100"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2878,13 +2878,13 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000095 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000095 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000095">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000095">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000094"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
@@ -2901,20 +2901,20 @@ a calibration process may be used to detect degradation of parts of instruments 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000096 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000096 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000134"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000130"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000131"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2942,9 +2942,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000099 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000099 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000099">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -2954,9 +2954,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000100 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000100 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000100">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of assay which attempts to identify and measure specific compound/ metabolites (known in advance) expressed as concentration or relative abundance ratio to a standard in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy or liquid chromatography DAD</obo:IAO_0000115>
@@ -2968,9 +2968,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000101 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000101 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000101">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of assay which attempts to identify and measure relative concentration of all possible metabolites present in an extract in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy.</obo:IAO_0000115>
@@ -2983,9 +2983,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000103 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000103 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000103">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">spent culture medium is a culture medium which has been added to a cell culture and which has been depleted of its component as used by the growing cell and which has received the by products of cell metabolites excreted by the cells. Therefore, spent culture medium will different significantly in pH and physical chemical properties from the initial fresh culture medium added to the cell as the begining of the cell culture. Spent culture medium is usually recovered by aspiration or mild centrifugation (as not to distrupt cell membrane) of the cell culture.</obo:IAO_0000115>
@@ -2999,9 +2999,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000104 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000104 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000104">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">metabolism quenching is a planned processed whose objective is a quick extinction of all biochemical reactions occuring in a biological system in order to fix molecular entity concentrations for downstream quantitation and analysis. An array of physical or chemical agent may be used to achieve that goal.</obo:IAO_0000115>
@@ -3013,10 +3013,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000105 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000105 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000104"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">direct metabolism quenching by solvent is a kind biochemical reaction extinction process which relies on organic solvents to denature enzymatic machinery and inactivate it.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3027,10 +3027,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000106 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000106 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000105"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000105"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a type of metabolism immediate extinction using cold acetonitrile</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3042,10 +3042,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000107 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000107 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000107">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000104"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a type of metabolism extinction which uses refrigerated buffer containing 60% of methanol ammonium bicarbonate solution</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3057,10 +3057,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000108 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000108 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000108">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000104"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a type of metabolism extinction which uses refrigerated buffer containing 60% of methanol HEPES solution</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3071,10 +3071,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000109 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000109 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000104"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a type of metabolism extinction which uses refrigerated PBS buffer</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3085,9 +3085,9 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000110 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000110 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000110">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
         <obo:IAO_0000112 xml:lang="en">acetonitrile 5%, isopropanol 95% for 15 minutes at flow rate 1 ml/min,</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -3099,13 +3099,13 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000111 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000111 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000111">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000111">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000029"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000029"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000652"/>
@@ -3121,10 +3121,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000112 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000112 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000112">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000111"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>a kind of derivatization which results in the addition of acetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3135,10 +3135,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000113 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000113 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000112"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000112"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">a kind of derivatization which results in the addition of trifluoroacetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000117>
@@ -3148,10 +3148,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000114 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000114 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000111"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of derivatization which results in the addition of alkyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3161,10 +3161,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000115 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000115 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000111"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of derivatization which results in the addition of methyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3174,10 +3174,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000116 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000116 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000111"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of derivatization which results in the addition of oxime group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3187,10 +3187,10 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000117 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000117 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000111"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a kind of derivatization which results in the addition of silyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3200,9 +3200,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000118 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000118 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000118">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000652"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Isotopic labeling (or isotopic labelling) is a technique used to track the passage of an isotope (an atom with a detectable variation) through a reaction, metabolic pathway, or cell. The reactant is &apos;labeled&apos; by replacing specific atoms by their isotope.</obo:IAO_0000115>
@@ -3213,20 +3213,20 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000119 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000119 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000118"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000118"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -3240,20 +3240,20 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000120 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000120 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000120">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000118"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000118"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -3266,9 +3266,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000121 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000121 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000121">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of collecting a sample when the cells of cell culture growth are collected at a specific phase of the cell division cycle (e.g collection at G2/G1). This often requires a cell synchronization step.</obo:IAO_0000115>
@@ -3280,9 +3280,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000122 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000122 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000122">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000122">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of collecting a sample when the cells of a cell culture growth are not dividing</obo:IAO_0000115>
@@ -3294,9 +3294,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000123 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000123 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000123">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of collecting a sample when the cell culture growth can be approximated by a logarithm function.</obo:IAO_0000115>
@@ -3308,9 +3308,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000124 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000124 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000124">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">collection at specific cell culture passage is a kind of specimen collection which occurs after a strictly defined number of  cell culture splitting, defined to control how many cell divisions have been performed.</obo:IAO_0000115>
@@ -3322,9 +3322,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000125 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000125 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000125">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">collection at stabilization phase before experiment is a kind of specimen collection process which takes places once cells have reached a stationary growth phase and prior the main experimental intervention is applied.</obo:IAO_0000115>
@@ -3336,9 +3336,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000126 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000126 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000126">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of collecting a sample when the cell culture growth has reached a plateau, indicative of a steady state</obo:IAO_0000115>
@@ -3351,9 +3351,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000127 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000127 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000127">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3361,8 +3361,8 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000077"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000078"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000077"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000078"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -3383,10 +3383,10 @@ doi:  10.1038/nbt.1614</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000128 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000128 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000127"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000127"/>
         <obo:IAO_0000112></obo:IAO_0000112>
         <obo:IAO_0000115></obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3396,9 +3396,9 @@ doi:  10.1038/nbt.1614</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000129 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000129 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000129">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000112>
             https://www.ncbi.nlm.nih.gov/pubmed/17554498
@@ -3414,14 +3414,14 @@ Fractional 13C enrichment of isolated carbons using [1-13C]- or [2- 13C]-glucose
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000130 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000130 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000130">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Correcting for the effects of natural abundance in stable isotope resolved metabolomics experiments involving ultra-high resolution mass spectrometry.
@@ -3438,14 +3438,14 @@ Correcting for the effects of natural abundance in stable isotope resolved metab
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000131 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000131 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000134"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -3458,10 +3458,10 @@ Correcting for the effects of natural abundance in stable isotope resolved metab
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000132 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000132 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000131"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000131"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">steady-state 13C metabolic flux analysis is a metabolic flux analysis approach which relies on 13C tracer experiments and requires long incubation period necessary to meet methodological requirements that all reactions under study have reach steady state.
 
@@ -3479,10 +3479,10 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000133 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000133 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000131"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000131"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Isotopically non-stationary MFA (INST-MFA)  is a metabolic flux analysis which provides an approach to circumvent limitations from other methods through computational analysis of metabolite labeling patterns obtained during the transient labeling period prior to isotopic steady state (Wiechert and Noh, 2005). This approach offers several advantages over steady-state MFA, including shorter experimental times and the ability to determine fluxes with increased precision (Nöh and Wiechert, 2011; Young and Walther, 2008).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3495,9 +3495,9 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000134 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000134 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000134">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000134">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#fluxomics"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
@@ -3509,9 +3509,9 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000135 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000135 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000135">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a normalization process which relies on the signal intensity measured for several reference compounds (internal standards) injected or added to the test samples in known quantities, thereby allowing sample comparison which have been placed on equal footing.</obo:IAO_0000115>
@@ -3522,9 +3522,9 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000136 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000136 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000136">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a normalization process which relies on the computing to total signal intensity by simply summing up those signals and then for each sample measurements, dividing it by the total signal.  The total sum is used as reference to which sample signals are then compared.</obo:IAO_0000115>
@@ -3535,9 +3535,9 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000137 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000137 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000137">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a normalization process used  in mass spectrometry signal processing which takes into account the fact that analytes can interact with internal standards and impair accurate estimatation of these. The interaction phenomenon is known as cross contribution and needs to be compensated for.</obo:IAO_0000115>
@@ -3553,9 +3553,9 @@ DOI: 10.1021/ac901143w</obo:IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000138 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000138 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000138">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <obo:IAO_0000112 xml:lang="en">ruv_starter_analysis(Y,X,ctl)
 
@@ -3587,9 +3587,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000140 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000140 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000140">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a normalization process which relies on the signal intensity measured for one reference compound (an internal standard) injected or added to the test samples in known quantity, thereby allowing sample comparison which have been placed on equal footing based on this reference.</obo:IAO_0000115>
@@ -3600,9 +3600,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000141 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000141">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302884"/>
         <obo:IAO_0000112 xml:lang="en">ribose extraction</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -3614,10 +3614,10 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000142 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000142 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000141"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000141"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">lipid extraction is an extraction which aims to retrieve lipid (hydrophobic carbohydrate) from a specimen</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3627,10 +3627,10 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000143 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000143 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000141"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000141"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">polar metabolite extraction is a metabolite extraction which aims to retrieve water soluble or metabolites with polar solvent solubility properties. This is usually exclusive of hydrophobique, lipophile and lipid like metabolites.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3640,9 +3640,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000144 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000144 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000144">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">cell layer enzymatic digestion is a material component separation process which uses an enzyme, usually a protease, to lyse the bonds between cultured cells and their substrates (usually a microplate, which may be coated with anchoring material such as collagen). Once the digestion is complete, cell layers can be harvested with minimal damage to the cells themselves.</obo:IAO_0000115>
@@ -3653,9 +3653,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000145 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000145 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000145">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">cell scraping is a material component separation technique which uses mechanism means (as opposed to enzymatic ones) to detach cultured cells from the growth substrate. The technique is thought to be more aggressive and cause  cellular breakage but has the benefit of avoiding use of enzymes, which may have their own side effects on cellular content.</obo:IAO_0000115>
@@ -3666,9 +3666,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000146 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000146 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000146">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">centrifugation is a material component separation process which relies on centrifugational forces applied by means of high velocity rotation to a sample placed in a vial or tube in a rotor, fixed to an centrifugation instrument.</obo:IAO_0000115>
@@ -3679,9 +3679,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000147 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000147 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000147">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">gas chromatography is a material component separation process which use a mobile phase  in gaseous form to force a mixture of chemical through chromatography columns and associated detecting equipment, which may be a mass spectrometry in GC-MS applications.</obo:IAO_0000115>
@@ -3693,9 +3693,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000148 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000148 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000148">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">high performance liquid chromatography is a kind of material component separation process which uses a mobile phase  in liquid form to force a mixture of chemical through chromatography columns and associated detecting equipment, which may be a mass spectrometry in LC-MS applications. the notion of high performance comes from the fact that higher pressure is applied to the liquid phase to pass material with adsorbant properties. Those may vary depending on the composition of the mobile phase (gradients between 2 solutions may be used).</obo:IAO_0000115>
@@ -3708,9 +3708,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000149 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000149 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000149">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001554"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">biomass is a rate measurement datum of how much biochemical or biological material is produced over a period of time. it is usually reported in &apos;per hour&apos; </obo:IAO_0000115>
@@ -3722,9 +3722,9 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000150 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000150 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000150">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001554"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Flux, or metabolic flux is the rate of turnover of molecules through a metabolic pathway. Flux is regulated by the enzymes involved in a pathway. Within cells, regulation of flux is vital for all metabolic pathways to regulate the metabolic pathway&apos;s activity under different conditions. Flux is therefore of great interest in metabolic network modelling, where it is analysed via flux balance analysis.
@@ -3740,10 +3740,10 @@ maybe normalized by protein content</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000151 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000151 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000150"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000150"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">exchange flux</obo:IAO_0000118>
@@ -3754,10 +3754,10 @@ maybe normalized by protein content</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000152 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000152 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000151"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000151"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system in its surroundings
 
@@ -3774,10 +3774,10 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000153 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000153 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000151"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000151"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">an uptake flux is a metabolic flux indicating the rate of absorption of a molecular entity by a cell system from its surroundings</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3790,9 +3790,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000154 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000154 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000154">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001554"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the reaction rate is a rate measurement datum denoting a biochemical reaction as measured according to standard experimental methods.</obo:IAO_0000115>
@@ -3804,9 +3804,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000155 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000155 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000155">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>continuous fermentation cell culture is a type of processed material which involved a bacterial or yeast cell stock grown in conditions such as nutrients are added and product removed at a steady rate throughout the culture process. This is usually achieved using the specific type of fermenter known as a fed-batch culture reactor).</obo:IAO_0000115>
@@ -3819,9 +3819,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000156 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000156 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000156">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000156">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a cell culture population where cells are grown on top of each other, producing two layers of cells on the surface of the growth substrate, usually a flask or a petri dish</obo:IAO_0000115>
@@ -3833,9 +3833,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000157 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000157 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000157">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000157">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a cell culture population where no cells are grown on top of each other, producing a single layer of cells on the surface of the growth substrate, usually a flask or a petri dish</obo:IAO_0000115>
@@ -3847,9 +3847,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000158 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000158 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000158">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
         <obo:IAO_0000112>https://www.ncbi.nlm.nih.gov/pubmed/20109035</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
@@ -3862,9 +3862,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000159 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000159 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000159">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>a 3D cell culture is a cultured cell population grown in conditions which better mimicks in-vivo growth environment (i.e. more effectively than a 2D culture) allowing more complex recapitulation of cellular processes. These cell cultures are achieved by used of scaffolding agents.</obo:IAO_0000115>
@@ -3879,9 +3879,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000160 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000160 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000160">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3892,9 +3892,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000161 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000161 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000161">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -3903,9 +3903,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000162 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000162 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000162">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">96-well microplate is an array of wells usually arranged in 8 rows of 12 columns whose volume range from 0.2 ml to 1.5 ml and which are used to grow cell or perform biochemical, in-vitro reactions. The material making up the plate may vary and may be surface treated in many custom way.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3916,9 +3916,9 @@ cell centric</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000163 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000163 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000163">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000163">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">a chemostat is a device  to which fresh medium is continuously added, while culture liquid is continuously removed to keep the culture volume constant. By changing the rate with which medium is added to the bioreactor the growth rate of the microorganism can be easily controlled. It allows culture to reach physiological steady state and chemostat is often used to gather steady state data about an organism in order to generate a mathematical model relating to its metabolic processes.
 The name chemostat stems from &quot;Chemical environment is static&quot;.
@@ -3935,9 +3935,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000164 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000164 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000164">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">a coated microplate is a kind of microplate whom surface has been treated in some, for instance by covalently attaching protein such as antibodies and cell matrix molecules to favor cell growth or induce speficic cellular behavior.
 </obo:IAO_0000115>
@@ -3949,9 +3949,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000165 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000165 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000165">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000165">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">a constantly fed-btach culture reactor is a device in which the feed rate of a growth-limiting substrate is constant, i.e. the feed rate is invariant during the culture.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3965,9 +3965,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000166 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000166 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000166">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000166">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">an exponentially fed-batch culture reactor is a device which deliver the ability to grow cells in a way non too dissimilar to that of a chemostat based culture, meaning that the cells are in a quasi steady-state condition.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -3980,9 +3980,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000167 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000167 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000167">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -3992,9 +3992,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000168 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000168 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000168">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000168">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">a flask is a kind of container used for cell culture, and which is available in an array of material (usually transparent plastic polymer) which may be surface treated.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4005,9 +4005,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000169 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000169 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000169">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en"> a petri dish is a container used to grow cells or perform biochemical reactions, which used to be made of glass, but which is now available in a variety of surface treated or non-treated plastic polymers. a petri dish is a thin cylinder with the upper part acting as a lid, resting on small peg, large enough to enable gaseaous exchanges but still preventing water evaporation.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4018,9 +4018,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000170 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000170 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000170">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000170">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115 xml:lang="en">a uncoated microplate is a kind of microplate whom surface has not received any treatment and is uniquely made of polymer.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4031,9 +4031,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000171 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000171 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000171">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000171">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000932"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -4042,9 +4042,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000172 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000172 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000172">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000117 xml:lang="en">import from NMRMLCV
@@ -4054,9 +4054,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000173 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000173 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000173">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>high dose is a dose specifically set to trigger strong response in the system it is administered to, those effects may be toxic. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system).</obo:IAO_0000115>
@@ -4067,9 +4067,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000174 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000174 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000174">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000174">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">low dose is a dose specifically set to trigger  no or very limited response in the system it is administered to, those effects are not expected to be toxic. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system).</obo:IAO_0000115>
@@ -4080,9 +4080,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000175 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000175 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000175">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a &quot;lethal dose&quot; represents a dose (usually recorded as dose per kilogram of subject body weight) at which a given percentage of subjects will die.</obo:IAO_0000115>
@@ -4094,10 +4094,10 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000176 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000176 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000175"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000175"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the &quot;lethal dose 50&quot; represents a dose (usually recorded as dose per kilogram of subject body weight) at which 50% of subjects will die.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4109,9 +4109,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000177 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000177 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000177">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">medium dose is a dose specifically set to trigger  limited but clear response in the system it is administered to, those effects are not expected to be toxic but may be. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system).</obo:IAO_0000115>
@@ -4122,9 +4122,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000178 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000178 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000178">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">noael dose is a dose defined as the highest experimental point that is without adverse effect.</obo:IAO_0000115>
@@ -4234,7 +4234,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000020"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
@@ -4306,9 +4306,9 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIAO_0000102_http://purl.obolibrary.org/obo/MSIAO_0000102 -->
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000102_http://purl.obolibrary.org/obo/MSIO_0000102 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000102_http://purl.obolibrary.org/obo/MSIAO_0000102">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000102_http://purl.obolibrary.org/obo/MSIO_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a fresh culture medium is a culture medium which presents its nominal characteristisc in terms of molecular concentration of its components, pH, and physical chemical expected properties.</obo:IAO_0000115>
@@ -4323,7 +4323,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     <!-- http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000074"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Signal intensity of all m/z values after integrating the whole peak and subtracting baseline</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4342,7 +4342,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000120"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
@@ -4380,8 +4380,8 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000100"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIAO_0000101"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000100"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -4402,7 +4402,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000077"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -4475,11 +4475,11 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#steady_state_labeling_experiment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#steady_state_labeling_experiment">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos;"/>
@@ -4495,11 +4495,11 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos; -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos;">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -4788,7 +4788,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000004 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000004">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MSIAO_0000020"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
         <rdfs:label xml:lang="en">Thermo Scientific</rdfs:label>
     </owl:NamedIndividual>
     
