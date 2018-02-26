@@ -15,9 +15,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="urn:absolute:purl.obolibrary.org/obo/msio.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
         <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_DUO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl"/>
@@ -327,7 +326,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <!-- http://usefulinc.com/ns/doap#bug-database -->
 
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:ObjectProperty>
     
 
 
@@ -4727,12 +4728,12 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/iao/project -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao/project">
+        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
         <doap:homepage rdf:resource="http://purl.obolibrary.org/obo/iao"/>
         <doap:mailing-list rdf:resource="mailto:information-ontology@googlegroups.com"/>
         <doap:release rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <doap:repository rdf:resource="http://purl.obolibrary.org/obo/iao/repository"/>
         <doap:wiki rdf:resource="http://purl.obolibrary.org/obo/iao/documentation"/>
-        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
     </owl:NamedIndividual>
     
 
@@ -4797,20 +4798,6 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- mailto:information-ontology@googlegroups.com -->
 
     <owl:NamedIndividual rdf:about="mailto:information-ontology@googlegroups.com"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#bug-database">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </rdf:Description>
     
 
 
