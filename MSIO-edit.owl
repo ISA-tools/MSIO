@@ -1644,16 +1644,6 @@ purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">organization</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MSIO_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000021">
@@ -4375,12 +4365,12 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000183"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -4714,6 +4704,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000068 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000068">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:label xml:lang="en">Biocrates AG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4722,6 +4713,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000093 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000093">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:label xml:lang="en">Agilent</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4730,6 +4722,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000097 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000097">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:label xml:lang="en">Bruker AG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4738,7 +4731,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000098 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000098">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:label xml:lang="en">Thermo Scientific</rdfs:label>
     </owl:NamedIndividual>
     
