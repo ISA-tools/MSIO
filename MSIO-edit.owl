@@ -267,6 +267,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000183 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIO_0000183">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">manufactured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
@@ -374,15 +385,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
         <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">manufactured_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1431,8 +1433,8 @@ last accessed: 2018-01-11</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000183"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1456,8 +1458,8 @@ last accessed: 2018-01-11</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000183"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1481,8 +1483,8 @@ last accessed: 2018-01-11</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000183"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2198,6 +2200,48 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
         <dc:contributor xml:lang="en">Pedra de Atauri</dc:contributor>
         <dc:contributor xml:lang="en">Vitaly Selivanov</dc:contributor>
         <rdfs:label xml:lang="en">midcor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000185"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">an isotopically non-stationary labeling experiment is a material processing used in fluxomics studies where cells cultures are grown in the presence of radiolabeled tracer compound for relatively short amount of time and samples collection before the system can reach an isotopic and metabolic steady state, and is therefore in a non-stationary phase. Such experiment are shorter to run that steady-state labeling experiment and usually allow to determine fluxes with increased precision.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">non-stationary isotopic labeling experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000120"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <obo:IAO_0000115 xml:lang="en">A non-radioactive,  glutamine molecule in which 5 carbons are substituted with stable carbon 13 (13C) isotope and both glutamin nitrogen atoms are substituted with 15N ones, with potential imaging application or fluxomics studies.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">submit to CHEBI</obo:IAO_0000116>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">184161-19-1</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">13C5-15N2-glutamine</rdfs:label>
     </owl:Class>
     
 
@@ -2922,8 +2966,8 @@ a calibration process may be used to detect degradation of parts of instruments 
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#steady_state_labeling_experiment"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos;"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000053"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000185"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -3511,7 +3555,7 @@ While 13C MFA provides a rich source of phenotypic information, the application 
     <!-- http://purl.obolibrary.org/obo/MSIO_0000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000134">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#fluxomics"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000182"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4149,6 +4193,93 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>continuous fermentation cell culture is a type of processed material which involved a bacterial or yeast cell stock grown in conditions such as nutrients are added at the begining of the culture process and products removed at the end.</obo:IAO_0000115>
+        <obo:IAO_0000116>classes could be moved to become subclasses of &apos;cell culture process&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <rdfs:label>batch cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000100"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">fluxomics is a kind of investigation which aims at identifying, quantifying  the fluxes of molecules in cellular systems and understanding the cellular metabolism.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">fluxomics investigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">mass isotopomer fractional abundance is a measurement data item corresponding to the following:  the most abundant species is given the value 100 and all other species are normalized relative to 100 and expressed as percent relative abundance.
+
+fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where Mx represents mass isotopomer Mx.
+
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">mass isotopomer distribution</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">
+            https://www.ncbi.nlm.nih.gov/pubmed/10362629
+</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mass isotopomer fractional abundance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">steady state labeling experiment is a material processing used in fluxomics studies where cells cultures are grown continuously in the presence of radiolabeled tracer compound throughout multiple platings. The redistribution of the label into metabolic intermediates and end-products is analysed when the system has reached an isotopic and metabolic steady state.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">steady state isotopic labeling experiment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -4246,7 +4377,7 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#manufactured_by"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000183"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -4334,92 +4465,6 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#C13N15-glutamine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#C13N15-glutamine">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000120"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <obo:IAO_0000115 xml:lang="en">A non-radioactive,  glutamine molecule in which 5 carbons are substituted with stable carbon 13 (13C) isotope and both glutamin nitrogen atoms are substituted with 15N ones, with potential imaging application or fluxomics studies.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">submit to CHEBI</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">184161-19-1</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">13C5-15N2-glutamine</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#batch_cell_culture -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#batch_cell_culture">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115>continuous fermentation cell culture is a type of processed material which involved a bacterial or yeast cell stock grown in conditions such as nutrients are added at the begining of the culture process and products removed at the end.</obo:IAO_0000115>
-        <obo:IAO_0000116>classes could be moved to become subclasses of &apos;cell culture process&apos;</obo:IAO_0000116>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <rdfs:label>batch cell culture</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#fluxomics -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#fluxomics">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000100"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">fluxomics is a kind of investigation which aims at identifying, quantifying  the fluxes of molecules in cellular systems and understanding the cellular metabolism.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">fluxomics investigation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#mass_isotopomer_fractional_abundance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#mass_isotopomer_fractional_abundance">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">mass isotopomer fractional abundance is a measurement data item corresponding to the following:  the most abundant species is given the value 100 and all other species are normalized relative to 100 and expressed as percent relative abundance.
-
-fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where Mx represents mass isotopomer Mx.
-
-</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">mass isotopomer distribution</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">
-            https://www.ncbi.nlm.nih.gov/pubmed/10362629
-</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mass isotopomer fractional abundance</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#normalization_to_the_mean -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#normalization_to_the_mean">
@@ -4467,45 +4512,6 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
         <obo:IAO_0000116 xml:lang="en">import from PATO</obo:IAO_0000116>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#steady_state_labeling_experiment -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#steady_state_labeling_experiment">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos;"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">steady state labeling experiment is a material processing used in fluxomics studies where cells cultures are grown continuously in the presence of radiolabeled tracer compound throughout multiple platings. The redistribution of the label into metabolic intermediates and end-products is analysed when the system has reached an isotopic and metabolic steady state.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">steady state isotopic labeling experiment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos; -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#&apos;isotopically_non-stationary_labeling_experiment&apos;">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000096"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">an isotopically non-stationary labeling experiment is a material processing used in fluxomics studies where cells cultures are grown in the presence of radiolabeled tracer compound for relatively short amount of time and samples collection before the system can reach an isotopic and metabolic steady state, and is therefore in a non-stationary phase. Such experiment are shorter to run that steady-state labeling experiment and usually allow to determine fluxes with increased precision.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">non-stationary isotopic labeling experiment</rdfs:label>
     </owl:Class>
     
 
@@ -4705,6 +4711,39 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000068 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000068">
+        <rdfs:label xml:lang="en">Biocrates AG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000093 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000093">
+        <rdfs:label xml:lang="en">Agilent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000097 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000097">
+        <rdfs:label xml:lang="en">Bruker AG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000098 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000098">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
+        <rdfs:label xml:lang="en">Thermo Scientific</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/iao -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao"/>
@@ -4756,39 +4795,6 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
         <doap:revision>SVN $Revision: 717 $</doap:revision>
         <rdfs:label>IAO Release 2015-02-23</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/iao/wiki/Releases/2015-02-23"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000001 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000001">
-        <rdfs:label xml:lang="en">Biocrates AG</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000002 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000002">
-        <rdfs:label xml:lang="en">Agilent</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000003 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000003">
-        <rdfs:label xml:lang="en">Bruker AG</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000004 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#SIRMS0000004">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000020"/>
-        <rdfs:label xml:lang="en">Thermo Scientific</rdfs:label>
     </owl:NamedIndividual>
     
 
