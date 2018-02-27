@@ -326,9 +326,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <!-- http://usefulinc.com/ns/doap#bug-database -->
 
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
     
 
 
@@ -2984,6 +2982,20 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a fresh culture medium is a culture medium which presents its nominal characteristisc in terms of molecular concentration of its components, pH, and physical chemical expected properties.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">fresh culture medium</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MSIO_0000103 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000103">
@@ -4307,20 +4319,6 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIO_0000102_http://purl.obolibrary.org/obo/MSIO_0000102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000102_http://purl.obolibrary.org/obo/MSIO_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a fresh culture medium is a culture medium which presents its nominal characteristisc in terms of molecular concentration of its components, pH, and physical chemical expected properties.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">fresh culture medium</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline">
@@ -4728,12 +4726,12 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/iao/project -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao/project">
-        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
         <doap:homepage rdf:resource="http://purl.obolibrary.org/obo/iao"/>
         <doap:mailing-list rdf:resource="mailto:information-ontology@googlegroups.com"/>
         <doap:release rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <doap:repository rdf:resource="http://purl.obolibrary.org/obo/iao/repository"/>
         <doap:wiki rdf:resource="http://purl.obolibrary.org/obo/iao/documentation"/>
+        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
     </owl:NamedIndividual>
     
 
@@ -4798,6 +4796,20 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <!-- mailto:information-ontology@googlegroups.com -->
 
     <owl:NamedIndividual rdf:about="mailto:information-ontology@googlegroups.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#bug-database">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </rdf:Description>
     
 
 
