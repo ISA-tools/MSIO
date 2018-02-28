@@ -23,8 +23,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_PSIMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_ChEBI_imports.owl"/>
         <owl:versionInfo>alpha</owl:versionInfo>
+        <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <dc:format>OWL</dc:format>
-        <dc:title xml:lang="en">MSI_AO.owl</dc:title>
+        <dc:creator xml:lang="en">Alejandra Gonzalez-Beltran</dc:creator>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
@@ -2493,6 +2494,7 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en"> metabolite pool size estimate is an information entity used in fluxomics studies to estimate the amount of  molecular entity available to a particular metabolic process. It is usually reported in umol per mg of protein </obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">can be also computed from simulation and be output of such simulation (then provide confidence indicator)
 </obo:IAO_0000116>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">pool size</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -3783,6 +3785,7 @@ maybe normalized by protein content</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000150"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An extracellular flux is a metabolic flux indicating the rate of absortion or release of a molecular entity by a cell system from or to its surroundings, respectively.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">exchange flux</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -3797,14 +3800,14 @@ maybe normalized by protein content</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000151"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system in its surroundings
+        <obo:IAO_0000115 xml:lang="en">an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system to its surroundings
 
 amount per unit of time
 
 cell centric</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">excretion rate</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">extracellular flux</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Philippe Rocca-Serra for the COSMOS-Fluxomics Ontology (CFO)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">metabolite excretion flux</rdfs:label>
