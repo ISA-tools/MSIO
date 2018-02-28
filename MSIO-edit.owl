@@ -1901,18 +1901,6 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MSIO_0000035 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <obo:IAO_0000116 xml:lang="en">import from  CHEBI (CHEBI:25212)</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">metabolite</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MSIO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000036">
@@ -2491,8 +2479,11 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000035"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000059"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25212"/>
+                            </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>

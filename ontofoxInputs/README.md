@@ -1,0 +1,1 @@
+For the CheBI import, the input file to use is ontofoxInputChEBI-noIntermediates.txt

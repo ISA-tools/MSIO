@@ -52,6 +52,11 @@ http://purl.obolibrary.org/obo/CHEBI_85060 #N-methyl-(tert-butyldimethylsilyl)tr
 http://purl.obolibrary.org/obo/CHEBI_18059 #lipids
 http://purl.obolibrary.org/obo/CHEBI_24913 #isoprenoids
 http://purl.obolibrary.org/obo/CHEBI_72544 #flavonoids
+http://purl.obolibrary.org/obo/CHEBI_25212 #metabolite
+http://purl.obolibrary.org/obo/CHEBI_52206 #biochemical role
+http://purl.obolibrary.org/obo/CHEBI_24432 #biological role
+http://purl.obolibrary.org/obo/CHEBI_50906 #role
+http://purl.obolibrary.org/obo/RO_0000087 #has role
 
 
 [Top level source term URIs and target direct superclass URIs]
