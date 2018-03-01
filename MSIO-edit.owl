@@ -1902,6 +1902,20 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">
+https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">openFlux</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MSIO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000036">
@@ -3783,14 +3797,20 @@ maybe normalized by protein content</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000151 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000150"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An extracellular flux is a metabolic flux indicating the rate of absortion or release of a molecular entity by a cell system from or to its surroundings, respectively.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">exchange flux</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">
+https://www.microbialcellfactories.com/content/13/1/152</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">extracellular flux</rdfs:label>
+        <rdfs:label xml:lang="en">openFlux2</rdfs:label>
     </owl:Class>
     
 
@@ -4458,34 +4478,6 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">normalization to the mean</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#openFlux2 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#openFlux2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">
-https://www.microbialcellfactories.com/content/13/1/152</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">openFlux2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#openflux -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#openflux">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">
-https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">openFlux</rdfs:label>
     </owl:Class>
     
 
