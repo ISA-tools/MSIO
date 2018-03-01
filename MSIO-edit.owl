@@ -847,6 +847,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18059"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367"/>
@@ -858,6 +864,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25212"/>
     
 
 
@@ -4691,6 +4703,11 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000068">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115 xml:lang="en">Biocrates Life Sciences AG, a biotechnology company, develops and markets targeted metabolic phenotyping solutions that support the discovery and validation of biomarkers for complex multifactorial diseases in pre-clinical and clinical research. The company offers mass-spectrometry based reproducible and quantitative kits and services that analyze various endogenous metabolites; and tools for insight into pathways and metabolic signatures of diseases, such as cancer or neurodegenerative diseases. It also offers metabolic phenotyping, and biomarker discovery and development services.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Biocrates Life Sciences AG</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=20741978</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Biocrates AG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4700,7 +4717,14 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000093">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdfs:label xml:lang="en">Agilent</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Agilent Technologies is an American public research, development and manufacturing company established in 1999 as a spin-off from Hewlett-Packard. The resulting IPO of Agilent stock was the largest in the history of Silicon Valley at the time.
+
+The company provides analytical instruments, software, services and consumables for the entire laboratory workflow.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Agilent</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Agilent_Technologies</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Agilent Technologies</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4709,6 +4733,10 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000097">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115 xml:lang="en">Bruker Corporation is a manufacturer of scientific instruments for molecular and materials research, as well as for industrial and applied analysis. It is headquartered in Billerica, Massachusetts and is the publicly traded parent company of Bruker Scientific Instruments (Bruker AXS, Bruker BioSpin, Bruker Daltonics and Bruker Optics) and Bruker Energy &amp; Supercon Technologies (BEST) divisions.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Bruker</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Bruker Corporation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Bruker</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Bruker AG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4718,7 +4746,11 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MSIO_0000098">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdfs:label xml:lang="en">Thermo Scientific</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Thermo Fisher Scientific is an American multinational biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Thermo_Fisher_Scientific</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Thermo Fisher Scientific</rdfs:label>
     </owl:NamedIndividual>
     
 
