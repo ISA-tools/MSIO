@@ -160,14 +160,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#NMR_instrument -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#NMR_instrument">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#synonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#synonym">
