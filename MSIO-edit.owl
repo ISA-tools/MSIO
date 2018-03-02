@@ -2990,9 +2990,12 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">A kind of assay which attempts to identify and measure relative concentration of all possible metabolites using the method high-performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography), is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/High-performance_liquid_chromatography</obo:IAO_0000119>
         <rdfs:label xml:lang="en">metabolite quantitation using high performance liquid chromatography</rdfs:label>
     </owl:Class>
     
@@ -3017,7 +3020,8 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a kind of assay which attempts to identify and measure relative concentration of all possible metabolites present in an extract in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a kind of assay which attempts to identify and measure relative concentration of all possible metabolites present in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118>global metabolite profiling</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
@@ -3198,8 +3202,9 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000112"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a kind of derivatization which results in the addition of trifluoroacetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">a kind of derivatization which results in the addition of trifluoroacetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.</obo:IAO_0000117>
         <obo:IAO_0000119>EU H2020 PhenoMenal</obo:IAO_0000119>
         <rdfs:label xml:lang="en">trifluoroacetylation</rdfs:label>
     </owl:Class>
@@ -3949,9 +3954,12 @@ cell centric</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A Chromatography column is a device used in chromatography for the separation of chemical compounds. A chromatography column contains the stationary phase, allowing the mobile phase to pass through it. Chromatography columns of different types are used in both gas and liquid chromatography.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Chromatography_column</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chromatography column</rdfs:label>
     </owl:Class>
     
