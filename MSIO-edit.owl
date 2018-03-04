@@ -264,6 +264,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MSIO_0000183">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000115 xml:lang="en">A relation associating a product to its manufacturer.</obo:IAO_0000115>
         <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label xml:lang="en">manufactured by</rdfs:label>
@@ -3969,9 +3970,14 @@ cell centric</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">An Instrument which is used to carry out a high performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography) technique. HPLC is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture. It relies on pumps to pass a pressurized liquid solvent containing the sample mixture through a column filled with a solid adsorbent material. 
+
+The schematic of an HPLC instrument typically includes a degasser, sampler, pumps, and a detector. The sampler brings the sample mixture into the mobile phase stream which carries it into the column. The pumps deliver the desired flow and composition of the mobile phase through the column. The detector generates a signal proportional to the amount of sample component emerging from the column, hence allowing for quantitative analysis of the sample components. A digital microprocessor and user software control the HPLC instrument and provide data analysis.</obo:IAO_0000119>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">hplc instrument</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/High-performance_liquid_chromatography</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">HPLC instrument</rdfs:label>
     </owl:Class>
     
 
@@ -4057,6 +4063,8 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
+        <obo:IAO_0000115 xml:lang="en">A container in which fermentation takes place.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
