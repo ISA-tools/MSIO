@@ -160,14 +160,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#synonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#synonym">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1639,12 +1631,13 @@ last accessed: 2018-01-11</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a pooled sample made from fractions from samples collected from large, study independent collection of samples with the purpose of serving as a reference for quality control purpose. Long Term Reference Samples maybe used in ring trials to check cross facility data acquisition consistency but also to enable data integration, irrespective of data acquisition platform or study context but providing a single point of reference against which to normalize.
 
 purpose: Inter study variability(within a core facility)</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">LTR</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">biological pool (inter) [CEA]</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">biological pool [MASTR-MS]</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">inter study QC</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">H2020 PhenoMenal</obo:IAO_0000119>
-        <synonym xml:lang="en">LTR</synonym>
-        <synonym xml:lang="en">biological pool (inter) [CEA]</synonym>
-        <synonym xml:lang="en">biological pool [MASTR-MS]</synonym>
-        <synonym xml:lang="en">inter study QC</synonym>
         <rdfs:label xml:lang="en">long term reference</rdfs:label>
     </owl:Class>
     
@@ -1767,8 +1760,10 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a material entity corresponding to ‘solvent’ (mobile phase in chromatography context) only, containing no biological sample and used as a negative control to evaluate carry over effect between injections of test samples.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">normal blank [Leiden]</obo:IAO_0000118>
-        <synonym xml:lang="en">solvent blank</synonym>
+        <obo:IAO_0000118 xml:lang="en">solvent blank</obo:IAO_0000118>
         <rdfs:label xml:lang="en">solvent blank</rdfs:label>
     </owl:Class>
     
@@ -1793,9 +1788,11 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a study reference sample is a pool made up of aliquots from all the sample collected in a given study. It is meant to be used to monitor intra study variability, also known as within study variability of the signal acquisition, for instance between batches of such data acquisition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">SR</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">iQC - internal quality control [Imperial College London]</obo:IAO_0000118>
         <obo:IAO_0000118>study reference</obo:IAO_0000118>
-        <synonym xml:lang="en">SR</synonym>
-        <synonym xml:lang="en">iQC - internal quality control [Imperial College London]</synonym>
         <rdfs:label xml:lang="en">study reference material</rdfs:label>
     </owl:Class>
     
@@ -3406,10 +3403,11 @@ Last accessed: 2018-01-11</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of collecting a sample when the cell culture growth has reached a plateau, indicative of a steady state</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">collection at steady state phase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <synonym xml:lang="en">collection at steady state phase</synonym>
         <rdfs:label xml:lang="en">collection at stationary phase</rdfs:label>
     </owl:Class>
     
@@ -4181,10 +4179,11 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000175"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the &quot;lethal dose 50&quot; represents a dose (usually recorded as dose per kilogram of subject body weight) at which 50% of subjects will die.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">LD50</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Lethal_dose</obo:IAO_0000119>
-        <synonym xml:lang="en">LD50</synonym>
         <rdfs:label xml:lang="en">lethal dose 50</rdfs:label>
     </owl:Class>
     
@@ -4209,9 +4208,10 @@ http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf</obo:IAO_0000119
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">noael dose is a dose defined as the highest experimental point that is without adverse effect.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">No Observed Adverse Effect Level dose</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/No-observed-adverse-effect_level</obo:IAO_0000119>
-        <synonym xml:lang="en">No Observed Adverse Effect Level dose</synonym>
         <rdfs:label xml:lang="en">NOAEL dose</rdfs:label>
     </owl:Class>
     
