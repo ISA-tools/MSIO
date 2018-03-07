@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/CHEBI_23367  #molecular entity
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431 #chemical entity
