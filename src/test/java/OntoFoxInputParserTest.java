@@ -21,6 +21,7 @@ public class OntoFoxInputParserTest {
     @Parameterized.Parameter
     public String inputFilename = null;
 
+    //The rest of the parameters are provided to build the assertions when testing
     @Parameterized.Parameter (value = 1)
     public String uri = null;
 
@@ -36,11 +37,11 @@ public class OntoFoxInputParserTest {
     @Parameterized.Parameter(value = 5)
     public String sourceRetrievalSetting = null;
 
-//    @Parameterized.Parameter(value = 6)
-//    public int sourceAnnotationURIsSize;
-//
-//    @Parameterized.Parameter(value =7)
-//    public String sourceAnnotationSetting = null;
+    @Parameterized.Parameter(value = 6)
+    public int sourceAnnotationURIsSize;
+
+    @Parameterized.Parameter(value =7)
+    public String sourceAnnotationSetting = null;
 
 
     @Parameterized.Parameters
@@ -48,23 +49,32 @@ public class OntoFoxInputParserTest {
         return Arrays.asList(
                 new Object[][] {
                 { "/ontofoxInputUO.txt",
-                        "http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl",
-                        "UO",
-                        18,
-                        1,
-                        "includeNoIntermediates" //,
-                 //       0,
-                 //       "includeAllAnnotationProperties"
+                  "http://purl.obolibrary.org/obo/MSIO_UO_import.owl", "UO",
+                   18,
+                   1,
+                   "includeNoIntermediates",
+                   0,
+                   "includeAllAnnotationProperties"
                 },
                 { "/input1.txt",
-                        "http://purl.obolibrary.org/obo/example.owl",
-                        "NCBITaxon",
-                        1,
-                        2,
-                        "includeAllIntermediates" //,
-                     //   3,
-                     //   "includeAllAnnotationProperties"
+                  "http://purl.obolibrary.org/obo/example.owl",
+                  "NCBITaxon",
+                  1,
+                  2,
+                  "includeAllIntermediates",
+                  3,
+                  null
                 },
+                {
+                  "/ontofoxInput-OBI-processes.txt",
+                  "http://purl.obolibrary.org/obo/MSIO_OBI_import.owl",
+                  "OBI",
+                  116,
+                  1,
+                  "includeAllIntermediates",
+                  0,
+                  "includeAllAxiomsRecursively"
+                }
 
         });
     }
@@ -85,14 +95,12 @@ public class OntoFoxInputParserTest {
     @Test
     public void testParsingSourceOntology() throws IOException {
         assertTrue("paser.getSourceOntology() should not be null", parser.getSourceOntology() !=null );
-        System.out.println(parser.getSourceOntology());
         assertTrue("paser.getSourceOntolgy() has specific value", parser.getSourceOntology().equals(sourceOntology) );
     }
 
     @Test
     public void testParsingLowerIRIs() throws IOException {
         assertTrue("paser.getLowerIRIs() should not be null", parser.getLowerIRIs() !=null );
-        System.out.println(parser.getLowerIRIs().size());
         assertTrue("paser.getLowerIRIs() has specific value", parser.getLowerIRIs().size()==lowerURIsSize );
 
     }
@@ -111,18 +119,20 @@ public class OntoFoxInputParserTest {
     }
 
 
-//    @Test
-//    public void testParsingSourceAnnotationURIs() throws IOException {
-//        assertTrue("paser.getSourceAnnotationURIs() should not be null", parser.getSourceAnnotationURIs() !=null );
-//        assertTrue("paser.getSourceAnnotationURIs() has specific value", parser.getSourceAnnotationURIs().size()==sourceAnnotationURIsSize);
-//    }
-//
-//    @Test
-//    public void testParsingSourceAnnotationSetting() throws IOException {
-//        //assertTrue("paser.getSourceAnnotationSetting() should not be null", parser.getSourceAnnotationSetting() !=null );
-//        System.out.println(parser.getSourceAnnotationURIs());
-//        assertTrue("paser.getSourceAnnotationSetting() has specific value", parser.getSourceAnnotationSetting().equals(sourceAnnotationSetting));
-//
-//    }
+    @Test
+    public void testParsingSourceAnnotationURIsORSourceAnnotationSetting() throws IOException {
+        if (parser.getSourceAnnotationSetting() == null) {
+
+            assertTrue("paser.getSourceAnnotationURIs() should not be null", parser.getSourceAnnotationURIs() != null);
+            assertTrue("paser.getSourceAnnotationURIs() has specific size", parser.getSourceAnnotationURIs().size() == sourceAnnotationURIsSize);
+
+        } else {
+
+            assertTrue("paser.getSourceAnnotationSetting() should not be null", parser.getSourceAnnotationSetting() !=null );
+            assertTrue("paser.getSourceAnnotationSetting() has specific value", parser.getSourceAnnotationSetting().equals(sourceAnnotationSetting));
+
+        }
+
+    }
 
 }

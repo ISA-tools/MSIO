@@ -65,67 +65,65 @@ public class OntoFoxInputParser {
             while ((line = br.readLine()) != null) {
                 if (line.trim().isEmpty() || line.startsWith("#"))
                     continue;
-                if (line.equals(URI_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)){
+                if (line.equals(URI_LINE)) {
+                    while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
                     uri = line;
                     continue;
                 }
                 if (line.equals(SOURCE_ONTOLOGY_LINE)) {
-                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
+                    while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
                     sourceOntology = line;
                     continue;
                 }
-                if (line.equals(LOWER_URIs_LINE)){
-                    while(!(line = br.readLine()).equals(UPPER_URIs_LINE)){
+                if (line.equals(LOWER_URIs_LINE)) {
+                    while (!(line = br.readLine()).equals(UPPER_URIs_LINE)) {
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         lowerIRIs.add(IRI.create(line));
                     }
                 }
-                if (line.equals(UPPER_URIs_LINE)){
+                if (line.equals(UPPER_URIs_LINE)) {
                     //TODO add support for subClassOf
-                    while(!(line = br.readLine()).equals(SOURCE_TERM_RETRIEVAL_LINE)){
+                    while (!(line = br.readLine()).equals(SOURCE_TERM_RETRIEVAL_LINE)) {
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         upperIRIs.add(IRI.create(line));
                     }
                 }
-                if (line.equals(SOURCE_TERM_RETRIEVAL_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
+                if (line.equals(SOURCE_TERM_RETRIEVAL_LINE)) {
+                    while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
                     sourceRetrievalSetting = line;
                     continue;
                 }
-                if (line.equals(BRANCH_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() || line.startsWith("#") ||  HEADERS.contains(line)){
+                if (line.equals(BRANCH_LINE)) {
+                    while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
 
                 }
-                if (line.equals(SOURCE_ANN_URIs_LINE)){
-                    while((line = br.readLine()).trim().isEmpty() ||  line.startsWith("#")  || HEADERS.contains(line)){
-                        System.out.println(line);
+                if (line.equals(SOURCE_ANN_URIs_LINE)) {
+                    while ((line = br.readLine())!= null
+                            && (line!=null && !line.equals(SOURCE_ANN_URIs_EXCLUDE_LINE))) {
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
                         try {
                             URL url = new URL(line);
                             sourceAnnotationURIs.add(IRI.create(line));
-                        }catch(MalformedURLException ex){
+                        } catch (MalformedURLException ex) {
                             sourceAnnotationSetting = line;
                         }
-
                     }
+                } // line source_ann_uris_line
 
-                }
-                if (line.equals(SOURCE_ANN_URIs_EXCLUDE_LINE)){
-
-                }
-            }
+            } // while each line
+        }catch(Exception ex) {
+            ex.printStackTrace();
         }
 
         return true;
