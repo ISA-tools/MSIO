@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl
+http://purl.obolibrary.org/obo/MSIO_OBI_import.owl
 
 [Source ontology]
 #comment here
@@ -163,7 +163,6 @@ http://purl.obolibrary.org/obo/OBI_0200094 #logarithmic transformation
 #http://purl.obolibrary.org/obo/OBI_0500013 #hyper graeco latin square design
 #http://purl.obolibrary.org/obo/OBI_0500014 #factorial design
 #http://purl.obolibrary.org/obo/OBI_0500015 #2x2 factorial design
-
 
 
 [Top level source term URIs and target direct superclass URIs]
