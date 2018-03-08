@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#"
-     xml:base="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl"
-     xmlns:msiao="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MSIO.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MSIO.owl"
+     xmlns:msiao="http://purl.obolibrary.org/obo/MSIO.owl#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -17,11 +17,11 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
         <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_UO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_CHMO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_PSIMS_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSI_AO_ChEBI_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_CHMO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
         <owl:versionInfo>alpha</owl:versionInfo>
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <dc:format>OWL</dc:format>

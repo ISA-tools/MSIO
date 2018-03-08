@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/MSIO_OBI_imports.owl
+http://purl.obolibrary.org/obo/MSI_AO_OBI_imports.owl
 
 [Source ontology]
 #comment here

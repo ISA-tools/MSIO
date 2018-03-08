@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/MSI_AO_PSIMS_imports.owl
+http://purl.obolibrary.org/obo/MSIO_PSIMS_imports.owl
 
 [Source ontology]
 MS
