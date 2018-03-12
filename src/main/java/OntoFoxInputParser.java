@@ -6,8 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashSet;
-import java.util.Set;
 
 /*
  * Parsing OntoFox input file
@@ -41,26 +39,19 @@ public class OntoFoxInputParser {
             );
 
 
-    private String uri = null;
-    private String sourceOntology = null;
-    private Set<IRI> lowerIRIs = null;
-    private Set<IRI> upperIRIs = null;
-    private String sourceRetrievalSetting;
-    private Set<IRI> sourceAnnotationURIs = null;
-    private String sourceAnnotationSetting = null;
-    private String filenamePath = null;
-
+    private OntoFoxInput ontoFoxInput = null;
 
     public OntoFoxInputParser(String fnp){
-        lowerIRIs = new HashSet<>();
-        upperIRIs = new HashSet<>();
-        sourceAnnotationURIs = new HashSet<>();
-        filenamePath = fnp;
+        ontoFoxInput = new OntoFoxInput(fnp);
+    }
+
+    public OntoFoxInput getOntoFoxInput(){
+        return ontoFoxInput;
     }
 
     public boolean parse() throws IOException{
 
-        try (BufferedReader br = new BufferedReader(new FileReader(filenamePath))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(ontoFoxInput.getFilenamePath()))) {
             String line;
             while ((line = br.readLine()) != null) {
                 if (line.trim().isEmpty() || line.startsWith("#"))
@@ -69,21 +60,21 @@ public class OntoFoxInputParser {
                     while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
-                    uri = line;
+                    ontoFoxInput.setUri(line);
                     continue;
                 }
                 if (line.equals(SOURCE_ONTOLOGY_LINE)) {
                     while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
-                    sourceOntology = line;
+                    ontoFoxInput.setSourceOntology(line);
                     continue;
                 }
                 if (line.equals(LOWER_URIs_LINE)) {
                     while (!(line = br.readLine()).equals(UPPER_URIs_LINE)) {
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
-                        lowerIRIs.add(IRI.create(line));
+                        ontoFoxInput.addLowerIRI(IRI.create(line));
                     }
                 }
                 if (line.equals(UPPER_URIs_LINE)) {
@@ -91,14 +82,14 @@ public class OntoFoxInputParser {
                     while (!(line = br.readLine()).equals(SOURCE_TERM_RETRIEVAL_LINE)) {
                         if (line.trim().isEmpty() || line.startsWith("#"))
                             continue;
-                        upperIRIs.add(IRI.create(line));
+                        ontoFoxInput.addUpperIRI(IRI.create(line));
                     }
                 }
                 if (line.equals(SOURCE_TERM_RETRIEVAL_LINE)) {
                     while ((line = br.readLine()).trim().isEmpty() || line.startsWith("#") || HEADERS.contains(line)) {
                         continue;
                     }
-                    sourceRetrievalSetting = line;
+                    ontoFoxInput.setSourceRetrievalSetting(line);
                     continue;
                 }
                 if (line.equals(BRANCH_LINE)) {
@@ -114,9 +105,9 @@ public class OntoFoxInputParser {
                             continue;
                         try {
                             URL url = new URL(line);
-                            sourceAnnotationURIs.add(IRI.create(line));
+                            ontoFoxInput.addSourceAnnotationURI(IRI.create(line));
                         } catch (MalformedURLException ex) {
-                            sourceAnnotationSetting = line;
+                            ontoFoxInput.setSourceAnnotationSetting(line);
                         }
                     }
                 } // line source_ann_uris_line
@@ -129,33 +120,5 @@ public class OntoFoxInputParser {
         return true;
     }
 
-
-    public String getURI() {
-        return uri;
-    }
-
-    public String getSourceOntology(){
-        return sourceOntology;
-    }
-
-    public Set<IRI> getLowerIRIs(){
-        return lowerIRIs;
-    }
-
-    public Set<IRI> getUpperIRIs(){
-        return upperIRIs;
-    }
-
-    public String getSourceRetrievalSetting(){
-        return sourceRetrievalSetting;
-    }
-
-    public Set<IRI> getSourceAnnotationURIs(){
-        return sourceAnnotationURIs;
-    }
-
-    public String getSourceAnnotationSetting(){
-        return sourceAnnotationSetting;
-    }
 
 }

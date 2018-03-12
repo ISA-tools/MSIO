@@ -74,7 +74,17 @@ public class OntoFoxInputParserTest {
                   "includeAllIntermediates",
                   0,
                   "includeAllAxiomsRecursively"
-                }
+                },
+//                {
+//                    "/ontofoxInputIAO.txt",
+//                        "http://purl.obolibrary.org/obo/MSIO_IAO_import.owl",
+//                        "OBI",
+//                        3,
+//                        0,
+//                        "includeAllIntermediates",
+//                        0,
+//                        "includeAllAxioms"
+//                }
 
         });
     }
@@ -88,48 +98,48 @@ public class OntoFoxInputParserTest {
 
     @Test
     public void testParsingURI(){
-        assertTrue("paser.getURI() should not be null", parser.getURI() !=null );
-        assertTrue("paser.getURI() has specific value", parser.getURI().equals(uri) );
+        assertTrue("paser.getURI() should not be null", parser.getOntoFoxInput().getURI() !=null );
+        assertTrue("paser.getURI() has specific value", parser.getOntoFoxInput().getURI().equals(uri) );
     }
 
     @Test
     public void testParsingSourceOntology() throws IOException {
-        assertTrue("paser.getSourceOntology() should not be null", parser.getSourceOntology() !=null );
-        assertTrue("paser.getSourceOntolgy() has specific value", parser.getSourceOntology().equals(sourceOntology) );
+        assertTrue("paser.getSourceOntology() should not be null", parser.getOntoFoxInput().getSourceOntology() !=null );
+        assertTrue("paser.getSourceOntolgy() has specific value", parser.getOntoFoxInput().getSourceOntology().equals(sourceOntology) );
     }
 
     @Test
     public void testParsingLowerIRIs() throws IOException {
-        assertTrue("paser.getLowerIRIs() should not be null", parser.getLowerIRIs() !=null );
-        assertTrue("paser.getLowerIRIs() has specific value", parser.getLowerIRIs().size()==lowerURIsSize );
+        assertTrue("paser.getLowerIRIs() should not be null", parser.getOntoFoxInput().getLowerIRIs() !=null );
+        assertTrue("paser.getLowerIRIs() has specific value", parser.getOntoFoxInput().getLowerIRIs().size()==lowerURIsSize );
 
     }
 
     @Test
     public void testParsingUpperRIs() throws IOException {
-        assertTrue("paser.getUpperIRIs() should not be null", parser.getUpperIRIs() !=null );
-        assertTrue("paser.getUpperIRIs() has specific value", parser.getUpperIRIs().size()== upperURIsSize);
+        assertTrue("paser.getUpperIRIs() should not be null", parser.getOntoFoxInput().getUpperIRIs() !=null );
+        assertTrue("paser.getUpperIRIs() has specific value", parser.getOntoFoxInput().getUpperIRIs().size()== upperURIsSize);
 
     }
 
     @Test
     public void testParsingSourceRetrievalSetting() throws IOException {
-        assertTrue("paser.getSourceRetrievalSetting() should not be null", parser.getSourceRetrievalSetting() !=null );
-        assertTrue("paser.getSourceRetrievalSetting() has specific value", parser.getSourceRetrievalSetting().equals(sourceRetrievalSetting));
+        assertTrue("paser.getSourceRetrievalSetting() should not be null", parser.getOntoFoxInput().getSourceRetrievalSetting() !=null );
+        assertTrue("paser.getSourceRetrievalSetting() has specific value", parser.getOntoFoxInput().getSourceRetrievalSetting().equals(sourceRetrievalSetting));
     }
 
 
     @Test
     public void testParsingSourceAnnotationURIsORSourceAnnotationSetting() throws IOException {
-        if (parser.getSourceAnnotationSetting() == null) {
+        if (parser.getOntoFoxInput().getSourceAnnotationSetting() == null) {
 
-            assertTrue("paser.getSourceAnnotationURIs() should not be null", parser.getSourceAnnotationURIs() != null);
-            assertTrue("paser.getSourceAnnotationURIs() has specific size", parser.getSourceAnnotationURIs().size() == sourceAnnotationURIsSize);
+            assertTrue("paser.getSourceAnnotationURIs() should not be null", parser.getOntoFoxInput().getSourceAnnotationURIs() != null);
+            assertTrue("paser.getSourceAnnotationURIs() has specific size", parser.getOntoFoxInput().getSourceAnnotationURIs().size() == sourceAnnotationURIsSize);
 
         } else {
 
-            assertTrue("paser.getSourceAnnotationSetting() should not be null", parser.getSourceAnnotationSetting() !=null );
-            assertTrue("paser.getSourceAnnotationSetting() has specific value", parser.getSourceAnnotationSetting().equals(sourceAnnotationSetting));
+            assertTrue("paser.getSourceAnnotationSetting() should not be null", parser.getOntoFoxInput().getSourceAnnotationSetting() !=null );
+            assertTrue("paser.getSourceAnnotationSetting() has specific value", parser.getOntoFoxInput().getSourceAnnotationSetting().equals(sourceAnnotationSetting));
 
         }
 
