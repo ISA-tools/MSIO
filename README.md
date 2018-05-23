@@ -5,15 +5,30 @@ MSIO aims to provide a single point of entry to support semantic markup of exper
 It is compatible with OBI and can be imported in it but also can be used as is for users working solely on Metabolomics.
 
 The following screenshots allow for a sneak peak at the resource to gauge its coverage.
-
+_________
 Material Processing:
+
 ![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-material-processing.png "Logo Title Text 1")
 
-
+_________
 Data Transformation:
 
 ![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-data-transformation.png "Logo Title Text 2")
 
+_________
+Material Entities:
+
+![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-material-entities.png "Logo Title Text 3")
+
+_________
+Material Entities:
+
+![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-material-entities-chebi-imports.png "Logo Title Text 4")
+
+_________
+Information Entities:
+
+![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-information-entities.png "Logo Title Text 5")
 
 ## Versions
 
