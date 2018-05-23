@@ -1,6 +1,6 @@
 # Metabolomics Standards Initiative Ontology (MSIO)
 
-MSIO aims to provide a single point of entry to support semantic markup of experiments making use of NMR and MS techniques to identify, measure and quantify small molecules known as metabolites. MSIO covers metabolite profiling, targeted or undertargeted, tracer based applications. MSIO reuses a number of resources such as CHEBI, OBI, NMRCV, DUO and STATO.
+MSIO aims to provide a single point of entry to support semantic markup of experiments making use of NMR and MS techniques to identify, measure and quantify small molecules known as metabolites. MSIO covers metabolite profiling, targeted or undertargeted, tracer based applications. MSIO reuses a number of resources such as [CHEBI](https://www.ebi.ac.uk/ols/ontologies/chebi), [DUO](https://www.ebi.ac.uk/ols/ontologies/duo), [NMRCV](https://www.ebi.ac.uk/ols/ontologies/nmrcv), [OBI](https://www.ebi.ac.uk/ols/ontologies/obi),  and [STATO](https://www.ebi.ac.uk/ols/ontologies/stato).
 
 It is compatible with OBI and can be imported in it but also can be used as is for users working solely on Metabolomics.
 
