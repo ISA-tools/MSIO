@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/MSIO.owl#"
      xml:base="http://purl.obolibrary.org/obo/MSIO.owl"
-     xmlns:msiao="http://purl.obolibrary.org/obo/MSIO.owl#"
+     xmlns:msio="http://purl.obolibrary.org/obo/MSIO.owl#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -17,11 +17,11 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
         <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_CHMO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
         <owl:versionInfo>alpha</owl:versionInfo>
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <dc:format>OWL</dc:format>
@@ -1895,11 +1895,11 @@ https://www.nist.gov/publications/certification-standard-reference-materialr-968
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">mass isotopologue is a set of chemical containing a known subsitution by isotopic element. mass isotologue encompass several isotopomers. Mass isotologue can be monitored using mass spectrometry but only NMR spectroscopy can discriminate between positional isotopomer.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A single isotopologue represents a set of mass-equivalent isotopomers. It is therefore a set of chemicals representing molecules of the same chemical entity and same isotopic composition. Isotopologue can be monitored using mass spectrometry but only NMR spectroscopy can discriminate between positional isotopomer.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">adapted from IUPAC nomenclature</obo:IAO_0000119>
         <dc:contributor xml:lang="en">cosmos tracer based metabolomics working group</dc:contributor>
-        <rdfs:label xml:lang="en">mass isotopologue</rdfs:label>
+        <rdfs:label xml:lang="en">isotopologue</rdfs:label>
     </owl:Class>
     
 
@@ -1923,11 +1923,13 @@ https://www.ncbi.nlm.nih.gov/pubmed/19409084</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">a mass isotopomer  (short for isotopic isomer) is a compound which differ from another one only by the position of an isotopic substitution in the molecular backbone.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a mass isotopomer  (short for isotopic isomer) is a compound which differ from another one only by the position of an isotopic substitution in the molecular backbone.
+One in a collection of isomers with the same number of each isotope of each element but differing in their positions within the chemical structure.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">isotopic isomer</obo:IAO_0000118>
+        <obo:IAO_0000118>mass isotopomer</obo:IAO_0000118>
         <dc:contributor xml:lang="en">cosmos tracer based metabolomics working group</dc:contributor>
-        <rdfs:label xml:lang="en">mass isotopomer</rdfs:label>
+        <rdfs:label xml:lang="en">isotopomer</rdfs:label>
     </owl:Class>
     
 
@@ -1982,9 +1984,10 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>an isotopomer where the isotopic content of specific atoms is known for a part of the molecule</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">should it be a relation or a class?</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">positional isotopomer</rdfs:label>
+        <rdfs:label xml:lang="en">partial isotopomer</rdfs:label>
     </owl:Class>
     
 
@@ -2335,6 +2338,19 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
             </owl:Restriction>
@@ -2628,12 +2644,27 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000074"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#retention_time"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>https://github.com/ISA-tools/isa-matrix-datapackages/tree/master/src/sirm_datapkg</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a mass isotopomer distribution matrix is an information object used in tracer based metabolomics experiments to report the amount of possible isotopologues derived from the tracer in a metabolic network. 
+        <obo:IAO_0000115 xml:lang="en">an isotopologue distribution matrix is an information object used in tracer based metabolomics experiments to report the amount of possible isotopologues (sets of isotopomers) derived from the tracer in a metabolic network. 
 
-the matrix hold the mass isotopomer distributions (MIDs) of Elementary Metabolite Unit (EMU) which will be used as state variables. An EMU is defined as a distinct subset of a metabolite’s atoms. EMUs can exist in a variety of mass states depending on their isotopic compositions. An EMU in its lowest mass state is referred to as M+0, while an EMU that contains one additional atomic mass unit (e.g., due to the presence of a 13C atom in place of a 12C atom) is referred to as M+1, with higher mass states described accordingly.  An MID is a vector that contains the fractional abundance of each mass state of an EMU.
-</obo:IAO_0000115>
+the matrix hold the mass isotopomer distributions (MIDs) of Elementary Metabolite Unit (EMU) which will be used as state variables. An EMU is defined as a distinct subset of a metabolite’s atoms. EMUs can exist in a variety of mass states depending on their isotopic compositions. An EMU in its lowest mass state is referred to as M+0, while an EMU that contains one additional atomic mass unit (e.g., due to the presence of a 13C atom in place of a 12C atom) is referred to as M+1, with higher mass states described accordingly.  An MID is a vector that contains the fractional abundance of each mass state of an EMU.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">DOI 10.1002/bit.21632
 An Elementary Metabolite Unit (EMU) BasedMethod of Isotopically Nonstationary Flux Analysis,
@@ -2641,7 +2672,7 @@ Jamey D. Young, Jason L. Walther, Maciek R. Antoniewicz, Hyuntae Yoo,Gregory Ste
 http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mass isotopomer distribution matrix</rdfs:label>
+        <rdfs:label xml:lang="en">isotopologue distribution matrix</rdfs:label>
     </owl:Class>
     
 
@@ -3806,7 +3837,6 @@ maybe normalized by protein content</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000150"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An extracellular flux is a metabolic flux indicating the rate of absortion or release of a molecular entity by a cell system from or to its surroundings, respectively.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
@@ -4474,6 +4504,202 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/msio.owl#assignment_by_database_search -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#assignment_by_database_search">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>assignment by database search</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>chemical entity assignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#direct_assignment_to_standard -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#direct_assignment_to_standard">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>direct assignment to standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#indirect_assignment_by_standard -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#indirect_assignment_by_standard">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>indirect assignment to standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#isotopomer_analysis -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#isotopomer_analysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>isotopomer analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#isotopomer_data_matrix -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#isotopomer_data_matrix">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000223"/>
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1400006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000578"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#peak_area"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>an isotopomer data matrix is a table resulting from the analysis of NMR data acquired in the context of tracer based studies and which contains information about chemical entity assignment</obo:IAO_0000115>
+        <rdfs:label>isotopomer data matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#m_over_z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#m_over_z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label>m over z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#mass_isotopologue_distribution_analysis -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#mass_isotopologue_distribution_analysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>isotopologue distribution analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#mq_by_liquidnitrogen -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#mq_by_liquidnitrogen">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000104"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>metabolism quenching by snap freeing in liquid nitrogen is a kind biochemical reaction extinction process which relies on extremely low temperature afforded by nitrogen in liquid state to denature enzymatic machinery of live cells or live tissue and inactivate it.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>LN2 snap freezing</obo:IAO_0000118>
+        <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <rdfs:label>metabolism quenching by snap freezing in liquid nitrogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#normalized_corrected_peak_area -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#normalized_corrected_peak_area">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#peak_area"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>normalized corrected peak area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#partial_isotopomer -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#partial_isotopomer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>part of an isotopomer where the isotopic content of specific atoms is known</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label>partial isotopomer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#peak_area -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#peak_area">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>peak area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#retention_time -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#retention_time">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>retention time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#corrected_m/z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#m_over_z"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#reference_and_adduct_corrected_m/z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#reference_and_adduct_corrected_m/z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>reference and adduct corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/msio.owl#reference_corrected_m/z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#reference_corrected_m/z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>reference corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline">
@@ -4880,5 +5106,5 @@ The company provides analytical instruments, software, services and consumables 
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
