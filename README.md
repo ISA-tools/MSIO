@@ -6,13 +6,14 @@ It is compatible with OBI and can be imported in it but also can be used as is f
 
 The following screenshots allow for a sneak peak at the resource to gauge its coverage.
 
-Material Processing
+Material Processing:
+![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-material-processing.png "Logo Title Text 1")
 
-.. image:: ./docs/img/msio-material-processing.png
 
-Data Transformation
+Data Transformation:
 
-.. image:: ./docs/img/msio-data-transformation.png
+![alt text](https://github.com/ISA-tools/MSIO/blob/master/docs/img/msio-data-transformation.png "Logo Title Text 2")
+
 
 ## Versions
 
