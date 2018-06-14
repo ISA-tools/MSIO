@@ -39,3 +39,7 @@ gradle-app.setting
 #miscellaneous
 .DS_Store
 catalog-v001.xml
+
+
+#  IntelliJ and Gradle
+.idea/*
