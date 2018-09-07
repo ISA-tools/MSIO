@@ -26,6 +26,7 @@
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
@@ -5064,12 +5065,12 @@ The company provides analytical instruments, software, services and consumables 
     <!-- http://purl.obolibrary.org/obo/iao/project -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao/project">
-        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
         <doap:homepage rdf:resource="http://purl.obolibrary.org/obo/iao"/>
         <doap:mailing-list rdf:resource="mailto:information-ontology@googlegroups.com"/>
         <doap:release rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <doap:repository rdf:resource="http://purl.obolibrary.org/obo/iao/repository"/>
         <doap:wiki rdf:resource="http://purl.obolibrary.org/obo/iao/documentation"/>
+        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
     </owl:NamedIndividual>
     
 
