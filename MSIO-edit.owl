@@ -10,6 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -22,10 +23,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
-        <owl:versionInfo>alpha</owl:versionInfo>
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
-        <dc:creator xml:lang="en">Alejandra Gonzalez-Beltran</dc:creator>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
@@ -34,9 +34,8 @@
         <dc:description xml:lang="en">an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies.</dc:description>
         <dc:contributor xml:lang="en">Andrew Lane</dc:contributor>
         <dc:contributor xml:lang="en">Hunter Moseley</dc:contributor>
-        <dc:contributor>Nicola Zamboni</dc:contributor>
-        <dc:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:creator>Philippe Rocca-Serra</dc:creator>
+        <dc:contributor xml:lang="en">Alejandra Gonzalez-Beltran</dc:contributor>
     </owl:Ontology>
     
 
@@ -148,6 +147,48 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#revision -->
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#revision"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
@@ -157,6 +198,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
 
 
@@ -372,25 +419,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
         <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#revision -->
-
-    <owl:DatatypeProperty rdf:about="http://usefulinc.com/ns/doap#revision">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -1300,6 +1328,19 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>OpenFLUX2 is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes. OpenFlux2 is an expanded version of OpenFLUX to support analysis of parallel labeling experiments (PLE) data, i.e. those experiments using several different tracers concomitantly.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>https://doi.org/10.1186/s12934-014-0152-x</obo:IAO_0000119>
+        <rdfs:label>openFlux2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MSIO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000001">
@@ -2028,8 +2069,7 @@ CAS RN 110187-42-3</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">c13Fluc2 is a software suite of applications for the detailed quantification of intracellular (quasi) steady-state fluxes as explored by 13C-based metabolic flux analysis. The tool is developed and maintained by W. Wiechert at the Institute of Bio- and Geosciences, IBG-1: Biotechnology and JARA High Performance Computing, Forschungszentrum
-Julich GmbH, 52428 Julich, Germany.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">c13Fluc2 is a software suite of applications for the detailed quantification of intracellular (quasi) steady-state fluxes as explored by 13C-based metabolic flux analysis. The tool is developed and maintained by W. Wiechert at the Institute of Bio- and Geosciences, IBG-1: Biotechnology and JARA High Performance Computing, Forschungszentrum, Julich GmbH, 52428 Julich, Germany.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">
 Weitzel M, Nöh K, Dalman T, Niedenführ S, Stute B, Wiechert W
@@ -2048,7 +2088,7 @@ doi: 10.1093/bioinformatics/bts646</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">C13 is a tool for quantification of in vivo metabolic fluxes, from carbon labelling experiments. The underlying approach is metabolic flux analysis based on stationary carbon isotope labelling experiments, using fractional enrichment data. The mathematical framework adopted herein is the one developed by Wiechert and de Graaf (1997).
-It is developed and maintained at the Chalmers University of Technology, Department of Chemical and Biological Engineering, Systems Biology group , Kemivägen 10 412 96 Göteborg, Sweden</obo:IAO_0000115>
+It is developed and maintained at the Chalmers University of Technology, Department of Chemical and Biological Engineering, Systems Biology group , Kemivägen 10 412 96 Göteborg, Sweden.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://129.16.106.142/tools.php?c=c13</obo:IAO_0000119>
         <rdfs:label xml:lang="en">C13</rdfs:label>
@@ -2077,6 +2117,7 @@ It is developed and maintained at the Chalmers University of Technology, Departm
         <obo:IAO_0000115 xml:lang="en">FIA is a software written in python, implementing the FIA (Fluxomer Iterative Algorithm) - a new effective method for 13C metabolic fluxes (tracer) experiments analysis. It is developed by Orr Srour, Jamey D. Young and Yonina C. Eldar at the Technion, Israel Institute of Technology</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">FIA</obo:IAO_0000118>
+        <obo:IAO_0000119>https://doi.org/10.1186/1752-0509-5-129</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Fluxomer Iterative Algorithm</rdfs:label>
     </owl:Class>
     
@@ -2091,7 +2132,7 @@ It is developed and maintained at the Chalmers University of Technology, Departm
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">Integrative Metabolic Analysis Tool</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Bioinformatics (2010) 26 (24): 3140-3142.
-doi: 10.1093/bioinformatics/btq602</obo:IAO_0000119>
+https://doi.org/10.1093/bioinformatics/btq602</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.cs.technion.ac.il/~tomersh/methods.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">iMAT</rdfs:label>
     </owl:Class>
@@ -2109,7 +2150,7 @@ doi: 10.1093/bioinformatics/btq602</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"> INCA: a computational platform for isotopically non-stationary metabolic flux analysis, Jamey D. Young. Bioinformatics, first published online January 11, 2014.
+        <obo:IAO_0000115 xml:lang="en">INCA: a computational platform for isotopically non-stationary metabolic flux analysis, Jamey D. Young. Bioinformatics, first published online January 11, 2014.
 INCA is a software package that can perform both steady-state metabolic flux analysis and isotopically non-stationary metabolic flux analysis. The software provides a framework for comprehensive analysis of metabolic networks using mass balances and elementary metabolite unit balances. The generation of balance equations and their computational solution is completely automated and can be performed on networks of arbitrary complexity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">Isotopomer Network Compartmental Analysis</obo:IAO_0000118>
@@ -2158,9 +2199,12 @@ the source code is available from: https://github.com/seliv55/isodyn</obo:IAO_00
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">IsoDesign, a software that enables these parameters to be maximized by optimizing the isotopic composition of the label input. It can be applied to (13) C-MFA investigations using a broad panel of analytical tools (MS, MS/MS, (1) H NMR, (13) C NMR, etc.) individually or in combination. It includes a visualization module to intuitively select the optimal label input depending on the biological question to be addressed.
+
+The software is available from:
+http://metasys.insa-toulouse.fr/software/isodes/</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.1002/bit.24997</obo:IAO_0000119>
         <rdfs:label xml:lang="en">isodesign</rdfs:label>
     </owl:Class>
     
@@ -2263,7 +2307,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>RaMID is a computer program designed to read the machine-generated files saved in netCDF format containing registered time course of m/z chromatograms. It evaluates the peaks of mass isotopomer distribution (MID) making them ready for further correction for natural isotope occurrence. RaMID is written in “R”, uses library “ncdf4” (it should be installed before the first use of RaMID) and contains several functions, located in the files “ramid.R” and &quot;libcdf.R,&quot; designed to read CDF files, and analyze and visualize the spectra that they contain.</obo:IAO_0000115>
+        <obo:IAO_0000115>RaMID is a computer program designed to read the machine-generated files saved in netCDF format containing registered time course of m/z chromatograms. It evaluates the peaks of mass isotopomer distribution (MID) making them ready for further correction for natural isotope occurrence. RaMID is written in “R”, uses library “ncdf4” (it should be installed before the first use of RaMID) and contains several functions, located in the files “ramid.R” and &quot;libcdf.R,&quot; designed to read CDF files, and analyze and visualize the spectra that they contain.
+
+the source code is available from: https://github.com/seliv55/RaMID</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://github.com/seliv55/RaMID</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Pedro de Atauri</dc:contributor>
@@ -2278,7 +2324,10 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a software produced by Nicolas Zamboni and colleagues for flux ratio estimation based on a 5 step workflow known as SUMOFLUX and which relies on surrogate modeling.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a software produced by Nicolas Zamboni and colleagues for flux ratio estimation based on a 5 step workflow known as SUMOFLUX and which relies on surrogate modeling.
+
+Matlab code available from:
+http://www.imsb.ethz.ch/research/zamboni/resources.html</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://ncbi.nlm.nih.gov/pubmed/27626798</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sumoflux</rdfs:label>
@@ -2291,9 +2340,10 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The chemical compounds of a living cell are connected by biochemical reactions which convert one compound into another. The reactions are catalyzed by enzymes. Thus, all compounds in a cell are parts of an intricate biochemical network of reactions which is called metabolic network. It is possible to use network analyses to infer how selection acts on metabolic pathways.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">adapted from wikipedia:
+https://en.wikipedia.org/wiki/Biological_network</obo:IAO_0000119>
         <rdfs:label xml:lang="en">network</rdfs:label>
     </owl:Class>
     
@@ -2304,9 +2354,9 @@ The source code is available from https://github.com/seliv55/midcor</obo:IAO_000
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a metabolic pathway is a linked series of chemical reactions occurring within a cell. The reactants, products, and intermediates of an enzymatic reaction are known as metabolites, which are modified by a sequence of chemical reactions catalyzed by enzymes.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Metabolic_pathway</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pathway</rdfs:label>
     </owl:Class>
     
@@ -2523,7 +2573,7 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"> metabolite pool size estimate is an information entity used in fluxomics studies to estimate the amount of  molecular entity available to a particular metabolic process. It is usually reported in umol per mg of protein </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">metabolite pool size estimate is an information entity used in fluxomics studies to estimate the amount of  molecular entity available to a particular metabolic process. It is usually reported in umol per mg of protein.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">can be also computed from simulation and be output of such simulation (then provide confidence indicator)
 </obo:IAO_0000116>
         <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
@@ -2652,9 +2702,9 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000074"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#retention_time"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000187"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000190"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000194"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -3125,10 +3175,10 @@ Tracer based pathway discovery study is a specific type of fluxomics study which
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a type of metabolism immediate extinction using cold acetonitrile</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">metabolism quenching using QDA</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">metabolism quenching by 13 CD3-QDA in cold CH3CN</rdfs:label>
-        <rdfs:label xml:lang="en">metabolism quenching using QDA</rdfs:label>
     </owl:Class>
     
 
@@ -3492,17 +3542,28 @@ doi:  10.1038/nbt.1614</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000112>
-            https://www.ncbi.nlm.nih.gov/pubmed/17554498
-            
-Fractional 13C enrichment of isolated carbons using [1-13C]- or [2- 13C]-glucose facilitates the accurate measurement of dynamics at backbone Calpha and side-chain methyl positions in proteins.
-        </obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">fractional enrichment is a data transformation which...TBC</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000223"/>
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
+                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1400006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000578"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000191"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000194"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>an isotopomer data matrix is a table resulting from the analysis of NMR data acquired in the context of tracer based studies and which contains information about chemical entity assignment</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">fractional enrichment</rdfs:label>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>isotopomer data matrix</rdfs:label>
     </owl:Class>
     
 
@@ -3579,7 +3640,7 @@ While 13C MFA provides a rich source of phenotypic information, the application 
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Isotopically non-stationary MFA (INST-MFA)  is a metabolic flux analysis which provides an approach to circumvent limitations from other methods through computational analysis of metabolite labeling patterns obtained during the transient labeling period prior to isotopic steady state (Wiechert and Noh, 2005). This approach offers several advantages over steady-state MFA, including shorter experimental times and the ability to determine fluxes with increased precision (Nöh and Wiechert, 2011; Young and Walther, 2008).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en"> INST-13C-MFA</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">INST-13C-MFA</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3535509/</obo:IAO_0000119>
@@ -3592,10 +3653,15 @@ While 13C MFA provides a rich source of phenotypic information, the application 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000182"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a tracer analysis is a type of experimental procedure which relies on tracer molecules, usually non radioactive, to probe metabolic pathways and biochemical routes</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <rdfs:label xml:lang="en">tracer analysis</rdfs:label>
     </owl:Class>
@@ -3806,10 +3872,10 @@ Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-report
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001554"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">biomass is a rate measurement datum of how much biochemical or biological material is produced over a period of time. it is usually reported in &apos;per hour&apos; </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">biomass is a rate measurement datum of how much biochemical or biological material is produced over a period of time. it is usually reported in &apos;per hour&apos;.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">COSMOS</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">Philippe Rocca-Serra for the COSMOS-Fluxomics Ontology (CFO)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">biomass</rdfs:label>
     </owl:Class>
     
@@ -3836,19 +3902,15 @@ maybe normalized by protein content</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MSIO_0000151 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An extracellular flux is a metabolic flux indicating the rate of absortion or release of a molecular entity by a cell system from or to its surroundings, respectively.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">exchange flux</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">
 https://www.microbialcellfactories.com/content/13/1/152</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">extracellular flux</rdfs:label>
-        <rdfs:label xml:lang="en">openFlux2</rdfs:label>
     </owl:Class>
     
 
@@ -3858,16 +3920,12 @@ https://www.microbialcellfactories.com/content/13/1/152</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000151"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system to its surroundings
-
-amount per unit of time
-
-cell centric</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system to its surroundings.</obo:IAO_0000115>
         <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">excretion rate</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">Philippe Rocca-Serra for the COSMOS-Fluxomics Ontology (CFO)</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">metabolite excretion flux</rdfs:label>
     </owl:Class>
     
@@ -3883,7 +3941,7 @@ cell centric</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">consumption rate</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">uptake rate</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">Philippe Rocca-Serra for the COSMOS-Fluxomics Ontology (CFO)</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">cosmos tracer based metabolomics working group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">metabolite uptake flux</rdfs:label>
     </owl:Class>
     
@@ -4334,6 +4392,179 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>the m/z notation is used for the independent variable in a mass spectrum. The mass-to-charge ratio (m/Q) is a physical quantity that is most widely used in the electrodynamics of charged particles, e.g. in electron optics and ion optics. It appears in the scientific fields of electron microscopy, cathode ray tubes, accelerator physics, nuclear physics, Auger electron spectroscopy, cosmology and mass spectrometry.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adapted from wikipedia:
+https://en.wikipedia.org/wiki/Mass-to-charge_ratio</obo:IAO_0000119>
+        <rdfs:label>m over z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000186"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a m over z ratio which underwent a correction data transformation to take into account variations caused by a specific aspects of the data acquisition process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000187"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a m over z ratio which underwent a correction data transformation that takes into account the signal obtained from a reference compound and its spectral characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>reference corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000187"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a m over z ratio which underwent a correction data transformation that takes into account the signal obtained from a reference compound, its spectral characteristics as well as the contributions caused by adducts generated during the ionization process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>reference and adduct corrected m/z</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Retention time (RT) is a measure of the time taken for a solute to pass through a chromatography column. It is calculated as the time from injection to detection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.chromatographytoday.com/news/autosamplers/36/breaking-news/understanding-the-difference-between-retention-time-and-relative-retention-time/31166</obo:IAO_0000119>
+        <rdfs:label>retention time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>The area of a peak is a kind of data derived from a spectrum which is proportional to the product of its height and its width of a spectrum peak, but the proportionality constant depends on the peak shape.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adapted from:
+https://terpconnect.umd.edu/~toh/spectrum/Integration.html</obo:IAO_0000119>
+        <rdfs:label>peak area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000191"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a normalized corrected peak area is a type of peak area which is produced followed a normalization data transformation and correction in order to make spectra comparable.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>normalized corrected peak area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Signal intensity of all m/z values after integrating the whole peak and subtracting baseline</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">peak area as signal intensity</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
+        <obo:IAO_0000119>cosmos tracer based metabolomics working group</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">total m/z signal intensity integrating over the whole peak with baseline substraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>chemical entity assignment is an annotation which uses spectral information to assign and identify and molecular entity/chemical compound. Various methods manual and computer assisted may be used.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119></obo:IAO_0000119>
+        <rdfs:label>chemical entity assignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000194"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>assignment by database search is a type of chemical entity assignment which relies on probing chemical electronic libraries and chemical databases to determine matching structure and thereby attempt to assign a chemical identity. Searches may rely on InChi string or keys for instance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>assignment by database search</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000194"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>chemical entity assignment by direct assignment to standards is a data transformation process which uses spectral information from a known compound (ie. the standard) to match the signature and affirm identity based on the spectral features found in the sample.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>direct assignment to standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSIO_0000197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MSIO_0000197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000194"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>chemical entity assignment by indirect assignment to standards is a data transformation process which uses spectral information from a known compound (ie. the standard) to infer chemical properties about another compound found in the sample.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>MSIO</obo:IAO_0000119>
+        <rdfs:label>indirect assignment to standard</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -4504,88 +4735,12 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/msio.owl#assignment_by_database_search -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#assignment_by_database_search">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>assignment by database search</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>chemical entity assignment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#direct_assignment_to_standard -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#direct_assignment_to_standard">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>direct assignment to standard</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#indirect_assignment_by_standard -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#indirect_assignment_by_standard">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>indirect assignment to standard</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/msio.owl#isotopomer_analysis -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#isotopomer_analysis">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label>isotopomer analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#isotopomer_data_matrix -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#isotopomer_data_matrix">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000223"/>
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1400006"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000578"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#chemical_identity_assignment"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/msio.owl#peak_area"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>an isotopomer data matrix is a table resulting from the analysis of NMR data acquired in the context of tracer based studies and which contains information about chemical entity assignment</obo:IAO_0000115>
-        <rdfs:label>isotopomer data matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#m_over_z -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#m_over_z">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:label>m over z</rdfs:label>
     </owl:Class>
     
 
@@ -4610,107 +4765,6 @@ fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where 
         <obo:IAO_0000118>LN2 snap freezing</obo:IAO_0000118>
         <obo:IAO_0000119>EU H2020 PhenoMenAl</obo:IAO_0000119>
         <rdfs:label>metabolism quenching by snap freezing in liquid nitrogen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#normalized_corrected_peak_area -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#normalized_corrected_peak_area">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#peak_area"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>normalized corrected peak area</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#partial_isotopomer -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#partial_isotopomer">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>part of an isotopomer where the isotopic content of specific atoms is known</obo:IAO_0000115>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119>cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label>partial isotopomer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#peak_area -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#peak_area">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>peak area</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#retention_time -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#retention_time">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>retention time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#corrected_m/z -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#m_over_z"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>corrected m/z</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#reference_and_adduct_corrected_m/z -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#reference_and_adduct_corrected_m/z">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>reference and adduct corrected m/z</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/msio.owl#reference_corrected_m/z -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/msio.owl#reference_corrected_m/z">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/msio.owl#corrected_m/z"/>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <rdfs:label>reference corrected m/z</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Signal_intensity_of_all_m/z_values_after_integrating_the_whole_peak_and_subtracting_baseline">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MSIO_0000074"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">Signal intensity of all m/z values after integrating the whole peak and subtracting baseline</obo:IAO_0000115>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">peak area as signal intensity</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">EU H2020 PhenoMenAl</obo:IAO_0000119>
-        <obo:IAO_0000119>cosmos tracer based metabolomics working group</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">total m/z signal intensity integrating over the whole peak with baseline substraction</rdfs:label>
     </owl:Class>
     
 
@@ -5010,12 +5064,12 @@ The company provides analytical instruments, software, services and consumables 
     <!-- http://purl.obolibrary.org/obo/iao/project -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao/project">
+        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
         <doap:homepage rdf:resource="http://purl.obolibrary.org/obo/iao"/>
         <doap:mailing-list rdf:resource="mailto:information-ontology@googlegroups.com"/>
         <doap:release rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <doap:repository rdf:resource="http://purl.obolibrary.org/obo/iao/repository"/>
         <doap:wiki rdf:resource="http://purl.obolibrary.org/obo/iao/documentation"/>
-        <doap:bug-database rdf:resource="http://purl.obolibrary.org/obo/iao/tracker"/>
     </owl:NamedIndividual>
     
 
@@ -5047,20 +5101,6 @@ The company provides analytical instruments, software, services and consumables 
     <!-- mailto:information-ontology@googlegroups.com -->
 
     <owl:NamedIndividual rdf:about="mailto:information-ontology@googlegroups.com"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#bug-database">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </rdf:Description>
     
 
 
@@ -5106,5 +5146,5 @@ The company provides analytical instruments, software, services and consumables 
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
