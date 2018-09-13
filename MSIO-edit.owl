@@ -369,12 +369,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://usefulinc.com/ns/doap#bug-database -->
-
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
-    
-
-
     <!-- http://usefulinc.com/ns/doap#file-release -->
 
     <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#file-release">
