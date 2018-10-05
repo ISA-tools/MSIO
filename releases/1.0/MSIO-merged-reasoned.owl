@@ -16,11 +16,11 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
         <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
         <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
         <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>

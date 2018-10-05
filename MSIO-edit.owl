@@ -24,11 +24,11 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
         <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
-         <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
+        <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
         <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
@@ -381,9 +381,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <!-- http://usefulinc.com/ns/doap#homepage -->
 
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage"/>
     
 
 
@@ -5098,6 +5096,20 @@ The company provides analytical instruments, software, services and consumables 
     <!-- mailto:information-ontology@googlegroups.com -->
 
     <owl:NamedIndividual rdf:about="mailto:information-ontology@googlegroups.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#homepage">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </rdf:Description>
     
 
 
