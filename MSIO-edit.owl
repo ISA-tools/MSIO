@@ -26,6 +26,8 @@
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
+        <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
+         <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
         <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
@@ -366,12 +368,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">has_role</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#bug-database -->
-
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
     
 
 
