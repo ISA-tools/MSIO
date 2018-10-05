@@ -18,6 +18,8 @@
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
+        <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
+        <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
         <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
         <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
         <dc:contributor>Vitaly Selivanov</dc:contributor>
@@ -1772,12 +1774,6 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://usefulinc.com/ns/doap#bug-database -->
-
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
-    
-
-
     <!-- http://usefulinc.com/ns/doap#file-release -->
 
     <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#file-release">
@@ -1788,9 +1784,7 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
 
     <!-- http://usefulinc.com/ns/doap#homepage -->
 
-    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage">
-        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage"/>
     
 
 
@@ -23348,6 +23342,9 @@ This interpretation is *not* the same as an at-all-times relation
         <owl:annotatedTarget xml:lang="en">To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/081-003"/>
     </owl:Axiom>
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#homepage">
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </rdf:Description>
     
 
 
