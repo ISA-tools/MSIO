@@ -4,9 +4,9 @@ MSIO aims to provide a single point of entry to support semantic markup of exper
 
 It is compatible with OBI and can be imported in it but also can be used as is for users working solely on Metabolomics.
 
-MSIO is now available from EMBL EBI Ontology Lookup System [here](https://www.ebi.ac.uk/ols/ontologies/msio)
+MSIO is now available from EMBL EBI Ontology Lookup System, [here.](https://www.ebi.ac.uk/ols/ontologies/msio)
 
-Log term requests (here](https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues)
+Log term requests [here.](https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues)
 
 The following screenshots allow for a sneak peak at the resource to gauge its coverage.
 _________
