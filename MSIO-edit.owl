@@ -1,44 +1,45 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/MSIO.owl#"
      xml:base="http://purl.obolibrary.org/obo/MSIO.owl"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:msio="http://purl.obolibrary.org/obo/MSIO.owl#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:msio="http://purl.obolibrary.org/obo/MSIO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/msio/2020-02-20/msio.owl"/>
         <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_CHMO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
-        <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
-        <dc:format>OWL</dc:format>
-        <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
-        <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
-        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
-        <owl:versionInfo>1.0.1</owl:versionInfo>
-        <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
-        <dc:contributor>Vitaly Selivanov</dc:contributor>
-        <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
-        <dc:contributor xml:lang="en">Pedro Ramon de Atauri Carulla</dc:contributor>
-        <dc:contributor>Teresa Fan</dc:contributor>
-        <dc:description xml:lang="en">an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies.</dc:description>
+        <dc:contributor xml:lang="en">Alejandra Gonzalez-Beltran</dc:contributor>
         <dc:contributor xml:lang="en">Andrew Lane</dc:contributor>
         <dc:contributor xml:lang="en">Hunter Moseley</dc:contributor>
+        <dc:contributor xml:lang="en">Marta Cascante</dc:contributor>
+        <dc:contributor xml:lang="en">Pedro Ramon de Atauri Carulla</dc:contributor>
+        <dc:contributor xml:lang="en">Silvia Marin</dc:contributor>
+        <dc:contributor>Teresa Fan</dc:contributor>
+        <dc:contributor>Vitaly Selivanov</dc:contributor>
         <dc:creator>Philippe Rocca-Serra</dc:creator>
-        <dc:contributor xml:lang="en">Alejandra Gonzalez-Beltran</dc:contributor>
+        <dc:description xml:lang="en">an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies.</dc:description>
+        <dc:format>OWL</dc:format>
+        <dc:license>http://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
+        <doap:bug-database>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues</doap:bug-database>
+        <doap:homepage>https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO</doap:homepage>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4777,16 +4778,6 @@ https://terpconnect.umd.edu/~toh/spectrum/Integration.html</obo:IAO_0000119>
     
 
 
-    <!-- http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#pH -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/prs/ontologies/2013/11/MSI_AO.owl#pH">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <obo:IAO_0000116 xml:lang="en">import from PATO</obo:IAO_0000116>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5155,5 +5146,5 @@ The company provides analytical instruments, software, services and consumables 
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
