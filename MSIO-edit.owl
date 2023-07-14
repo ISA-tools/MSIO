@@ -17,12 +17,8 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:msio="http://purl.obolibrary.org/obo/MSIO.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/msio.owl">
-        <owl:imports rdf:resource="http://nmrML.org/nmrCV"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_PSIMS_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_CHMO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_OBI_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_ChEBI_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MSIO_UO_import.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/nmrcv/master/nmrCV-corrected-namespace.owl"/>
+
         <dc:title xml:lang="en">Metabolomics Standards Initiative Ontology (MSIO)</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <dc:format>OWL</dc:format>
@@ -2695,7 +2691,7 @@ Barcelona meeting, march 2015</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/nmrCV#NMR:1000864"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000074"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000187"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000190"/>
@@ -3544,9 +3540,9 @@ doi:  10.1038/nbt.1614</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000223"/>
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1000864"/>
-                            <rdf:Description rdf:about="http://nmrML.org/nmrCV#NMR:1400006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/nmrCV#NMR:1000223"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/nmrCV#NMR:1000864"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/nmrCV#NMR:1400006"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000578"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000191"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MSIO_0000194"/>
