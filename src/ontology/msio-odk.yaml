@@ -1,0 +1,65 @@
+id: msio
+title: "Metabolomics Standards Initiative Ontology"
+github_org: ISA-tools
+git_main_branch: master
+repo: MSIO
+  - base
+  - full
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  use_base_merging: TRUE
+  products:
+    - id: iao
+    - id: cl
+      use_base: TRUE
+    - id: obi
+      use_base: TRUE
+    - id: chebi
+      mirror_from: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/refs/heads/main/chebi_slim.owl
+      is_large: TRUE
+    - id: duo
+      make_base: TRUE
+    - id: ro
+      use_base: TRUE
+    - id: nmrCV
+      mirror_from: http://nmrml.org/cv/v1.1.0/nmrCV.owl
+      make_base: TRUE
+      base_iris:
+        - http://nmrML.org/nmrCV#
+    - id: chmo    
+      use_base: TRUE
+#    - id: gaz
+#      make_base: TRUE
+#      base_iris:
+#        - http://purl.obolibrary.org/obo/gaz_
+    - id: go
+      use_base: TRUE
+    - id: ms
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/MS_
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+    - id: pato
+      use_base: TRUE
+    - id: uo
+      make_base: TRUE
+    - id: ogms
+      make_base: TRUE
+    - id: pr
+      make_base: TRUE
+      mirror_from: https://raw.githubusercontent.com/obophenotype/pro_obo_slim/master/pr_slim.owl
+      is_large: TRUE
+    - id: so
+      make_base: TRUE
+robot_java_args: "-Xmx16G"
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit

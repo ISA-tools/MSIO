@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/msio
+
+idspace: MSIO
+base_url: /obo/msio
+
+products:
+- msio.owl: https://raw.githubusercontent.com/ISA-tools/MSIO - base - full/master/msio.owl
+- msio.obo: https://raw.githubusercontent.com/ISA-tools/MSIO - base - full/master/msio.obo
+
+term_browser: ontobee
+example_terms:
+- MSIO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISA-tools/MSIO - base - full/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ISA-tools/MSIO - base - full/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MSIO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ISA-tools/MSIO - base - full/master/
+
