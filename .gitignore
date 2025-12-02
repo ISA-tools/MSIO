@@ -1,45 +1,69 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-.gradle
-/build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-#miscellaneous
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
 .DS_Store
-catalog-v001.xml
+semantic.cache
+bin/
 
+*.tmp
+*.tmp.obo
+*.tmp.owl
+*.tmp.json
+*-relation-graph.tsv.gz
+.template.db
 
-#  IntelliJ and Gradle
-.idea/*
+.github/token.txt
+
+/msio.owl
+/msio.obo
+/msio.json
+/msio.db
+/msio-base.*
+/msio-basic.*
+/msio-full.*
+/msio-simple.*
+/msio-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
+
+src/ontology/mirror
+src/ontology/mirror/*
+src/ontology/reports/*
+!src/ontology/reports/release-diff.md
+src/ontology/msio.owl
+src/ontology/msio.obo
+src/ontology/msio.json
+src/ontology/msio.db
+src/ontology/msio-base.*
+src/ontology/msio-basic.*
+src/ontology/msio-full.*
+src/ontology/msio-simple.*
+src/ontology/msio-simple-non-classified.*
+
+src/ontology/seed.txt
+src/ontology/dosdp-tools.log
+src/ontology/ed_definitions_merged.owl
+src/ontology/ontologyterms.txt
+src/ontology/simple_seed.txt
+src/ontology/patterns
+src/ontology/merged-msio-edit.owl
+src/ontology/msio-edit.properties
+
+src/ontology/target/
+src/ontology/tmp/*
+!src/ontology/tmp/.gitkeep
+!src/ontology/tmp/README.md
+
+src/ontology/run.sh.conf
+src/ontology/run.sh.env
+
+src/ontology/imports/*_terms_combined.txt
+
+src/patterns/data/**/*.ofn
+src/patterns/data/**/*.txt
+src/patterns/pattern_owl_seed.txt
+src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules

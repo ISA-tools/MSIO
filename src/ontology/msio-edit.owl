@@ -1,0 +1,2373 @@
+Prefix(:=<http://purl.obolibrary.org/obo/msio.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(doap:=<http://usefulinc.com/ns/doap#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(msio:=<http://purl.obolibrary.org/obo/MSIO.owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(chebi:=<http://purl.obolibrary.org/obo/chebi/>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/msio.owl>
+Import(<http://purl.obolibrary.org/obo/msio/imports/merged_import.owl>)
+Annotation(dc:contributor "Alejandra Gonzalez-Beltran"@en)
+Annotation(dc:contributor "Andrew Lane"@en)
+Annotation(dc:contributor "Hunter Moseley"@en)
+Annotation(dc:contributor "Marta Cascante"@en)
+Annotation(dc:contributor "Pedro Ramon de Atauri Carulla"@en)
+Annotation(dc:contributor "Silvia Marin"@en)
+Annotation(dc:contributor "Teresa Fan")
+Annotation(dc:contributor "Vitaly Selivanov")
+Annotation(dc:creator "Philippe Rocca-Serra")
+Annotation(dc:description "an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies."@en)
+Annotation(dc:license "http://creativecommons.org/licenses/by/3.0/")
+Annotation(dc:title "Metabolomics Standards Initiative Ontology (MSIO)"@en)
+Annotation(doap:bug-database "https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues")
+Annotation(doap:homepage "https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO")
+
+Declaration(Class(obo:MSIO0000020))
+Declaration(Class(obo:MSIO_0000001))
+Declaration(Class(obo:MSIO_0000002))
+Declaration(Class(obo:MSIO_0000003))
+Declaration(Class(obo:MSIO_0000004))
+Declaration(Class(obo:MSIO_0000005))
+Declaration(Class(obo:MSIO_0000006))
+Declaration(Class(obo:MSIO_0000007))
+Declaration(Class(obo:MSIO_0000008))
+Declaration(Class(obo:MSIO_0000009))
+Declaration(Class(obo:MSIO_0000010))
+Declaration(Class(obo:MSIO_0000011))
+Declaration(Class(obo:MSIO_0000012))
+Declaration(Class(obo:MSIO_0000013))
+Declaration(Class(obo:MSIO_0000014))
+Declaration(Class(obo:MSIO_0000015))
+Declaration(Class(obo:MSIO_0000016))
+Declaration(Class(obo:MSIO_0000017))
+Declaration(Class(obo:MSIO_0000018))
+Declaration(Class(obo:MSIO_0000019))
+Declaration(Class(obo:MSIO_0000021))
+Declaration(Class(obo:MSIO_0000022))
+Declaration(Class(obo:MSIO_0000023))
+Declaration(Class(obo:MSIO_0000024))
+Declaration(Class(obo:MSIO_0000025))
+Declaration(Class(obo:MSIO_0000026))
+Declaration(Class(obo:MSIO_0000027))
+Declaration(Class(obo:MSIO_0000028))
+Declaration(Class(obo:MSIO_0000029))
+Declaration(Class(obo:MSIO_0000030))
+Declaration(Class(obo:MSIO_0000031))
+Declaration(Class(obo:MSIO_0000032))
+Declaration(Class(obo:MSIO_0000033))
+Declaration(Class(obo:MSIO_0000034))
+Declaration(Class(obo:MSIO_0000035))
+Declaration(Class(obo:MSIO_0000036))
+Declaration(Class(obo:MSIO_0000037))
+Declaration(Class(obo:MSIO_0000038))
+Declaration(Class(obo:MSIO_0000039))
+Declaration(Class(obo:MSIO_0000040))
+Declaration(Class(obo:MSIO_0000041))
+Declaration(Class(obo:MSIO_0000042))
+Declaration(Class(obo:MSIO_0000043))
+Declaration(Class(obo:MSIO_0000044))
+Declaration(Class(obo:MSIO_0000045))
+Declaration(Class(obo:MSIO_0000046))
+Declaration(Class(obo:MSIO_0000047))
+Declaration(Class(obo:MSIO_0000048))
+Declaration(Class(obo:MSIO_0000049))
+Declaration(Class(obo:MSIO_0000050))
+Declaration(Class(obo:MSIO_0000051))
+Declaration(Class(obo:MSIO_0000052))
+Declaration(Class(obo:MSIO_0000053))
+Declaration(Class(obo:MSIO_0000054))
+Declaration(Class(obo:MSIO_0000055))
+Declaration(Class(obo:MSIO_0000056))
+Declaration(Class(obo:MSIO_0000057))
+Declaration(Class(obo:MSIO_0000058))
+Declaration(Class(obo:MSIO_0000059))
+Declaration(Class(obo:MSIO_0000060))
+Declaration(Class(obo:MSIO_0000061))
+Declaration(Class(obo:MSIO_0000062))
+Declaration(Class(obo:MSIO_0000063))
+Declaration(Class(obo:MSIO_0000064))
+Declaration(Class(obo:MSIO_0000065))
+Declaration(Class(obo:MSIO_0000066))
+Declaration(Class(obo:MSIO_0000067))
+Declaration(Class(obo:MSIO_0000069))
+Declaration(Class(obo:MSIO_0000070))
+Declaration(Class(obo:MSIO_0000071))
+Declaration(Class(obo:MSIO_0000072))
+Declaration(Class(obo:MSIO_0000073))
+Declaration(Class(obo:MSIO_0000074))
+Declaration(Class(obo:MSIO_0000075))
+Declaration(Class(obo:MSIO_0000076))
+Declaration(Class(obo:MSIO_0000077))
+Declaration(Class(obo:MSIO_0000078))
+Declaration(Class(obo:MSIO_0000079))
+Declaration(Class(obo:MSIO_0000080))
+Declaration(Class(obo:MSIO_0000081))
+Declaration(Class(obo:MSIO_0000082))
+Declaration(Class(obo:MSIO_0000083))
+Declaration(Class(obo:MSIO_0000084))
+Declaration(Class(obo:MSIO_0000085))
+Declaration(Class(obo:MSIO_0000086))
+Declaration(Class(obo:MSIO_0000087))
+Declaration(Class(obo:MSIO_0000088))
+Declaration(Class(obo:MSIO_0000089))
+Declaration(Class(obo:MSIO_0000090))
+Declaration(Class(obo:MSIO_0000091))
+Declaration(Class(obo:MSIO_0000092))
+Declaration(Class(obo:MSIO_0000094))
+Declaration(Class(obo:MSIO_0000095))
+Declaration(Class(obo:MSIO_0000096))
+Declaration(Class(obo:MSIO_0000099))
+Declaration(Class(obo:MSIO_0000100))
+Declaration(Class(obo:MSIO_0000101))
+Declaration(Class(obo:MSIO_0000102))
+Declaration(Class(obo:MSIO_0000103))
+Declaration(Class(obo:MSIO_0000104))
+Declaration(Class(obo:MSIO_0000105))
+Declaration(Class(obo:MSIO_0000106))
+Declaration(Class(obo:MSIO_0000107))
+Declaration(Class(obo:MSIO_0000108))
+Declaration(Class(obo:MSIO_0000109))
+Declaration(Class(obo:MSIO_0000110))
+Declaration(Class(obo:MSIO_0000111))
+Declaration(Class(obo:MSIO_0000112))
+Declaration(Class(obo:MSIO_0000113))
+Declaration(Class(obo:MSIO_0000114))
+Declaration(Class(obo:MSIO_0000115))
+Declaration(Class(obo:MSIO_0000116))
+Declaration(Class(obo:MSIO_0000117))
+Declaration(Class(obo:MSIO_0000118))
+Declaration(Class(obo:MSIO_0000119))
+Declaration(Class(obo:MSIO_0000120))
+Declaration(Class(obo:MSIO_0000121))
+Declaration(Class(obo:MSIO_0000122))
+Declaration(Class(obo:MSIO_0000123))
+Declaration(Class(obo:MSIO_0000124))
+Declaration(Class(obo:MSIO_0000125))
+Declaration(Class(obo:MSIO_0000126))
+Declaration(Class(obo:MSIO_0000127))
+Declaration(Class(obo:MSIO_0000128))
+Declaration(Class(obo:MSIO_0000129))
+Declaration(Class(obo:MSIO_0000130))
+Declaration(Class(obo:MSIO_0000131))
+Declaration(Class(obo:MSIO_0000132))
+Declaration(Class(obo:MSIO_0000133))
+Declaration(Class(obo:MSIO_0000134))
+Declaration(Class(obo:MSIO_0000135))
+Declaration(Class(obo:MSIO_0000136))
+Declaration(Class(obo:MSIO_0000137))
+Declaration(Class(obo:MSIO_0000138))
+Declaration(Class(obo:MSIO_0000140))
+Declaration(Class(obo:MSIO_0000141))
+Declaration(Class(obo:MSIO_0000142))
+Declaration(Class(obo:MSIO_0000143))
+Declaration(Class(obo:MSIO_0000144))
+Declaration(Class(obo:MSIO_0000145))
+Declaration(Class(obo:MSIO_0000146))
+Declaration(Class(obo:MSIO_0000147))
+Declaration(Class(obo:MSIO_0000148))
+Declaration(Class(obo:MSIO_0000149))
+Declaration(Class(obo:MSIO_0000150))
+Declaration(Class(obo:MSIO_0000151))
+Declaration(Class(obo:MSIO_0000152))
+Declaration(Class(obo:MSIO_0000153))
+Declaration(Class(obo:MSIO_0000154))
+Declaration(Class(obo:MSIO_0000155))
+Declaration(Class(obo:MSIO_0000156))
+Declaration(Class(obo:MSIO_0000157))
+Declaration(Class(obo:MSIO_0000158))
+Declaration(Class(obo:MSIO_0000159))
+Declaration(Class(obo:MSIO_0000160))
+Declaration(Class(obo:MSIO_0000161))
+Declaration(Class(obo:MSIO_0000162))
+Declaration(Class(obo:MSIO_0000163))
+Declaration(Class(obo:MSIO_0000164))
+Declaration(Class(obo:MSIO_0000165))
+Declaration(Class(obo:MSIO_0000166))
+Declaration(Class(obo:MSIO_0000167))
+Declaration(Class(obo:MSIO_0000168))
+Declaration(Class(obo:MSIO_0000169))
+Declaration(Class(obo:MSIO_0000170))
+Declaration(Class(obo:MSIO_0000171))
+Declaration(Class(obo:MSIO_0000172))
+Declaration(Class(obo:MSIO_0000173))
+Declaration(Class(obo:MSIO_0000174))
+Declaration(Class(obo:MSIO_0000175))
+Declaration(Class(obo:MSIO_0000176))
+Declaration(Class(obo:MSIO_0000177))
+Declaration(Class(obo:MSIO_0000178))
+Declaration(Class(obo:MSIO_0000181))
+Declaration(Class(obo:MSIO_0000182))
+Declaration(Class(obo:MSIO_0000184))
+Declaration(Class(obo:MSIO_0000185))
+Declaration(Class(obo:MSIO_0000186))
+Declaration(Class(obo:MSIO_0000187))
+Declaration(Class(obo:MSIO_0000188))
+Declaration(Class(obo:MSIO_0000189))
+Declaration(Class(obo:MSIO_0000190))
+Declaration(Class(obo:MSIO_0000191))
+Declaration(Class(obo:MSIO_0000192))
+Declaration(Class(obo:MSIO_0000193))
+Declaration(Class(obo:MSIO_0000194))
+Declaration(Class(obo:MSIO_0000195))
+Declaration(Class(obo:MSIO_0000196))
+Declaration(Class(obo:MSIO_0000197))
+Declaration(NamedIndividual(obo:MSIO_0000068))
+Declaration(NamedIndividual(obo:MSIO_0000093))
+Declaration(NamedIndividual(obo:MSIO_0000097))
+Declaration(NamedIndividual(obo:MSIO_0000098))
+Declaration(AnnotationProperty(dc:contributor))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:identifier))
+Declaration(AnnotationProperty(dc:language))
+Declaration(AnnotationProperty(dc:license))
+Declaration(AnnotationProperty(dc:publisher))
+Declaration(AnnotationProperty(dc:relation))
+Declaration(AnnotationProperty(dc:rights))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(dc:type))
+Declaration(AnnotationProperty(doap:bug-database))
+Declaration(AnnotationProperty(doap:revision))
+Declaration(AnnotationProperty(oboInOwl:id))
+Declaration(AnnotationProperty(oboInOwl:shorthand))
+Declaration(AnnotationProperty(skos:note))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: doap:homepage (doap:homepage)
+
+AnnotationAssertion(rdfs:isDefinedBy doap:homepage <http://usefulinc.com/ns/doap>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: obo:MSIO_0000179 (is isotopomer of)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000179 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000179 "a chemical entity is said to be an isotopomer of another one if it has the same number of each isotopic atom but differs in their positions. isotopomer is a contraction of isotopic isomer"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000179 "CH2DCH=0 is isotopomer of CH3CD=0"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000179 "IUPAC compendium of chemical terminology (2nd edition, 1997)"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000179 "is isotopomer of"@en)
+
+# Object Property: obo:MSIO_0000180 (is isotopologue of)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000180 "CH4 is isotopologue of CH3D which is isotopologue of CH2D2"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000180 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000180 "a molecular entity which differs only in isotopic composition (i.e the number of isotopic substitution differs but the overall chemical structure is unchanged) is said to be an isotologue"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000180 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000180 "IUPAC compendium of chemical terminology (2nd edition, 1997)"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000180 "is isotopologue of")
+
+# Object Property: obo:MSIO_0000183 (manufactured by)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000183 "A relation associating a product to its manufacturer."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000183 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000183 "Philippe Rocca-Serra")
+AnnotationAssertion(rdfs:label obo:MSIO_0000183 "manufactured by"@en)
+SubObjectPropertyOf(obo:MSIO_0000183 owl:topObjectProperty)
+
+
+############################
+#   Classes
+############################
+
+# Class: obo:MSIO0000020 (openFlux2)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO0000020 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO0000020 "OpenFLUX2 is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes. OpenFlux2 is an expanded version of OpenFLUX to support analysis of parallel labeling experiments (PLE) data, i.e. those experiments using several different tracers concomitantly.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO0000020 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO0000020 "https://doi.org/10.1186/s12934-014-0152-x")
+AnnotationAssertion(rdfs:label obo:MSIO0000020 "openFlux2")
+SubClassOf(obo:MSIO0000020 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000001 (chemical reaction)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000001 "2H2O -> 2H2+ O2")
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000001 "a process which uses or consumes chemical/molecular entities to generate other molecular entities"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000001 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000001 "adapted from wikipedia:
+https://en.wikipedia.org/wiki/Chemical_reaction
+last accessed: 2018-01-11")
+AnnotationAssertion(rdfs:label obo:MSIO_0000001 "chemical reaction"@en)
+SubClassOf(obo:MSIO_0000001 obo:BFO_0000015)
+
+# Class: obo:MSIO_0000002 (buffer role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000002 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000002 "buffer role is a role played by a chemical solution to dampens pH variation"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000002 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000002 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000002 "buffer role"@en)
+SubClassOf(obo:MSIO_0000002 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000003 (derivatization agent role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000003 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000003 "derivatization agent role is a role played by a chemical entity involved in a chemical reaction known as derivatization whereby another chemical entity is augmented, but not altered otherwise, with groups specify to the chemical entity acting as a derivatization agent."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000003 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000003 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000003 "derivatization agent role"@en)
+SubClassOf(obo:MSIO_0000003 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000004 (external standard role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000004 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000004 "external standard role is a role played by a material entity used as a reference point for signal acquisition. this is a type of positive control role"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000004 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000004 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000004 "external standard role"@en)
+SubClassOf(obo:MSIO_0000004 obo:MSIO_0000008)
+
+# Class: obo:MSIO_0000005 (internal standard role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000005 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000005 "internal standard role is a role played by a chemical entity added in known amount to an analytical sample"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000005 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000005 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000005 "internal standard role"@en)
+SubClassOf(obo:MSIO_0000005 obo:MSIO_0000008)
+
+# Class: obo:MSIO_0000006 (long term reference role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000006 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000006 "long term reference role is a role played by a material entity known for its stability to provide the means to compare across sets of acquisitions"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000006 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000006 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000006 "long term reference role"@en)
+SubClassOf(obo:MSIO_0000006 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000007 (negative control role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000007 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000007 "positive control role is a role played by a material entity in the context of analytical work to provide no signal  or a signal as close to baseline as technically possible (within the limits of detection) thereby providing a reference point for the noise and indicative that the detectors and signal acquisition system operate nominally."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000007 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000007 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000007 "negative control role"@en)
+SubClassOf(obo:MSIO_0000007 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000008 (positive control role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000008 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000008 "positive control role is a role played by a material entity in the context of analytical work to provide a signal of known intensity indicative that the detectors and signal acquisition system operate nominally."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000008 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000008 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000008 "positive control role"@en)
+SubClassOf(obo:MSIO_0000008 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000009 (solvent role)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000009 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000009 "solvent role is a role played by a chemical entity present in a solution and providing the solvatation activity to other compounds, the solutes."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000009 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000009 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000009 "solvent role"@en)
+SubClassOf(obo:MSIO_0000009 obo:BFO_0000023)
+
+# Class: obo:MSIO_0000010 (AbsoluteIDQ p150 Kit)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000010 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000010 "AbsoluteIDQ p150 kit is a reagent system manufactured by Biocrates AG, Austria which allows the targeted metabolite profiling of up to 163 distinct molecular entities with quantitative accuracy on human plasma samples."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000010 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000010 "http://www.biocrates.com/products/research-products/absoluteidq-p150-kit"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000010 "AbsoluteIDQ p150 Kit"@en)
+SubClassOf(obo:MSIO_0000010 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000010 ObjectSomeValuesFrom(obo:OBI_0000295 obo:MSIO_0000100))
+SubClassOf(obo:MSIO_0000010 ObjectHasValue(obo:MSIO_0000183 obo:MSIO_0000068))
+
+# Class: obo:MSIO_0000011 (AbsoluteIDQ p180 Kit)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000011 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000011 "AbsoluteIDQ p180 kit is a reagent system manufactured by Biocrates AG, Austria which allows the targeted metabolite profiling of up to 188 distinct endogenous molecular entities with quantitative accuracy from 5 different compound classes (i.e. acylcarnitines, amino acids, hexoses, phospho- and sphingolipids and biogenic amines). The assay requires very small sample amounts (10 μL) and shows excellent reproducibility."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000011 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000011 "http://www.biocrates.com/products/research-products/absoluteidq-p180-kit"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000011 "AbsoluteIDQ p180 Kit"@en)
+SubClassOf(obo:MSIO_0000011 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000011 ObjectSomeValuesFrom(obo:OBI_0000295 obo:MSIO_0000100))
+SubClassOf(obo:MSIO_0000011 ObjectHasValue(obo:MSIO_0000183 obo:MSIO_0000068))
+
+# Class: obo:MSIO_0000012 (AbsoluteIDQ Stero17 Kit)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000012 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000012 "AbsoluteIDQ Stero17 kit is a reagent system manufactured by Biocrates AG, Austria which allows the targeted metabolite profiling  (identification and quantification) of 17 steroid hormones (sex steroids, mineralocorticoids, glucocorticoids)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000012 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000012 "http://www.biocrates.com/products/research-products/absoluteidq-p150-kit"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000012 "AbsoluteIDQ Stero17 Kit"@en)
+SubClassOf(obo:MSIO_0000012 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000012 ObjectSomeValuesFrom(obo:OBI_0000295 obo:MSIO_0000100))
+SubClassOf(obo:MSIO_0000012 ObjectHasValue(obo:MSIO_0000183 obo:MSIO_0000068))
+
+# Class: obo:MSIO_0000013 (AbsoluteIDQ p400 Kit)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000013 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000013 "AbsoluteIDQ p400 kit is a reagent system manufactured by Biocrates AG, Austria which allows the targeted metabolite profiling of up to 400 distinct molecular entities with quantitative accuracy on human plasma samples."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000013 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000013 "http://www.biocrates.com/products/research-products/absoluteidq-p400-hr-kit"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000013 "AbsoluteIDQ p400 Kit"@en)
+SubClassOf(obo:MSIO_0000013 obo:BFO_0000040)
+
+# Class: obo:MSIO_0000014 (ammonium bicarbonate buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000014 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000014 "ammonium bicarbonate is kind of buffer solution where the weak base is ammonium and the weak acid carbonic acid."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000014 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000014 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000014 "ammonium bicarbonate buffer"@en)
+SubClassOf(obo:MSIO_0000014 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000014 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000002))
+
+# Class: obo:MSIO_0000015 (buffer)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000015 "the bicarbonate buffering system is used to regulate the pH of blood."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000015 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000015 "A buffer solution (more precisely, pH buffer or hydrogen ion buffer) is an aqueous solution consisting of a mixture of a weak acid and its conjugate base, or vice versa."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000015 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000015 "https://en.wikipedia.org/wiki/Buffer_solution"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000015 "buffer"@en)
+EquivalentClasses(obo:MSIO_0000015 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000002)))
+SubClassOf(obo:MSIO_0000015 obo:BFO_0000040)
+
+# Class: obo:MSIO_0000016 (dilution series reference)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000016 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000016 "a dilution series sample is a material entity which is part of a collection of such materials, each defined by its dilution factor with respect to a stock solution of reference sample. Dilution series samples are used to assess the linearity of the signal acquisition by providing a set of expected and known quantities."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000016 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000016 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000016 "dilution series reference"@en)
+SubClassOf(obo:MSIO_0000016 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000016 ObjectSomeValuesFrom(obo:OBI_0000295 ObjectUnionOf(obo:MSIO_0000084 obo:MSIO_0000085)))
+
+# Class: obo:MSIO_0000017 (fetal bovine serum)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000017 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000017 "Fetal bovine serum (FBS) or fetal calf serum (spelled foetal in Commonwealth English) is a material entity which correspsonds to the blood fraction remaining after the natural coagulation of blood, followed by centrifugation to remove any remaining red blood cells."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000017 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000017 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000017 "https://en.wikipedia.org/wiki/Fetal_bovine_serum"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000017 "fetal bovine serum"@en)
+SubClassOf(obo:MSIO_0000017 obo:BFO_0000040)
+
+# Class: obo:MSIO_0000018 (HEPES buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000018 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000018 "HEPES buffer is a buffer which uses HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) as a zwitterionic organic chemical buffering agent ."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000018 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000018 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000018 "HEPES buffer"@en)
+SubClassOf(obo:MSIO_0000018 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000018 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000002))
+
+# Class: obo:MSIO_0000019 (long term reference)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000019 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000019 "a pooled sample made from fractions from samples collected from large, study independent collection of samples with the purpose of serving as a reference for quality control purpose. Long Term Reference Samples maybe used in ring trials to check cross facility data acquisition consistency but also to enable data integration, irrespective of data acquisition platform or study context but providing a single point of reference against which to normalize.
+
+purpose: Inter study variability(within a core facility)"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000019 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000019 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000019 "LTR"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000019 "biological pool (inter) [CEA]"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000019 "biological pool [MASTR-MS]"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000019 "inter study QC"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000019 "H2020 PhenoMenal"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000019 "long term reference"@en)
+SubClassOf(obo:MSIO_0000019 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000019 ObjectSomeValuesFrom(obo:OBI_0000295 ObjectUnionOf(obo:MSIO_0000084 obo:MSIO_0000085)))
+
+# Class: obo:MSIO_0000021 (PBS buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000021 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000021 "Phosphated buffer saline (PBS) buffer is a buffer which is a water-based salt solution containing disodium hydrogen phosphate, sodium chloride and, in some formulations, potassium chloride and potassium dihydrogen phosphate."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000021 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000021 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000021 "https://en.wikipedia.org/wiki/Phosphate-buffered_saline"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000021 "PBS buffer"@en)
+SubClassOf(obo:MSIO_0000021 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000021 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000002))
+
+# Class: obo:MSIO_0000022 (quality control material)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000022 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000022 "quality control material (qc material)  is a material entity which is used for the purpose to quality control processes such as assessing unwanted source of variations during signal acquisitions. Typically, these materials are known compounds or mixture of compounds introduced in known quantities into test samples or run as is, diluted from stock to provide reference measurements at fixed temporal intervals."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000022 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000022 "QC material"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000022 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000022 "quality control material"@en)
+SubClassOf(obo:MSIO_0000022 obo:BFO_0000040)
+
+# Class: obo:MSIO_0000023 (reference compound)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000023 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000023 "a reference compound is a chemical entity of know origin, formula and established spectral fingerprint added to a solution of unknown component in known quantities in order to provide a basis (hence the term reference) with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000023 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000023 "pure standard"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000023 "reference material"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000023 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000023 "reference compound"@en)
+SubClassOf(obo:MSIO_0000023 obo:BFO_0000040)
+
+# Class: obo:MSIO_0000024 (reference compound mix)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000024 "NIST reference material:
+https://www.nist.gov/publications/certification-standard-reference-materialr-968f-fat-soluble-vitamins-frozen-human-serum"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000024 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000024 "a reference compound mix is a material entity which consists of composite solution of several molecular entities acting as reference compound and present in known quantity in the mixture, with which to establish a comparison, be used for calibration or quality control or quantitation estimate for unknown compound in spectral analysis such as NMR or mass spectrometry"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000024 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000024 "pure standard mix"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000024 "reference material mix"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000024 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000024 "reference compound mix"@en)
+SubClassOf(obo:MSIO_0000024 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000024 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MSIO_0000023))
+
+# Class: obo:MSIO_0000025 (sample preparation blank)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000025 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000025 "a material entity corresponding to a sample containing no biological sample, which undergoes all laboratory process of preparation as used for test samples and used as a negative control to evaluate contamination effect and artefacts caused by reactions occurring during the sample preparation steps of test samples."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000025 "method blank"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000025 "method reference"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000025 "sample preparation blank"@en)
+SubClassOf(obo:MSIO_0000025 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000025 ObjectSomeValuesFrom(obo:OBI_0000295 ObjectUnionOf(obo:MSIO_0000084 obo:MSIO_0000085)))
+
+# Class: obo:MSIO_0000026 (solvent blank)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000026 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000026 "a material entity corresponding to ‘solvent’ (mobile phase in chromatography context) only, containing no biological sample and used as a negative control to evaluate carry over effect between injections of test samples."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000026 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000026 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000026 "normal blank [Leiden]"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000026 "solvent blank"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000026 "solvent blank"@en)
+SubClassOf(obo:MSIO_0000026 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000026 ObjectSomeValuesFrom(obo:OBI_0000295 ObjectUnionOf(obo:MSIO_0000084 obo:MSIO_0000085)))
+
+# Class: obo:MSIO_0000027 (study reference material)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000027 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000027 "a study reference sample is a pool made up of aliquots from all the sample collected in a given study. It is meant to be used to monitor intra study variability, also known as within study variability of the signal acquisition, for instance between batches of such data acquisition."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000027 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000027 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000027 "SR"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000027 "iQC - internal quality control [Imperial College London]"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000027 "study reference")
+AnnotationAssertion(rdfs:label obo:MSIO_0000027 "study reference material"@en)
+SubClassOf(obo:MSIO_0000027 obo:BFO_0000040)
+SubClassOf(obo:MSIO_0000027 ObjectSomeValuesFrom(obo:OBI_0000295 ObjectUnionOf(obo:MSIO_0000084 obo:MSIO_0000085)))
+
+# Class: obo:MSIO_0000028 (carrier gas)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000028 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000028 "a carrier gas is a chemical entity in gaseous phase with is used for eluting chemical compound in a gas chromatography process."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000028 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000028 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000028 "carrier gas"@en)
+SubClassOf(obo:MSIO_0000028 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000029 (derivatization agent)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000029 "tert-Butyldimethylsilyl chloride is a derivatization agent"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000029 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000029 "a derivatization agent is a chemical entity which is used in a material combination process known as derivatization and which consists in adding chemical groups to a molecule in an attempt to make it more volatile and therefore amenable to gas-chromatography mass spectrometry."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000029 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000029 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000029 "derivatization agent"@en)
+EquivalentClasses(obo:MSIO_0000029 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000003))
+SubClassOf(obo:MSIO_0000029 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000030 (quaternary ammonium dodecyl aminooxy reagent)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000030 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000030 ""@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000030 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000030 "QDA reagent"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000030 ""@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000030 "quaternary ammonium dodecyl aminooxy reagent"@en)
+SubClassOf(obo:MSIO_0000030 obo:MSIO_0000029)
+
+# Class: obo:MSIO_0000031 (isotopic tracer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000031 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000031 "an isotopic tracer is a molecular entity whose atoms may have entirely or partially replaced with isotopes of the normally occuring element and which can be distinguished from naturally occuring molecular entity through mass analysis or nucleic magnetic resonance analysis."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000031 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000031 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000031 "isotopic tracer"@en)
+EquivalentClasses(obo:MSIO_0000031 ObjectSomeValuesFrom(obo:OBI_0000312 obo:MSIO_0000118))
+SubClassOf(obo:MSIO_0000031 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000032 (positionally labeled isotopic tracer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000032 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000032 "a specificly labeled isotopic tracer is an isotopic tracer where only specific positions on the backbone have been replaced with an isotopic atom. Such molecules are often used in Fluxomics analysis and metabolic path elucidation experiments."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000032 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000032 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000032 "positionally labeled isotopic tracer"@en)
+SubClassOf(obo:MSIO_0000032 obo:MSIO_0000031)
+
+# Class: obo:MSIO_0000033 (uniformly labeled isotopic tracer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000033 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000033 "uniformly labeled isotopic tracer is an isotopic tracer where all atoms of the backbone are replaced with the same isotope. Such molecules are often used in Fluxomics analysis and metabolic path elucidation experiments."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000033 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000033 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000033 "uniformly labeled isotopic tracer"@en)
+SubClassOf(obo:MSIO_0000033 obo:MSIO_0000031)
+
+# Class: obo:MSIO_0000034 (isotopologue)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000034 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000034 "A single isotopologue represents a set of mass-equivalent isotopomers. It is therefore a set of chemicals representing molecules of the same chemical entity and same isotopic composition. Isotopologue can be monitored using mass spectrometry but only NMR spectroscopy can discriminate between positional isotopomer."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000034 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000034 "adapted from IUPAC nomenclature"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000034 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000034 "isotopologue"@en)
+SubClassOf(obo:MSIO_0000034 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000035 (openFlux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000035 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000035 "OpenFLUX is a MATLAB-based modelling software for 13C metabolic flux analysis (MFA). Modern techniques like Elementary Metabolite Unit (EMU) framework, are implemented for efficient computing of fluxes."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000035 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000035 "
+https://www.ncbi.nlm.nih.gov/pubmed/19409084"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000035 "openFlux"@en)
+SubClassOf(obo:MSIO_0000035 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000036 (isotopomer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000036 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000036 "a mass isotopomer  (short for isotopic isomer) is a compound which differ from another one only by the position of an isotopic substitution in the molecular backbone.
+One in a collection of isomers with the same number of each isotope of each element but differing in their positions within the chemical structure."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000036 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000036 "isotopic isomer"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000036 "mass isotopomer")
+AnnotationAssertion(dc:contributor obo:MSIO_0000036 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000036 "isotopomer"@en)
+SubClassOf(obo:MSIO_0000036 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000037 (solvent)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000037 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000037 "a solvent is a chemical entity playing a solvent role in a solution."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000037 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000037 obo:IAO_0000226)
+AnnotationAssertion(rdfs:label obo:MSIO_0000037 "solvent"@en)
+EquivalentClasses(obo:MSIO_0000037 ObjectIntersectionOf(obo:CHEBI_23367 ObjectSomeValuesFrom(obo:RO_0000087 obo:MSIO_0000009)))
+
+# Class: obo:MSIO_0000038 (uniformly-labeled [U-13C] glucose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000038 obo:IAO_0000226)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000038 "A non-radioactive,  glucose molecule in which all six carbons are substituted with stable carbon 13 (13C) isotope, with potential imaging application or fluxomics studies.
+
+CAS RN 110187-42-3"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000038 "submit to CHEBI"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000038 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000038 "uniformly-labeled [U-13C] glucose"@en)
+AnnotationAssertion(rdfs:seeAlso obo:MSIO_0000038 "http://www.cancer.gov/drugdictionary?cdrid=739239"@en)
+SubClassOf(obo:MSIO_0000038 obo:CHEBI_23367)
+SubClassOf(obo:MSIO_0000038 ObjectSomeValuesFrom(obo:OBI_0000312 obo:MSIO_0000120))
+
+# Class: obo:MSIO_0000039 (partial isotopomer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000039 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000039 "an isotopomer where the isotopic content of specific atoms is known for a part of the molecule")
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000039 "should it be a relation or a class?"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000039 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000039 "partial isotopomer"@en)
+SubClassOf(obo:MSIO_0000039 obo:CHEBI_23367)
+
+# Class: obo:MSIO_0000040 (metabolic flux unit)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000040 "metabolic flux unit is a measurement unit datum used to qualify a metabolic flux. It is therefore an amount of matter over a temporal interval."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000040 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000040 "Philippe Rocca-Serra for the COSMOS-Fluxomics Ontology (CFO)"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000040 "metabolic flux unit"@en)
+SubClassOf(obo:MSIO_0000040 obo:IAO_0000003)
+SubClassOf(obo:MSIO_0000040 ObjectSomeValuesFrom(obo:IAO_0000219 obo:MSIO_0000150))
+
+# Class: obo:MSIO_0000041 (micromolar per milligram of protein per hour)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000041 "micromolar per milligram of protein per hour  is a unit used to report metabolic fluxes. it denotes a measurement indicative of an amount of material over a period of time and normalized to the amount of protein present in the cellular fraction under consideration"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000041 "Philippe Rocca-Serra
+"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000041 "umol mg prot-1 hr-1"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000041 "micromolar per milligram of protein per hour"@en)
+SubClassOf(obo:MSIO_0000041 obo:MSIO_0000040)
+
+# Class: obo:MSIO_0000042 (13cflux2)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000042 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000042 "c13Fluc2 is a software suite of applications for the detailed quantification of intracellular (quasi) steady-state fluxes as explored by 13C-based metabolic flux analysis. The tool is developed and maintained by W. Wiechert at the Institute of Bio- and Geosciences, IBG-1: Biotechnology and JARA High Performance Computing, Forschungszentrum, Julich GmbH, 52428 Julich, Germany."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000042 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000042 "
+Weitzel M, Nöh K, Dalman T, Niedenführ S, Stute B, Wiechert W
+13CFLUX2 - High-Performance Software Suite for 13C-Metabolic Flux Analysis
+Bioinformatics 2012
+doi: 10.1093/bioinformatics/bts646"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000042 "http://www.13cflux.net/13cflux2/"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000042 "13cflux2"@en)
+SubClassOf(obo:MSIO_0000042 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000043 (C13)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000043 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000043 "C13 is a tool for quantification of in vivo metabolic fluxes, from carbon labelling experiments. The underlying approach is metabolic flux analysis based on stationary carbon isotope labelling experiments, using fractional enrichment data. The mathematical framework adopted herein is the one developed by Wiechert and de Graaf (1997).
+It is developed and maintained at the Chalmers University of Technology, Department of Chemical and Biological Engineering, Systems Biology group , Kemivägen 10 412 96 Göteborg, Sweden."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000043 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000043 "http://129.16.106.142/tools.php?c=c13"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000043 "C13"@en)
+SubClassOf(obo:MSIO_0000043 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000044 (fiatFlux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000044 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000044 "An intuitive tool for quantitative investigations of intracellular metabolism by users that are not familiar with numerical methods or isotopic tracer experiments. The aim of this open source software is to enable non-specialists to adapt the software to their specific scientific interests, including other 13C-substrates, labeling mixtures, and organisms. FiatFlux is written in Matlab"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000044 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000044 "http://www.ncbi.nlm.nih.gov/pubmed/16122385"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000044 "fiatFlux"@en)
+SubClassOf(obo:MSIO_0000044 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000045 (Fluxomer Iterative Algorithm)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000045 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000045 "FIA is a software written in python, implementing the FIA (Fluxomer Iterative Algorithm) - a new effective method for 13C metabolic fluxes (tracer) experiments analysis. It is developed by Orr Srour, Jamey D. Young and Yonina C. Eldar at the Technion, Israel Institute of Technology"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000045 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000045 "FIA"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000045 "https://doi.org/10.1186/1752-0509-5-129")
+AnnotationAssertion(rdfs:label obo:MSIO_0000045 "Fluxomer Iterative Algorithm"@en)
+SubClassOf(obo:MSIO_0000045 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000046 (iMAT)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000046 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000046 "iMAT is a software integrating transcriptomic and proteomic data with genome-scale metabolic network models to predict enzyme metabolic flux. The tool is developed by Tomer Shlomi at The Isreal Institute of Technology"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000046 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000046 "Integrative Metabolic Analysis Tool"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000046 "Bioinformatics (2010) 26 (24): 3140-3142.
+https://doi.org/10.1093/bioinformatics/btq602"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000046 "http://www.cs.technion.ac.il/~tomersh/methods.html"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000046 "iMAT"@en)
+SubClassOf(obo:MSIO_0000046 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000047 (INCA)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000047 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000047 "INCA: a computational platform for isotopically non-stationary metabolic flux analysis, Jamey D. Young. Bioinformatics, first published online January 11, 2014.
+INCA is a software package that can perform both steady-state metabolic flux analysis and isotopically non-stationary metabolic flux analysis. The software provides a framework for comprehensive analysis of metabolic networks using mass balances and elementary metabolite unit balances. The generation of balance equations and their computational solution is completely automated and can be performed on networks of arbitrary complexity."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000047 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000047 "Isotopomer Network Compartmental Analysis"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000047 "http://www.ncbi.nlm.nih.gov/pubmed/24413674"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000047 "INCA"@en)
+SubClassOf(obo:MSIO_0000047 obo:IAO_0000010)
+SubClassOf(obo:MSIO_0000047 ObjectSomeValuesFrom(obo:OBI_0000295 obo:MSIO_0000128))
+
+# Class: obo:MSIO_0000048 (iso2flux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000048 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000048 "Iso2Flux is a Python-based flux analysis software that allows to perform 13C Metabolic Flux Analysis on a sub-network of a large scale model. Iso2flux uses constraint-based modelling to compute steady state fluxes across a large metabolic network and uses such flxues to predict 13C distribution across a subser of the newtork. Then, given a set of 13C data Iso2flux can iteratively find the steady state flux distributions that are most consistent with such fluxes.
+
+the source code is available from: https://github.com/cfoguet/iso2flux"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000048 "http://portal.phenomenal-h2020.eu/app-library/iso2flux"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000048 "https://github.com/cfoguet/iso2flux"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000048 "Pedro de Atauri"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000048 "Vitaly Selivanov"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000048 "iso2flux"@en)
+SubClassOf(obo:MSIO_0000048 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000049 (isodyn)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000049 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000049 "“Isodyn” is a C++-program that performs an analysis of stable isotope tracer data to assess metabolic flux profiles in living cells. Isodyn simulates the dynamics of isotopic isomer (isotopomer) distribution in central metabolic pathways, and, by changing its parameters, which reflect the characteristics of corresponding biochemical reactions, fit the simulated dynamics of mass isotopomers to that observed experimentally. The simulated metabolic fluxes that correspond to the best fit are assumed to reproduce the real fluxes in the analyzed biological object and conditions. Isodyn contains tools that check the goodness of fit and perform a statistical analysis of obtained metabolic fluxes.
+
+the source code is available from: https://github.com/seliv55/isodyn"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000049 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000049 "http://portal.phenomenal-h2020.eu/app-library/isodyn"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000049 "Pedro de Atauri"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000049 "Vitaly Selivanov"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000049 "isodyn"@en)
+SubClassOf(obo:MSIO_0000049 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000050 (isodesign)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000050 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000050 "IsoDesign, a software that enables these parameters to be maximized by optimizing the isotopic composition of the label input. It can be applied to (13) C-MFA investigations using a broad panel of analytical tools (MS, MS/MS, (1) H NMR, (13) C NMR, etc.) individually or in combination. It includes a visualization module to intuitively select the optimal label input depending on the biological question to be addressed.
+
+The software is available from:
+http://metasys.insa-toulouse.fr/software/isodes/"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000050 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000050 "https://doi.org/10.1002/bit.24997"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000050 "isodesign"@en)
+SubClassOf(obo:MSIO_0000050 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000051 (metran)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000051 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000051 "Metran is a software for Metabolic Flux Analysis implementing the Elementary Metabolite Units.
+
+Metabolic Flux Analysis (MFA) has emerged as a tool of great significance for metabolic engineering and quantitative cell physiology. An important limitation of MFA, as carried out via stable isotope labeling and GC-MS measurements, is the large number of isotopomer/cumomer equations that need to be solved, especially when multiple isotopic tracers are used for the labeling of the system. This restriction reduces the ability of MFA to fully utilize the power of multiple isotopic tracers in elucidating the physiology of realistic situations comprising complex bioreaction networks. 
+
+To address this limitation, we have developed a novel framework for modeling of isotopic tracer distributions that significantly reduces the number of variables, without any loss of information. The EMU framework is based on a highly efficient decomposition method that identifies the minimum amount of information needed to simulate isotopic labeling within a reaction network using the knowledge of atomic transitions occurring in the network reactions. The functional units generated by the decomposition algorithm, called elementary metabolite units (EMUs), form the new basis for generating system equations that describe the relationship between fluxes and isotopomer abundances.
+
+The EMU decomposition algorithm is completely unsupervised and converges within seconds even for very genome-wide network models. Isotopomer abundances simulated using the EMU framework are identical to those obtained using the isotopomer and cumomer frameworks, however, requiring significantly less computation time. For a typical carbon labeling system the total number of equations that needs to be solved is reduced by one order-of-magnitude (100s EMUs vs. 1000s cumomers). As such, the EMU framework is most efficient for the analysis of labeling by multiple isotopic tracers. For example, the analysis of gluconeogenesis network model with 2H, 13C, and 18O tracers requires only 354 EMUs compared to >2,000,000 isotopomers"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000051 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000051 "http://www.ncbi.nlm.nih.gov/pubmed/17088092"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000051 "metran"@en)
+SubClassOf(obo:MSIO_0000051 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000052 (midcor)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000052 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000052 "“midcor.R” is an “R”-program that performs a primary analysis of isotopic isomers (isotopomers) distribution obtained by Gas Chromatography coupled with Mass Spectrometry (GCMS). The aim of this analysis is to have a correct distribution of isotopes originated from substrates that are artificially enriched with specific isotopes (usually 13C). To this end the program performs a correction for natural occurring isotopes and also correction for “impurities” of the assay media that give peaks overlapping with the spectra of analyzed labeled metabolites. This program offers two ways of corrections of “impurities” resulted from overlapping the assayed mass isotopomer distribution with peaks produced either by unknown metabolites in the media, or by different fragments produced by the assayed metabolite.
+
+The source code is available from https://github.com/seliv55/midcor")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000052 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000052 "http://portal.phenomenal-h2020.eu/app-library/midcor")
+AnnotationAssertion(dc:contributor obo:MSIO_0000052 "Pedra de Atauri"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000052 "Vitaly Selivanov"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000052 "midcor"@en)
+SubClassOf(obo:MSIO_0000052 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000053 (non-stationary isotopic labeling experiment)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000053 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000053 "an isotopically non-stationary labeling experiment is a material processing used in fluxomics studies where cells cultures are grown in the presence of radiolabeled tracer compound for relatively short amount of time and samples collection before the system can reach an isotopic and metabolic steady state, and is therefore in a non-stationary phase. Such experiment are shorter to run that steady-state labeling experiment and usually allow to determine fluxes with increased precision."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000053 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000053 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000053 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000053 "non-stationary isotopic labeling experiment"@en)
+SubClassOf(obo:MSIO_0000053 obo:MSIO_0000096)
+SubClassOf(obo:MSIO_0000053 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+DisjointClasses(obo:MSIO_0000053 obo:MSIO_0000185)
+
+# Class: obo:MSIO_0000054 (13C5-15N2-glutamine)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000054 obo:IAO_0000226)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000054 "A non-radioactive,  glutamine molecule in which 5 carbons are substituted with stable carbon 13 (13C) isotope and both glutamin nitrogen atoms are substituted with 15N ones, with potential imaging application or fluxomics studies."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000054 "submit to CHEBI"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000054 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000054 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000054 "184161-19-1"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000054 "13C5-15N2-glutamine"@en)
+SubClassOf(obo:MSIO_0000054 obo:CHEBI_23367)
+SubClassOf(obo:MSIO_0000054 ObjectSomeValuesFrom(obo:OBI_0000312 obo:MSIO_0000120))
+
+# Class: obo:MSIO_0000055 (openMoebius)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000055 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000055 "OpenMoebius is an integrated software for conventional 13C-Metabolic Flux Analysis and isotopically nonstationary 13C-Metabolic Flux Analysis (INST-13C-MFA). This work is partially supported by JST, Strategic International Collaborative Research Program, SICORP for JP-US Metabolomics.
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000055 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000055 "http://www-shimizu.ist.osaka-u.ac.jp/hp/en/software/OpenMebius.html"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000055 "openMoebius"@en)
+SubClassOf(obo:MSIO_0000055 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000056 (ramid)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000056 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000056 "RaMID is a computer program designed to read the machine-generated files saved in netCDF format containing registered time course of m/z chromatograms. It evaluates the peaks of mass isotopomer distribution (MID) making them ready for further correction for natural isotope occurrence. RaMID is written in “R”, uses library “ncdf4” (it should be installed before the first use of RaMID) and contains several functions, located in the files “ramid.R” and \"libcdf.R,\" designed to read CDF files, and analyze and visualize the spectra that they contain.
+
+the source code is available from: https://github.com/seliv55/RaMID")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000056 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000056 "https://github.com/seliv55/RaMID"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000056 "Pedro de Atauri"@en)
+AnnotationAssertion(dc:contributor obo:MSIO_0000056 "Vitaly Selivanov"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000056 "ramid"@en)
+SubClassOf(obo:MSIO_0000056 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000057 (sumoflux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000057 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000057 "a software produced by Nicolas Zamboni and colleagues for flux ratio estimation based on a 5 step workflow known as SUMOFLUX and which relies on surrogate modeling.
+
+Matlab code available from:
+http://www.imsb.ethz.ch/research/zamboni/resources.html"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000057 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000057 "http://ncbi.nlm.nih.gov/pubmed/27626798"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000057 "sumoflux"@en)
+SubClassOf(obo:MSIO_0000057 obo:IAO_0000010)
+
+# Class: obo:MSIO_0000058 (network)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000058 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000058 "The chemical compounds of a living cell are connected by biochemical reactions which convert one compound into another. The reactions are catalyzed by enzymes. Thus, all compounds in a cell are parts of an intricate biochemical network of reactions which is called metabolic network. It is possible to use network analyses to infer how selection acts on metabolic pathways."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000058 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000058 "adapted from wikipedia:
+https://en.wikipedia.org/wiki/Biological_network"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000058 "network"@en)
+SubClassOf(obo:MSIO_0000058 obo:IAO_0000030)
+
+# Class: obo:MSIO_0000059 (pathway)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000059 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000059 "a metabolic pathway is a linked series of chemical reactions occurring within a cell. The reactants, products, and intermediates of an enzymatic reaction are known as metabolites, which are modified by a sequence of chemical reactions catalyzed by enzymes."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000059 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000059 "https://en.wikipedia.org/wiki/Metabolic_pathway"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000059 "pathway"@en)
+SubClassOf(obo:MSIO_0000059 obo:IAO_0000030)
+
+# Class: obo:MSIO_0000060 (stoichiometric coefficient)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000060 "CH4 + 2 O2 → CO2 + 2 H2O, the stoichiometric coefficient of CH4 is -1, the stoichiometric coefficient of O2 is -2, for CO2 it would be +1 and for H2O it is +2"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000060 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000060 "a stoichiometric coefficient is an information object which is part of an equation describing a chemical reaction and which corresponds to the number of molecules of a reactant  taking part in a reaction."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000060 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000060 "http://en.wikipedia.org/wiki/Stoichiometry#Stoichiometric_coefficient"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000060 "stoichiometric coefficient"@en)
+SubClassOf(obo:MSIO_0000060 obo:IAO_0000030)
+SubClassOf(obo:MSIO_0000060 ObjectSomeValuesFrom(obo:IAO_0000219 obo:MSIO_0000001))
+
+# Class: obo:MSIO_0000061 (cell culture doubling time)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000061 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000061 "the amount of time elapsed for a cell culture to growth twice its initial size, usually expressed in hour"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000061 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000061 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000061 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000061 "cell culture doubling time"@en)
+SubClassOf(obo:MSIO_0000061 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000061 ObjectSomeValuesFrom(obo:IAO_0000039 ObjectUnionOf(obo:UO_0000010 obo:UO_0000031)))
+SubClassOf(obo:MSIO_0000061 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0100060))
+
+# Class: obo:MSIO_0000062 (cell seeding density)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000062 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000062 "Cell seeding density is a measurement datum which denotes the number of cells per surface area in the case of adherent cells or number of cells per volume in the case of free cells deposited in the culture vessel to start a cell culture. The cell seeding density is therefore stated in number of cells per cm2 or number of cells per ml."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000062 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000062 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000062 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000062 "cell seeding density"@en)
+SubClassOf(obo:MSIO_0000062 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000062 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0100060))
+
+# Class: obo:MSIO_0000063 (cell volume)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000063 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000063 "average cell volume is a measurement datum used to report over physcal occupancy of cells under study. This information is used for as input for kinetic modeling."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000063 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000063 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000063 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000063 "cell volume"@en)
+SubClassOf(obo:MSIO_0000063 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000063 ObjectSomeValuesFrom(obo:IAO_0000219 obo:CL_0000010))
+
+# Class: obo:MSIO_0000064 (confluence level)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000064 "when cells reach 50% confluence level, replenish medium"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000064 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000064 "confluence level is a measurement datum denotes the status of a cell culture and how cells are occupying the space available in a plate. confluence levels are stated in %."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000064 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000064 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000064 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000064 "confluence level"@en)
+SubClassOf(obo:MSIO_0000064 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000064 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0100060))
+
+# Class: obo:MSIO_0000065 (dilution factor)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000065 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000065 "dilution factor is a measurement data item which indicates in percentage the level of purity of a material in the context of dilution such as a dilution series."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000065 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000065 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000065 "dilution factor"@en)
+SubClassOf(obo:MSIO_0000065 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000065 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MSIO_0000016))
+
+# Class: obo:MSIO_0000066 (DNA content)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000066 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000066 "the amount of dideoxyribonucleic acids present in a cell culture or tissue.
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000066 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000066 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000066 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000066 "DNA content"@en)
+SubClassOf(obo:MSIO_0000066 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000066 ObjectSomeValuesFrom(obo:IAO_0000219 obo:CL_0000010))
+
+# Class: obo:MSIO_0000067 (interacellular metabolite average content)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000067 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000067 "intracellular metabolite average content is a measurement provided of metabolite concentration normalized against  cell average volume or DNA content or protein content or dry weight"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000067 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000067 "metabolite content"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000067 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000067 "cosmos tracer based metabolomics working group
+Barcelona meeting, march 2015"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000067 "interacellular metabolite average content"@en)
+SubClassOf(obo:MSIO_0000067 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000067 ObjectSomeValuesFrom(obo:IAO_0000219 obo:CL_0000010))
+
+# Class: obo:MSIO_0000069 (metabolite concentration)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000069 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000069 "the concentration of a molecular entity acting as metabolite and stated in standard concentration units, such molar, micromolar and so on"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000069 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000069 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000069 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000069 "metabolite concentration"@en)
+SubClassOf(obo:MSIO_0000069 obo:IAO_0000109)
+
+# Class: obo:MSIO_0000070 (metabolite pool size estimate)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000070 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000070 "metabolite pool size estimate is an information entity used in fluxomics studies to estimate the amount of  molecular entity available to a particular metabolic process. It is usually reported in umol per mg of protein."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000070 "can be also computed from simulation and be output of such simulation (then provide confidence indicator)
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000070 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000070 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000070 "pool size"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000070 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000070 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000070 "metabolite pool size estimate"@en)
+SubClassOf(obo:MSIO_0000070 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000070 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectUnionOf(obo:MSIO_0000059 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHEBI_25212))))
+
+# Class: obo:MSIO_0000071 (passage number)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000071 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000071 "passage number is a measurement data item denoting how many times a cell culture has been split and transferred to a new culture vessel. It can also be considered to be equivalent to how many times a cell culture has reached 100% confluence"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000071 "Philippe Rocca-Serra
+"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000071 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000071 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000071 "passage number"@en)
+SubClassOf(obo:MSIO_0000071 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000071 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0100060))
+
+# Class: obo:MSIO_0000072 (protein concentration)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000072 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000072 "ratio of protein content over a reference standard element (usually bovine serum albumin (BSA))"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000072 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000072 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000072 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000072 "protein concentration"@en)
+SubClassOf(obo:MSIO_0000072 obo:IAO_0000109)
+
+# Class: obo:MSIO_0000073 (protein content)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000073 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000073 "the amount of (soluble) protein from cell culture or tissue. the quantity of total protein recovered from an extraction process varies depending on the solvent and buffers used during the extraction phase. the amount is usuall expressed in milligram (refer to Unit Ontology)"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000073 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000073 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000073 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000073 "protein content"@en)
+SubClassOf(obo:MSIO_0000073 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000073 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000414))
+SubClassOf(obo:MSIO_0000073 ObjectSomeValuesFrom(obo:IAO_0000219 obo:CL_0000010))
+
+# Class: obo:MSIO_0000074 (signal intensity)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000074 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000074 "signal intensity is a kind of measurement providing an estimate of the strength of a phenomena as it is recorded. For digital detector instrument, the signal intensity is usually a electric intensity or a field strength of the electromagnetic wave transmitting a signal.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000074 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000074 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000074 "cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000074 "signal intensity"@en)
+SubClassOf(obo:MSIO_0000074 obo:IAO_0000109)
+
+# Class: obo:MSIO_0000075 (maximum m/z values signal intensity with baseline substraction)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000075 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000075 "Signal intensity of all m/z values at the maximum of the peak (also known as maximum signal intensity) and subtracting baseline."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000075 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000075 "peak height as signal intensity"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000075 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000075 "cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000075 "maximum m/z values signal intensity with baseline substraction"@en)
+SubClassOf(obo:MSIO_0000075 obo:MSIO_0000074)
+
+# Class: obo:MSIO_0000076 (total volume of cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000076 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000076 "total volume of cell culture is a measurement data item which denotes the volume occupied by a cell culture"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000076 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000076 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000076 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000076 "total volume of cell culture"@en)
+SubClassOf(obo:MSIO_0000076 obo:IAO_0000109)
+
+# Class: obo:MSIO_0000077 (isotopologue distribution matrix)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000077 "https://github.com/ISA-tools/isa-matrix-datapackages/tree/master/src/sirm_datapkg")
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000077 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000077 "an isotopologue distribution matrix is an information object used in tracer based metabolomics experiments to report the amount of possible isotopologues (sets of isotopomers) derived from the tracer in a metabolic network. 
+
+the matrix hold the mass isotopomer distributions (MIDs) of Elementary Metabolite Unit (EMU) which will be used as state variables. An EMU is defined as a distinct subset of a metabolite’s atoms. EMUs can exist in a variety of mass states depending on their isotopic compositions. An EMU in its lowest mass state is referred to as M+0, while an EMU that contains one additional atomic mass unit (e.g., due to the presence of a 13C atom in place of a 12C atom) is referred to as M+1, with higher mass states described accordingly.  An MID is a vector that contains the fractional abundance of each mass state of an EMU."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000077 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000077 "DOI 10.1002/bit.21632
+An Elementary Metabolite Unit (EMU) BasedMethod of Isotopically Nonstationary Flux Analysis,
+Jamey D. Young, Jason L. Walther, Maciek R. Antoniewicz, Hyuntae Yoo,Gregory Stephanopoulos, Department of Chemical Engineering, Massachusetts Institute of Technology. 
+http://onlinelibrary.wiley.com/doi/10.1002/bit.21632/epdf"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000077 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000077 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000077 "isotopologue distribution matrix"@en)
+SubClassOf(obo:MSIO_0000077 obo:IAO_0000306)
+SubClassOf(obo:MSIO_0000077 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(<http://nmrML.org/nmrCV#NMR:1000864> obo:MSIO_0000074 obo:MSIO_0000187 obo:MSIO_0000190 obo:MSIO_0000194)))
+
+# Class: obo:MSIO_0000078 (metabolic flux rate matrix)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000078 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000078 "a metabolic flux rate matrix is an information content entity which is defined as a 2 dimensional table associating chemical species with uptake and excretion rate in the cell")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000078 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000078 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000078 "cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000078 "metabolic flux rate matrix"@en)
+SubClassOf(obo:MSIO_0000078 obo:IAO_0000306)
+
+# Class: obo:MSIO_0000079 (stoichiometry matrix)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000079 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000079 "a stoichiometry matrix is an information content entity holding arrays of stoichiometric coefficients, each associated to a specific chemical reactions"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000079 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000079 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000079 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000079 "stoichiometry matrix"@en)
+SubClassOf(obo:MSIO_0000079 obo:IAO_0000306)
+SubClassOf(obo:MSIO_0000079 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MSIO_0000060))
+SubClassOf(obo:MSIO_0000079 ObjectMinCardinality(1 obo:IAO_0000136 obo:MSIO_0000001))
+
+# Class: obo:MSIO_0000080 (metabolite identifier)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000080 "a CHEBI identifier for chemical or an HMDB identifier"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000080 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000080 "a centrally registered identifier to denote a metabolite chemical entity"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000080 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000080 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000080 "metabolite identifier"@en)
+SubClassOf(obo:MSIO_0000080 obo:IAO_0000578)
+
+# Class: obo:MSIO_0000081 (pathway identifier)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000081 "a KEGG pathway identifier such as map00010 (http://www.genome.jp/dbget-bin/www_bget?map00010)"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000081 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000081 "a centrally registered identifier which denotes a pathway data item"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000081 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000081 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000081 "pathway identifier"@en)
+SubClassOf(obo:MSIO_0000081 obo:IAO_0000578)
+
+# Class: obo:MSIO_0000082 (protein identifier)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000082 "a uniprot identifier such P20248 (http://www.uniprot.org/uniprot/P20248)"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000082 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000082 "a centrally registered identifier to denote a molecular entity of the type Protein."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000082 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000082 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000082 "protein identifier"@en)
+SubClassOf(obo:MSIO_0000082 obo:IAO_0000578)
+
+# Class: obo:MSIO_0000083 (reaction identifier)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000083 "a reactome identifier such as R-HSA-174054"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000083 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000083 "a centrally registered identifier which denotes a chemical reaction."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000083 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000083 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000083 "reaction identifier"@en)
+SubClassOf(obo:MSIO_0000083 obo:IAO_0000578)
+
+# Class: obo:MSIO_0000084 (calibration)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000084 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000084 "calibration is a process which relies on comparison between measurements in order to estimate the reliability of the measurements performed on a particular device or instrument configuration. 
+a calibration process may be used to identify a systematic error in measurement and possibly include it into an error model.
+a calibration process may be used to detect degradation of parts of instruments when long data acquisition times are needed (e.g. degradation of a chromatography column in a GC-MS chain).
+
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000084 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000084 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000084 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000084 "calibration"@en)
+SubClassOf(obo:MSIO_0000084 obo:OBI_0000011)
+
+# Class: obo:MSIO_0000085 (quality control)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000085 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000085 "quality control is a process which aims to ensure that procedures for producing a material or a measurement remain within established error tolerance margins. Quality control often relies on the use of references or standards against which readings are gauged. those standards can be 'negative control' which should produce in an absence of signal or 'positive control', which should result in the presence of a signal of known quality and intensity."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000085 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000085 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000085 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000085 "quality control"@en)
+SubClassOf(obo:MSIO_0000085 obo:OBI_0000011)
+
+# Class: obo:MSIO_0000086 (assessing across studies variability)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000086 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000086 "assessing across studies variability is a quality control process which aims at monitoring the consistency of signal acquisitions  between different studies (for instance in the context of meta-analysis and data integration) in order to detect unwanted causes of variation (i.e. variation that was not planned and that should be taken into account)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000086 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000086 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000086 "assessing across studies variability"@en)
+SubClassOf(obo:MSIO_0000086 obo:MSIO_0000085)
+
+# Class: obo:MSIO_0000087 (assessing instrument conditioning)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000087 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000087 "assessing instrument conditionning is a quality control process which aims at monitoring the stability of the analytical instrument prior to running data acquisition on specimen of interest by running a set of control runs."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000087 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000087 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000087 "assessing instrument conditioning"@en)
+SubClassOf(obo:MSIO_0000087 obo:MSIO_0000085)
+
+# Class: obo:MSIO_0000088 (assessing within study variability)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000088 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000088 "assessing within study variability is a quality control process which aims at monitoring the consistency of signal acquisition throughout the course of a study in order to detect unwanted causes of variation (i.e. variation that was not planned and that should be taken into account)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000088 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000088 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000088 "assessing within study variability"@en)
+SubClassOf(obo:MSIO_0000088 obo:MSIO_0000085)
+
+# Class: obo:MSIO_0000089 (assessing study batch to batch variation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000089 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000089 "assessing study batch-to-batch variation is a within study variably quality control which specifically looks at how batching of data acquisition contributes to adding unwanted noice and how to account for it."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000089 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000089 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000089 "assessing study batch to batch variation"@en)
+SubClassOf(obo:MSIO_0000089 obo:MSIO_0000088)
+
+# Class: obo:MSIO_0000090 (detecting carry over event)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000090 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000090 "detecting carry over event is a quality control process which aims to determine if measurements in one sample are affected to earlier measurements made on different samples and indicative of insufficient matrix regeneration between 2 data acquisition events. this is usually assessed by running solvent blanks or sample preparation blank between analytical runs."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000090 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000090 "carry over detection"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000090 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000090 "detecting carry over event"@en)
+SubClassOf(obo:MSIO_0000090 obo:MSIO_0000085)
+SubClassOf(obo:MSIO_0000090 ObjectSomeValuesFrom(obo:RO_0000057 ObjectUnionOf(obo:MSIO_0000025 obo:MSIO_0000026)))
+
+# Class: obo:MSIO_0000091 (detecting departure from linearity event)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000091 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000091 "detecting departure from linearity event is a quality control process which aims to determine if measurements respond in a linear fashion of a linear increase of concentration of analytes. this is usually assessed by running a dilution series between analytical runs."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000091 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000091 "linearity departure detection"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000091 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000091 "detecting departure from linearity event"@en)
+SubClassOf(obo:MSIO_0000091 obo:MSIO_0000085)
+SubClassOf(obo:MSIO_0000091 ObjectSomeValuesFrom(obo:RO_0000057 obo:MSIO_0000016))
+
+# Class: obo:MSIO_0000092 (detecting sample degradation event)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000092 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000092 "detecting sample degradation event is a quality control process which aims to determine if measurements in samples are affected by their run order or time of acquisition. This is usually assessed by running the same analytical samples at different points along the data acquistion plan (technical replication at the begining and end of runs)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000092 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000092 "sample degradatation detection"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000092 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000092 "detecting sample degradation event"@en)
+SubClassOf(obo:MSIO_0000092 obo:MSIO_0000085)
+SubClassOf(obo:MSIO_0000092 ObjectSomeValuesFrom(obo:RO_0000057 obo:MSIO_0000025))
+
+# Class: obo:MSIO_0000094 (metabolomics investigation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000094 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000094 "an investigation which focused on measuring small biological molecules known as metabolite with the goal of understanding biochemical process underlying normal or pathological biological processes"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000094 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000094 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000094 "metabolomics investigation"@en)
+EquivalentClasses(obo:MSIO_0000094 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectUnionOf(obo:MSIO_0000100 obo:MSIO_0000101)))
+SubClassOf(obo:MSIO_0000094 obo:OBI_0000066)
+
+# Class: obo:MSIO_0000095 (lipidomics investigation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000095 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000095 "lipidomics investigation is an investigation which aims at determining the lipid content of a biological system under given experimental conditions using data acquisition techniques such as mass spectrometry, nmr spectroscopy or chromatography techniques."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000095 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000095 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000095 "lipidomics investigation"@en)
+SubClassOf(obo:MSIO_0000095 ObjectIntersectionOf(obo:MSIO_0000094 ObjectSomeValuesFrom(obo:OBI_0000293 obo:CHEBI_18059)))
+
+# Class: obo:MSIO_0000096 (stable isotope resolved metabolomics study)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000096 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000096 "stable isotope resolved metabolomics study is a kind of investigation which uses non-radioactive isotope for labeling compounds which are precursors in key metabolic reaction. These studies therefore allow deciphering reaction and understanding the fluxes in cells.
+Tracer based pathway discovery study is a specific type of fluxomics study which aims at discovery new metabolic routes and their associated signature metabolites by using  isotopically labeled tracers"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000096 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000096 "SIRMS")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000096 "tracer based metabolite profiling"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000096 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000096 "stable isotope resolved metabolomics study")
+SubClassOf(obo:MSIO_0000096 obo:MSIO_0000134)
+SubClassOf(obo:MSIO_0000096 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MSIO_0000130))
+SubClassOf(obo:MSIO_0000096 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MSIO_0000131))
+SubClassOf(obo:MSIO_0000096 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectUnionOf(obo:MSIO_0000053 obo:MSIO_0000185)))
+
+# Class: obo:MSIO_0000099 (metabolite quantitation using high performance liquid chromatography)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000099 "A kind of assay which attempts to identify and measure relative concentration of all possible metabolites using the method high-performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography), is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000099 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000099 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000099 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000099 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000099 "https://en.wikipedia.org/wiki/High-performance_liquid_chromatography"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000099 "metabolite quantitation using high performance liquid chromatography"@en)
+SubClassOf(obo:MSIO_0000099 obo:OBI_0000070)
+
+# Class: obo:MSIO_0000100 (targeted metabolite profiling)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000100 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000100 "a kind of assay which attempts to identify and measure specific compound/ metabolites (known in advance) expressed as concentration or relative abundance ratio to a standard in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy or liquid chromatography DAD"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000100 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000100 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000100 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000100 "targeted metabolite profiling"@en)
+SubClassOf(obo:MSIO_0000100 obo:OBI_0000070)
+
+# Class: obo:MSIO_0000101 (untargeted metabolite profiling)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000101 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000101 "a kind of assay which attempts to identify and measure relative concentration of all possible metabolites present in a extract derived from a specimen using techniques such as gas chromatography mass spectrometry, liquid chromatography mass spectrometry, NMR spectroscopy."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000101 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000101 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000101 "global metabolite profiling")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000101 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000101 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000101 "untargeted metabolite profiling"@en)
+SubClassOf(obo:MSIO_0000101 obo:OBI_0000070)
+
+# Class: obo:MSIO_0000102 (fresh culture medium)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000102 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000102 "a fresh culture medium is a culture medium which presents its nominal characteristisc in terms of molecular concentration of its components, pH, and physical chemical expected properties."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000102 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000102 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000102 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000102 "fresh culture medium"@en)
+SubClassOf(obo:MSIO_0000102 obo:OBI_0000079)
+
+# Class: obo:MSIO_0000103 (spent culture medium)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000103 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000103 "spent culture medium is a culture medium which has been added to a cell culture and which has been depleted of its component as used by the growing cell and which has received the by products of cell metabolites excreted by the cells. Therefore, spent culture medium will different significantly in pH and physical chemical properties from the initial fresh culture medium added to the cell as the begining of the cell culture. Spent culture medium is usually recovered by aspiration or mild centrifugation (as not to distrupt cell membrane) of the cell culture."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000103 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000103 "cell culture supernatant"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000103 "spent medium"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000103 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000103 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000103 "spent culture medium"@en)
+SubClassOf(obo:MSIO_0000103 obo:OBI_0000079)
+
+# Class: obo:MSIO_0000104 (metabolism quenching)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000104 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000104 "metabolism quenching is a planned processed whose objective is a quick extinction of all biochemical reactions occuring in a biological system in order to fix molecular entity concentrations for downstream quantitation and analysis. An array of physical or chemical agent may be used to achieve that goal."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000104 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000104 "metabolism immediate extinction"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000104 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000104 "metabolism quenching"@en)
+SubClassOf(obo:MSIO_0000104 obo:OBI_0000094)
+
+# Class: obo:MSIO_0000105 (direct metabolism quenching by solvent)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000105 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000105 "direct metabolism quenching by solvent is a kind biochemical reaction extinction process which relies on organic solvents to denature enzymatic machinery and inactivate it."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000105 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000105 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000105 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000105 "direct metabolism quenching by solvent"@en)
+SubClassOf(obo:MSIO_0000105 obo:MSIO_0000104)
+
+# Class: obo:MSIO_0000106 (metabolism quenching by 13 CD3-QDA in cold CH3CN)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000106 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000106 "a type of metabolism immediate extinction using cold acetonitrile"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000106 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000106 "metabolism quenching using QDA"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000106 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000106 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000106 "metabolism quenching by 13 CD3-QDA in cold CH3CN"@en)
+SubClassOf(obo:MSIO_0000106 obo:MSIO_0000105)
+
+# Class: obo:MSIO_0000107 (metabolism quenching using precooled 60 percent methanol ammonium bicarbonate buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000107 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000107 "a type of metabolism extinction which uses refrigerated buffer containing 60% of methanol ammonium bicarbonate solution"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000107 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000107 "cooled 60% methanol NH4HCO3 metabolism quenching"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000107 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000107 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000107 "metabolism quenching using precooled 60 percent methanol ammonium bicarbonate buffer")
+SubClassOf(obo:MSIO_0000107 obo:MSIO_0000104)
+
+# Class: obo:MSIO_0000108 (metabolism quenching using precooled 60 percent methanol HEPES buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000108 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000108 "a type of metabolism extinction which uses refrigerated buffer containing 60% of methanol HEPES solution"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000108 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000108 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000108 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000108 "metabolism quenching using precooled 60 percent methanol HEPES buffer")
+SubClassOf(obo:MSIO_0000108 obo:MSIO_0000104)
+
+# Class: obo:MSIO_0000109 (metabolism quenching using precooled PBS buffer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000109 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000109 "a type of metabolism extinction which uses refrigerated PBS buffer"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000109 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000109 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000109 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000109 "metabolism quenching using precooled PBS buffer")
+SubClassOf(obo:MSIO_0000109 obo:MSIO_0000104)
+
+# Class: obo:MSIO_0000110 (elution program)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000110 "acetonitrile 5%, isopropanol 95% for 15 minutes at flow rate 1 ml/min,"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000110 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000110 "an elution program is a set of recorded instructions which determine the mobile phase (gas or liquid) composition, pressure, temperature and flow rate during the chromatography separation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000110 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000110 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000110 "elution program"@en)
+SubClassOf(obo:MSIO_0000110 obo:OBI_0000272)
+
+# Class: obo:MSIO_0000111 (derivatization)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000111 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000111 "derivatization is a technique used in chemistry which transforms a chemical compound into a product (the reaction's derivate) of similar chemical structure, called a derivative. That compound has properties more
+amenable to a particular analytical method. Some samples analyzed by GC require derivatization in order to make them suitable for analysis. Compounds that have poor volatility, poor thermal stability, or that can be adsorbed in the injector will exhibit nonreproducible peak areas, heights, and shapes. Other compounds that respond poorly on a specific detector may need to be “tagged” with a different functional group to improve detection.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000111 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000111 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000111 "adapted from https://en.wikipedia.org/wiki/Derivatization and  https://www.restek.com/pdfs/CFTS1269.pdf.
+Last accessed: 2018-01-11")
+AnnotationAssertion(rdfs:label obo:MSIO_0000111 "derivatization"@en)
+EquivalentClasses(obo:MSIO_0000111 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000029))
+SubClassOf(obo:MSIO_0000111 obo:OBI_0000652)
+
+# Class: obo:MSIO_0000112 (acetylation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000112 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000112 "a kind of derivatization which results in the addition of acetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000112 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000112 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000112 "EU cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000112 "acetylation"@en)
+SubClassOf(obo:MSIO_0000112 obo:MSIO_0000111)
+
+# Class: obo:MSIO_0000113 (trifluoroacetylation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000113 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000113 "a kind of derivatization which results in the addition of trifluoroacetyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000113 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000113 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000113 "EU H2020 PhenoMenal")
+AnnotationAssertion(rdfs:label obo:MSIO_0000113 "trifluoroacetylation"@en)
+SubClassOf(obo:MSIO_0000113 obo:MSIO_0000112)
+
+# Class: obo:MSIO_0000114 (alkylation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000114 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000114 "a kind of derivatization which results in the addition of alkyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000114 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000114 "EU H2020 PhenoMenal")
+AnnotationAssertion(rdfs:label obo:MSIO_0000114 "alkylation"@en)
+SubClassOf(obo:MSIO_0000114 obo:MSIO_0000111)
+
+# Class: obo:MSIO_0000115 (methylation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000115 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000115 "a kind of derivatization which results in the addition of methyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000115 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000115 "EU H2020 PhenoMenal")
+AnnotationAssertion(rdfs:label obo:MSIO_0000115 "methylation"@en)
+SubClassOf(obo:MSIO_0000115 obo:MSIO_0000111)
+
+# Class: obo:MSIO_0000116 (oximation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000116 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000116 "a kind of derivatization which results in the addition of oxime group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000116 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000116 "EU H2020 PhenoMenal")
+AnnotationAssertion(rdfs:label obo:MSIO_0000116 "oximation"@en)
+SubClassOf(obo:MSIO_0000116 obo:MSIO_0000111)
+
+# Class: obo:MSIO_0000117 (silylation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000117 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000117 "a kind of derivatization which results in the addition of silyl group to molecules in an attempt to make ions derived from it more volatile in a gas-chromatography experiment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000117 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000117 "EU H2020 PhenoMenal")
+AnnotationAssertion(rdfs:label obo:MSIO_0000117 "silylation"@en)
+SubClassOf(obo:MSIO_0000117 obo:MSIO_0000111)
+
+# Class: obo:MSIO_0000118 (isotopic labeling)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000118 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000118 "Isotopic labeling (or isotopic labelling) is a technique used to track the passage of an isotope (an atom with a detectable variation) through a reaction, metabolic pathway, or cell. The reactant is 'labeled' by replacing specific atoms by their isotope."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000118 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000118 "https://en.wikipedia.org/wiki/Isotopic_labeling"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000118 "isotopic labeling"@en)
+SubClassOf(obo:MSIO_0000118 obo:OBI_0000652)
+
+# Class: obo:MSIO_0000119 (isotopic labeling with positional labeled tracer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000119 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000119 "Specific isotopic labeling refers to the placement of a single label (e.g., 2H, 13C, or 15N) in a specified location in a molecule."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000119 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000119 "specific isotopic labeling"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000119 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000119 "http://www.sigmaaldrich.com/content/dam/sigma-aldrich/articles/stable-isotopes/biomolecular_nmr.pdf"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000119 "isotopic labeling with positional labeled tracer"@en)
+SubClassOf(obo:MSIO_0000119 obo:MSIO_0000118)
+SubClassOf(obo:MSIO_0000119 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+SubClassOf(obo:MSIO_0000119 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MSIO_0000032))
+
+# Class: obo:MSIO_0000120 (isotopic labeling with uniformly labeled tracer)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000120 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000120 "Uniform labeling refers to biosynthetic labeling of all carbon, nitrogen, or hydrogen sites with stable isotopes. Uniform labeling of proteins with 15N is particularly convenient because of the strategic locations of nitrogens in the backbone and the absence of homonuclear couplings due to the intervening carbons. It is also possible to replace all of the carbons with 13C, although in this case the spectroscopy has to deal with the network of couplings among bonded carbons. Similarly, all of the hydrogens can be replaced with deuterons in order to attenuate the dipolar couplings among the hydrogens that often present complications and difficulties in the experiments."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000120 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000120 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000120 "http://www.sigmaaldrich.com/content/dam/sigma-aldrich/articles/stable-isotopes/biomolecular_nmr.pdf"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000120 "isotopic labeling with uniformly labeled tracer"@en)
+SubClassOf(obo:MSIO_0000120 obo:MSIO_0000118)
+SubClassOf(obo:MSIO_0000120 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+SubClassOf(obo:MSIO_0000120 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MSIO_0000033))
+
+# Class: obo:MSIO_0000121 (collection at cell cycle phase)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000121 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000121 "a process of collecting a sample when the cells of cell culture growth are collected at a specific phase of the cell division cycle (e.g collection at G2/G1). This often requires a cell synchronization step."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000121 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000121 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000121 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000121 "collection at cell cycle phase"@en)
+SubClassOf(obo:MSIO_0000121 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000122 (collection at cytostatic phase)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000122 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000122 "a process of collecting a sample when the cells of a cell culture growth are not dividing"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000122 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000122 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000122 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000122 "collection at cytostatic phase"@en)
+SubClassOf(obo:MSIO_0000122 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000123 (collection at logarithmic phase)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000123 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000123 "a process of collecting a sample when the cell culture growth can be approximated by a logarithm function."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000123 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000123 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000123 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000123 "collection at logarithmic phase")
+SubClassOf(obo:MSIO_0000123 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000124 (collection at specific cell culture passage)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000124 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000124 "collection at specific cell culture passage is a kind of specimen collection which occurs after a strictly defined number of  cell culture splitting, defined to control how many cell divisions have been performed."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000124 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000124 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000124 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000124 "collection at specific cell culture passage"@en)
+SubClassOf(obo:MSIO_0000124 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000125 (collection at stabilization phase before experiment)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000125 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000125 "collection at stabilization phase before experiment is a kind of specimen collection process which takes places once cells have reached a stationary growth phase and prior the main experimental intervention is applied."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000125 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000125 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000125 "cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000125 "collection at stabilization phase before experiment"@en)
+SubClassOf(obo:MSIO_0000125 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000126 (collection at stationary phase)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000126 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000126 "a process of collecting a sample when the cell culture growth has reached a plateau, indicative of a steady state"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000126 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000126 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000126 "collection at steady state phase"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000126 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000126 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000126 "collection at stationary phase"@en)
+SubClassOf(obo:MSIO_0000126 obo:OBI_0000659)
+
+# Class: obo:MSIO_0000127 (flux balance analysis)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000127 "")
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000127 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000127 "Flux balance analysis is a mathematical approach for analyzing the flow of metabolites through a metabolic network. Flux balance analysis calculates the flow of metabolites through a metabolic network, thereby making it possible to predict the growth rate of an organism or the rate of production of a biotechnologically important metabolite.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000127 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000127 "What is flux balance analysis?
+Jeffrey D. Orth, Ines Thiele, and Bernhard Ø. Palsson
+
+Nat Biotechnol. 2010 Mar; 28(3): 245–248.
+doi:  10.1038/nbt.1614")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000127 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000127 "flux balance analysis"@en)
+SubClassOf(obo:MSIO_0000127 obo:OBI_0200000)
+SubClassOf(obo:MSIO_0000127 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:MSIO_0000077 obo:MSIO_0000078)))
+
+# Class: obo:MSIO_0000128 (13C-constrained flux balance analysis)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000128 "")
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000128 "")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000128 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000128 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000128 "13C-constrained flux balance analysis"@en)
+SubClassOf(obo:MSIO_0000128 obo:MSIO_0000127)
+
+# Class: obo:MSIO_0000129 (isotopomer data matrix)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000129 "an isotopomer data matrix is a table resulting from the analysis of NMR data acquired in the context of tracer based studies and which contains information about chemical entity assignment")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000129 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000129 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000129 "isotopomer data matrix")
+SubClassOf(obo:MSIO_0000129 obo:IAO_0000306)
+SubClassOf(obo:MSIO_0000129 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(<http://nmrML.org/nmrCV#NMR:1000223> <http://nmrML.org/nmrCV#NMR:1000864> <http://nmrML.org/nmrCV#NMR:1400006> obo:IAO_0000578 obo:MSIO_0000191 obo:MSIO_0000194)))
+
+# Class: obo:MSIO_0000130 (isotope natural abundance correction)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000130 "Correcting for the effects of natural abundance in stable isotope resolved metabolomics experiments involving ultra-high resolution mass spectrometry.
+BMC Bioinformatics. 2010 Mar 17;11:139. doi: 10.1186/1471-2105-11-139.")
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000130 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000130 "natural abundance correction is a data transformation which aims to take into account the contribution of natural random variation in isotopic composition in the environment and adjust for it during the calculation of mass isotopologue distribution in a tracer based metabolomics experiment"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000130 "Hunter Moseley")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000130 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000130 "BMC Bioinformatics. 2010 Mar 17;11:139. doi: 10.1186/1471-2105-11-139.
+Correcting for the effects of natural abundance in stable isotope resolved metabolomics experiments involving ultra-high resolution mass spectrometry."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000130 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000130 "isotope natural abundance correction"@en)
+SubClassOf(obo:MSIO_0000130 obo:OBI_0200000)
+SubClassOf(obo:MSIO_0000130 ObjectSomeValuesFrom(obo:BFO_0000050 obo:MSIO_0000096))
+
+# Class: obo:MSIO_0000131 (metabolic flux analysis)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000131 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000131 "metabolic flux analysis is a type of investigation which uses data from tracer based studies to provide insights into cellular metabolites creation and destruction."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000131 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000131 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000131 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000131 "metabolic flux analysis"@en)
+SubClassOf(obo:MSIO_0000131 obo:MSIO_0000134)
+SubClassOf(obo:MSIO_0000131 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+
+# Class: obo:MSIO_0000132 (steady state 13C metabolic flux analysis)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000132 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000132 "steady-state 13C metabolic flux analysis is a metabolic flux analysis approach which relies on 13C tracer experiments and requires long incubation period necessary to meet methodological requirements that all reactions under study have reach steady state.
+
+By feeding cells a 13C-labeled substrate and subsequently measuring the patterns of isotope incorporation in downstream metabolic products, extensive information about the intracellular distribution of carbon flux can be obtained. This enables system-wide quantification of reversible, parallel, and cyclic metabolic pathways that would be otherwise unidentifiable based solely upon measurements of extracellular nutrient uptake and product excretion (Zamboni et al., 2009).
+
+While 13C MFA provides a rich source of phenotypic information, the application of this technique to mammalian systems presents unique challenges. In particular, the presence of subcellular compartmentation, complex media formulations, and slow labeling dynamics can lead to significant difficulties in experimental design and data interpretation (Zamboni, 2011)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000132 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000132 "conventional 13C metabolic flux analysis"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000132 "conventional 13C-MFA"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000132 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000132 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000132 "https://www.ncbi.nlm.nih.gov/pubmed/22140245"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000132 "steady state 13C metabolic flux analysis"@en)
+SubClassOf(obo:MSIO_0000132 obo:MSIO_0000131)
+
+# Class: obo:MSIO_0000133 (isotopically non-stationary 13C-metabolic flux analysis)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000133 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000133 "Isotopically non-stationary MFA (INST-MFA)  is a metabolic flux analysis which provides an approach to circumvent limitations from other methods through computational analysis of metabolite labeling patterns obtained during the transient labeling period prior to isotopic steady state (Wiechert and Noh, 2005). This approach offers several advantages over steady-state MFA, including shorter experimental times and the ability to determine fluxes with increased precision (Nöh and Wiechert, 2011; Young and Walther, 2008)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000133 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000133 "INST-13C-MFA"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000133 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000133 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000133 "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3535509/"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000133 "isotopically non-stationary 13C-metabolic flux analysis"@en)
+SubClassOf(obo:MSIO_0000133 obo:MSIO_0000131)
+
+# Class: obo:MSIO_0000134 (tracer analysis)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000134 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000134 "a tracer analysis is a type of experimental procedure which relies on tracer molecules, usually non radioactive, to probe metabolic pathways and biochemical routes"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000134 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000134 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000134 "tracer analysis"@en)
+SubClassOf(obo:MSIO_0000134 obo:MSIO_0000182)
+SubClassOf(obo:MSIO_0000134 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+
+# Class: obo:MSIO_0000135 (normalization by optimal selection with multiple internal standards)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000135 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000135 "a normalization process which relies on the signal intensity measured for several reference compounds (internal standards) injected or added to the test samples in known quantities, thereby allowing sample comparison which have been placed on equal footing."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000135 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000135 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000135 "normalization by optimal selection with multiple internal standards"@en)
+SubClassOf(obo:MSIO_0000135 obo:OBI_0200169)
+
+# Class: obo:MSIO_0000136 (normalization to a total sum)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000136 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000136 "a normalization process which relies on the computing to total signal intensity by simply summing up those signals and then for each sample measurements, dividing it by the total signal.  The total sum is used as reference to which sample signals are then compared."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000136 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000136 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000136 "normalization to a total sum"@en)
+SubClassOf(obo:MSIO_0000136 obo:OBI_0200169)
+
+# Class: obo:MSIO_0000137 (normalization to multiple standard with cross contribution compensation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000137 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000137 "a normalization process used  in mass spectrometry signal processing which takes into account the fact that analytes can interact with internal standards and impair accurate estimatation of these. The interaction phenomenon is known as cross contribution and needs to be compensated for."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000137 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000137 "Compensation for Systematic Cross-Contribution Improves Normalization of Mass Spectrometry Based Metabolomics Data.
+Henning Redestig, Atsushi Fukushima, Hans Stenlund, Thomas Moritz, Masanori Arita, Kazuki Saito and Miyako Kusano.
+RIKEN Plant Science Center, Tsurumi-ku, Suehiro-cho, 1-7-22 Yokohama, Kanagawa, 230-0045, Japan, and Umea Plant Science Center, Umea University, 901 87 Umea, Sweden. 
+Anal. Chem., 2009, 81 (19), pp 7974–7980
+DOI: 10.1021/ac901143w"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000137 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000137 "normalization to multiple standard with cross contribution compensation"@en)
+SubClassOf(obo:MSIO_0000137 obo:OBI_0200169)
+
+# Class: obo:MSIO_0000138 (remove unwanted variation 2-step normalization)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000138 "ruv_starter_analysis(Y,X,ctl)
+
+http://www-personal.umich.edu/~johanngb/ruv/howto/howto.html"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000138 "the 2 step normalization is a normalization process which uses 2 complementary steps provided suitable quality controls have been supplied. The process attempts to remove overall unwanted variation given suitable controls and  uses factors of interest in the normalization. It relies on linear mixed effects model which utilizes quality control metabolites to obtain normalized data in typical metabolomics experiments."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000138 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000138 "RUV"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000138 "RUV-2"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000138 "Statistical Methods for Handling Unwanted Variation in Metabolomics Data.
+Alysha M. De Livera, Marko Sysi-Aho, Laurent Jacob, Johann A. Gagnon-Bartsch, Sandra Castillo, Julie A. Simpson, and Terence P. Speed
+Biostatistics Unit, Centre for Epidemiology and Biostatistics, University of Melbourne, Melbourne, VIC 3800, Australia
+Zora Biosciences Oy, FIN-02150 Espoo, Finland
+VTT Technical Research Centre of Finland, P. O. Box 1000, FI-02044 VTT Espoo, Finland
+Laboratoire de Biométrie et Biologie Evolutive, Université Lyon 1, CNRS, INRA, UMR5558, Villeurbanne, France
+Department of Statistics, University of California, Berkeley, California United States, 94720
+Bioinformatics Division, Walter and Eliza Hall Institute, 1 G Royal Parade, Parkville, Victoria 3052, Australia
+Department of Mathematics and Statistics, University of Melbourne, VIC 3800, Melbourne, Australia
+Anal. Chem., 2015, 87 (7), pp 3606–3615
+DOI: 10.1021/ac502439y"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000138 "Using control genes to correct for unwanted variation in microarray data. Gagnon-Bartsch and
+Speed, 2012. Available at: http://biostatistics.oxfordjournals.org/content/13/3/539.full.
+
+Removing Unwanted Variation from High Dimensional Data with Negative Controls. GagnonBartsch,
+Jacob, and Speed, 2013. Available at: http://statistics.berkeley.edu/tech-reports/820."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000138 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000138 "http://www-personal.umich.edu/~johanngb/ruv/index.html"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000138 "remove unwanted variation 2-step normalization"@en)
+SubClassOf(obo:MSIO_0000138 obo:OBI_0200169)
+
+# Class: obo:MSIO_0000140 (normalization to a single internal standard)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000140 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000140 "a normalization process which relies on the signal intensity measured for one reference compound (an internal standard) injected or added to the test samples in known quantity, thereby allowing sample comparison which have been placed on equal footing based on this reference."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000140 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000140 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000140 "normalization to a single internal standard"@en)
+SubClassOf(obo:MSIO_0000140 obo:OBI_0200169)
+
+# Class: obo:MSIO_0000141 (metabolite extraction)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000141 "ribose extraction"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000141 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000141 "metabolite extraction is an extraction process which aims to retrieve small molecules known as metabolites, from a specimen"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000141 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000141 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000141 "metabolite extraction"@en)
+SubClassOf(obo:MSIO_0000141 obo:OBI_0302884)
+
+# Class: obo:MSIO_0000142 (lipid extraction)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000142 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000142 "lipid extraction is an extraction which aims to retrieve lipid (hydrophobic carbohydrate) from a specimen"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000142 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000142 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000142 "lipid extraction"@en)
+SubClassOf(obo:MSIO_0000142 obo:MSIO_0000141)
+
+# Class: obo:MSIO_0000143 (polar metabolite extraction)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000143 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000143 "polar metabolite extraction is a metabolite extraction which aims to retrieve water soluble or metabolites with polar solvent solubility properties. This is usually exclusive of hydrophobique, lipophile and lipid like metabolites."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000143 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000143 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000143 "polar metabolite extraction"@en)
+SubClassOf(obo:MSIO_0000143 obo:MSIO_0000141)
+
+# Class: obo:MSIO_0000144 (cell layer enzymatic digestion)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000144 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000144 "cell layer enzymatic digestion is a material component separation process which uses an enzyme, usually a protease, to lyse the bonds between cultured cells and their substrates (usually a microplate, which may be coated with anchoring material such as collagen). Once the digestion is complete, cell layers can be harvested with minimal damage to the cells themselves."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000144 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000144 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000144 "cell layer enzymatic digestion")
+SubClassOf(obo:MSIO_0000144 obo:OBI_0600014)
+
+# Class: obo:MSIO_0000145 (cell scraping)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000145 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000145 "cell scraping is a material component separation technique which uses mechanism means (as opposed to enzymatic ones) to detach cultured cells from the growth substrate. The technique is thought to be more aggressive and cause  cellular breakage but has the benefit of avoiding use of enzymes, which may have their own side effects on cellular content."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000145 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000145 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000145 "cell scraping")
+SubClassOf(obo:MSIO_0000145 obo:OBI_0600014)
+
+# Class: obo:MSIO_0000146 (centrifugation)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000146 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000146 "centrifugation is a material component separation process which relies on centrifugational forces applied by means of high velocity rotation to a sample placed in a vial or tube in a rotor, fixed to an centrifugation instrument."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000146 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000146 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000146 "centrifugation")
+SubClassOf(obo:MSIO_0000146 obo:OBI_0600014)
+
+# Class: obo:MSIO_0000147 (gas chromatography)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000147 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000147 "gas chromatography is a material component separation process which use a mobile phase  in gaseous form to force a mixture of chemical through chromatography columns and associated detecting equipment, which may be a mass spectrometry in GC-MS applications."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000147 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000147 "GC"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000147 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000147 "gas chromatography"@en)
+SubClassOf(obo:MSIO_0000147 obo:OBI_0600014)
+
+# Class: obo:MSIO_0000148 (high performance liquid chromatography)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000148 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000148 "high performance liquid chromatography is a kind of material component separation process which uses a mobile phase  in liquid form to force a mixture of chemical through chromatography columns and associated detecting equipment, which may be a mass spectrometry in LC-MS applications. the notion of high performance comes from the fact that higher pressure is applied to the liquid phase to pass material with adsorbant properties. Those may vary depending on the composition of the mobile phase (gradients between 2 solutions may be used)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000148 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000148 "HPLC"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000148 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000148 "adapted from https://en.wikipedia.org/wiki/High-performance_liquid_chromatography"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000148 "high performance liquid chromatography"@en)
+SubClassOf(obo:MSIO_0000148 obo:OBI_0600014)
+
+# Class: obo:MSIO_0000149 (biomass)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000149 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000149 "biomass is a rate measurement datum of how much biochemical or biological material is produced over a period of time. it is usually reported in 'per hour'."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000149 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000149 "COSMOS"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000149 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000149 "biomass"@en)
+SubClassOf(obo:MSIO_0000149 obo:OBI_0001554)
+
+# Class: obo:MSIO_0000150 (metabolic flux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000150 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000150 "Flux, or metabolic flux is the rate of turnover of molecules through a metabolic pathway. Flux is regulated by the enzymes involved in a pathway. Within cells, regulation of flux is vital for all metabolic pathways to regulate the metabolic pathway's activity under different conditions. Flux is therefore of great interest in metabolic network modelling, where it is analysed via flux balance analysis.
+
+amount per unit of time
+
+maybe normalized by protein content"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000150 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000150 "metabolic rate"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000150 "http://en.wikipedia.org/wiki/Flux_%28metabolism%29"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000150 "metabolic flux"@en)
+SubClassOf(obo:MSIO_0000150 obo:OBI_0001554)
+
+# Class: obo:MSIO_0000151 (extracellular flux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000151 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000151 "An extracellular flux is a metabolic flux indicating the rate of absortion or release of a molecular entity by a cell system from or to its surroundings, respectively."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000151 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000151 "
+https://www.microbialcellfactories.com/content/13/1/152"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000151 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000151 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000151 "extracellular flux"@en)
+SubClassOf(obo:MSIO_0000151 obo:IAO_0000030)
+
+# Class: obo:MSIO_0000152 (metabolite excretion flux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000152 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000152 "an excretion flux is a metabolic flux indicating the rate of release of a metabolite by a cell system to its surroundings."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000152 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000152 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000152 "excretion rate"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000152 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000152 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000152 "metabolite excretion flux"@en)
+SubClassOf(obo:MSIO_0000152 obo:MSIO_0000151)
+
+# Class: obo:MSIO_0000153 (metabolite uptake flux)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000153 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000153 "an uptake flux is a metabolic flux indicating the rate of absorption of a molecular entity by a cell system from its surroundings"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000153 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000153 "consumption rate"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000153 "uptake rate"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000153 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000153 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000153 "metabolite uptake flux"@en)
+SubClassOf(obo:MSIO_0000153 obo:MSIO_0000151)
+
+# Class: obo:MSIO_0000154 (reaction rate)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000154 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000154 "the reaction rate is a rate measurement datum denoting a biochemical reaction as measured according to standard experimental methods."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000154 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000154 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000154 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000154 "reaction rate"@en)
+SubClassOf(obo:MSIO_0000154 obo:OBI_0001554)
+
+# Class: obo:MSIO_0000155 (continuous fermentation cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000155 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000155 "continuous fermentation cell culture is a type of processed material which involved a bacterial or yeast cell stock grown in conditions such as nutrients are added and product removed at a steady rate throughout the culture process. This is usually achieved using the specific type of fermenter known as a fed-batch culture reactor).")
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000155 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000155 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000155 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000155 "http://ib.bioninja.com.au/options/untitled/b1-microbiology-organisms/batch-versus-continuous.html")
+AnnotationAssertion(rdfs:label obo:MSIO_0000155 "continuous fermentation cell culture"@en)
+SubClassOf(obo:MSIO_0000155 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000156 (double layer cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000156 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000156 "a cell culture population where cells are grown on top of each other, producing two layers of cells on the surface of the growth substrate, usually a flask or a petri dish"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000156 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000156 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000156 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000156 "double layer cell culture"@en)
+SubClassOf(obo:MSIO_0000156 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000157 (monolayer cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000157 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000157 "a cell culture population where no cells are grown on top of each other, producing a single layer of cells on the surface of the growth substrate, usually a flask or a petri dish"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000157 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000157 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000157 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000157 "monolayer cell culture"@en)
+SubClassOf(obo:MSIO_0000157 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000158 (sandwich cell culture)
+
+AnnotationAssertion(obo:IAO_0000112 obo:MSIO_0000158 "https://www.ncbi.nlm.nih.gov/pubmed/20109035")
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000158 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000158 "a sandwich cell culture is a type of cell culture population where the grown cells are in contact with a substratum at the bottom and the top, thereby providing a more defined boundary and level of interaction than in suspension grown cells or in classic monolayer cell cultures.")
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000158 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000158 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000158 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000158 "sandwich cell culture"@en)
+SubClassOf(obo:MSIO_0000158 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000159 (3D cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000159 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000159 "a 3D cell culture is a cultured cell population grown in conditions which better mimicks in-vivo growth environment (i.e. more effectively than a 2D culture) allowing more complex recapitulation of cellular processes. These cell cultures are achieved by used of scaffolding agents.")
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000159 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000159 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000159 "")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000159 "spheroid culture"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000159 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000159 "https://www.thermofisher.com/blog/cellculture/3d-culturing-leads-parkinsons-breakthrough/")
+AnnotationAssertion(rdfs:label obo:MSIO_0000159 "3D cell culture"@en)
+SubClassOf(obo:MSIO_0000159 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000160 (chromatography column)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000160 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000160 "A Chromatography column is a device used in chromatography for the separation of chemical compounds. A chromatography column contains the stationary phase, allowing the mobile phase to pass through it. Chromatography columns of different types are used in both gas and liquid chromatography."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000160 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000160 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000160 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000160 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000160 "https://en.wikipedia.org/wiki/Chromatography_column"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000160 "chromatography column"@en)
+SubClassOf(obo:MSIO_0000160 obo:OBI_0000968)
+
+# Class: obo:MSIO_0000161 (HPLC instrument)
+
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000161 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000161 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000161 "An Instrument which is used to carry out a high performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography) technique. HPLC is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture. It relies on pumps to pass a pressurized liquid solvent containing the sample mixture through a column filled with a solid adsorbent material. 
+
+The schematic of an HPLC instrument typically includes a degasser, sampler, pumps, and a detector. The sampler brings the sample mixture into the mobile phase stream which carries it into the column. The pumps deliver the desired flow and composition of the mobile phase through the column. The detector generates a signal proportional to the amount of sample component emerging from the column, hence allowing for quantitative analysis of the sample components. A digital microprocessor and user software control the HPLC instrument and provide data analysis."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000161 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000161 "https://en.wikipedia.org/wiki/High-performance_liquid_chromatography"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000161 "HPLC instrument"@en)
+SubClassOf(obo:MSIO_0000161 obo:OBI_0000968)
+
+# Class: obo:MSIO_0000162 (96-well microplate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000162 "96-well microplate is an array of wells usually arranged in 8 rows of 12 columns whose volume range from 0.2 ml to 1.5 ml and which are used to grow cell or perform biochemical, in-vitro reactions. The material making up the plate may vary and may be surface treated in many custom way."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000162 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000162 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000162 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000162 "96-well microplate"@en)
+SubClassOf(obo:MSIO_0000162 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000163 (chemostat)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000163 "a chemostat is a device  to which fresh medium is continuously added, while culture liquid is continuously removed to keep the culture volume constant. By changing the rate with which medium is added to the bioreactor the growth rate of the microorganism can be easily controlled. It allows culture to reach physiological steady state and chemostat is often used to gather steady state data about an organism in order to generate a mathematical model relating to its metabolic processes.
+The name chemostat stems from \"Chemical environment is static\".
+
+The  most  striking  advantages of chemostats are two-fold: microorganisms can be kept at  a  constant  environmental  conditions  until  the  cultivated microorganisms  reach  steady  state,  defined  by  their  specific growth  rate  (μ)  being  in  balance  with  the  dilution  rate  (D). Once the system is equilibrated, the steady state data can be used for quantification of physiological parameters and metabolic rates of organisms, which are eventually required for the parameterization  of  mathematical  models."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000163 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000163 "10.4319/lom.2014.12.432
+http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000163 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000163 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000163 "http://en.wikipedia.org/wiki/Chemostat"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000163 "chemostat"@en)
+SubClassOf(obo:MSIO_0000163 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000164 (coated microplate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000164 "a coated microplate is a kind of microplate whom surface has been treated in some, for instance by covalently attaching protein such as antibodies and cell matrix molecules to favor cell growth or induce speficic cellular behavior.
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000164 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000164 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000164 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000164 "coated microplate")
+SubClassOf(obo:MSIO_0000164 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000165 (constantly fed-batch culture reactor)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000165 "a constantly fed-btach culture reactor is a device in which the feed rate of a growth-limiting substrate is constant, i.e. the feed rate is invariant during the culture."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000165 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000165 "CFBC"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000165 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000165 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000165 "http://en.wikipedia.org/wiki/Fed-batch_culture#Constantly-fed-batch_culture"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000165 "http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000165 "constantly fed-batch culture reactor"@en)
+SubClassOf(obo:MSIO_0000165 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000166 (exponentially fed-batch culture reactor)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000166 "an exponentially fed-batch culture reactor is a device which deliver the ability to grow cells in a way non too dissimilar to that of a chemostat based culture, meaning that the cells are in a quasi steady-state condition."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000166 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000166 "EFBC"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000166 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000166 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000166 "http://onlinelibrary.wiley.com/doi/10.4319/lom.2014.12.432/epdf"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000166 "exponentially fed-batch culture reactor"@en)
+SubClassOf(obo:MSIO_0000166 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000167 (fermenter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000167 "A container in which fermentation takes place."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000167 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000167 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000167 "COSMOS tracer based metabolomics working group"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000167 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000167 "fermenter")
+SubClassOf(obo:MSIO_0000167 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000168 (flask)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000168 "a flask is a kind of container used for cell culture, and which is available in an array of material (usually transparent plastic polymer) which may be surface treated."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000168 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000168 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000168 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000168 "flask")
+SubClassOf(obo:MSIO_0000168 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000169 (petri dish)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000169 " a petri dish is a container used to grow cells or perform biochemical reactions, which used to be made of glass, but which is now available in a variety of surface treated or non-treated plastic polymers. a petri dish is a thin cylinder with the upper part acting as a lid, resting on small peg, large enough to enable gaseaous exchanges but still preventing water evaporation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000169 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000169 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000169 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000169 "petri dish")
+SubClassOf(obo:MSIO_0000169 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000170 (uncoated microplate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000170 "a uncoated microplate is a kind of microplate whom surface has not received any treatment and is uniquely made of polymer."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000170 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000170 "EU H2020 PhenoMenAl")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000170 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000170 "uncoated microplate")
+SubClassOf(obo:MSIO_0000170 obo:OBI_0000967)
+
+# Class: obo:MSIO_0000171 (mass spectrometry instrument)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000171 obo:IAO_0000423)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000171 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000171 "mass spectrometry instrument"@en)
+SubClassOf(obo:MSIO_0000171 obo:OBI_0000932)
+
+# Class: obo:MSIO_0000172 (NMR instrument)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000172 obo:IAO_0000423)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000172 "import from NMRMLCV
+"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000172 "NMR instrument"@en)
+SubClassOf(obo:MSIO_0000172 obo:OBI_0000832)
+
+# Class: obo:MSIO_0000173 (high dose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000173 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000173 "high dose is a dose specifically set to trigger strong response in the system it is administered to, those effects may be toxic. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system).")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000173 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000173 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000173 "high dose"@en)
+SubClassOf(obo:MSIO_0000173 obo:OBI_0000984)
+
+# Class: obo:MSIO_0000174 (low dose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000174 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000174 "low dose is a dose specifically set to trigger  no or very limited response in the system it is administered to, those effects are not expected to be toxic. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000174 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000174 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000174 "low dose"@en)
+SubClassOf(obo:MSIO_0000174 obo:OBI_0000984)
+
+# Class: obo:MSIO_0000175 (lethal dose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000175 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000175 "a \"lethal dose\" represents a dose (usually recorded as dose per kilogram of subject body weight) at which a given percentage of subjects will die."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000175 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000175 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000175 "https://en.wikipedia.org/wiki/Lethal_dose"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000175 "lethal dose"@en)
+SubClassOf(obo:MSIO_0000175 obo:OBI_0000984)
+
+# Class: obo:MSIO_0000176 (lethal dose 50)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000176 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000176 "the \"lethal dose 50\" represents a dose (usually recorded as dose per kilogram of subject body weight) at which 50% of subjects will die."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000176 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000176 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000176 "LD50"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000176 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000176 "https://en.wikipedia.org/wiki/Lethal_dose"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000176 "lethal dose 50"@en)
+SubClassOf(obo:MSIO_0000176 obo:MSIO_0000175)
+
+# Class: obo:MSIO_0000177 (medium dose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000177 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000177 "medium dose is a dose specifically set to trigger  limited but clear response in the system it is administered to, those effects are not expected to be toxic but may be. Also, the denomination allows a discrete, categorical classification of the dose points, irrespective of the actual quantity administered thereby allowing to capture the intent of the operator, something which is not necessary explicit when reading the quantitative dose reading (specific to a chemical entity and a system)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000177 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000177 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000177 "medium dose"@en)
+SubClassOf(obo:MSIO_0000177 obo:OBI_0000984)
+
+# Class: obo:MSIO_0000178 (NOAEL dose)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000178 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000178 "noael dose is a dose defined as the highest experimental point that is without adverse effect."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000178 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000178 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000178 "No Observed Adverse Effect Level dose"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000178 "https://en.wikipedia.org/wiki/No-observed-adverse-effect_level"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000178 "NOAEL dose"@en)
+SubClassOf(obo:MSIO_0000178 obo:OBI_0000984)
+
+# Class: obo:MSIO_0000181 (batch cell culture)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000181 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000181 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000181 "continuous fermentation cell culture is a type of processed material which involved a bacterial or yeast cell stock grown in conditions such as nutrients are added at the begining of the culture process and products removed at the end.")
+AnnotationAssertion(obo:IAO_0000116 obo:MSIO_0000181 "classes could be moved to become subclasses of 'cell culture process'")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000181 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000181 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000181 "EU H2020 PhenoMenAl")
+AnnotationAssertion(rdfs:label obo:MSIO_0000181 "batch cell culture")
+SubClassOf(obo:MSIO_0000181 obo:OBI_0100060)
+
+# Class: obo:MSIO_0000182 (fluxomics investigation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000182 "fluxomics is a kind of investigation which aims at identifying, quantifying  the fluxes of molecules in cellular systems and understanding the cellular metabolism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000182 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000182 "cosmos tracer based metabolomics working group"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000182 "fluxomics investigation"@en)
+SubClassOf(obo:MSIO_0000182 obo:OBI_0000066)
+SubClassOf(obo:MSIO_0000182 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectUnionOf(obo:MSIO_0000100 obo:MSIO_0000101)))
+
+# Class: obo:MSIO_0000184 (mass isotopomer fractional abundance)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000184 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000184 "mass isotopomer fractional abundance is a measurement data item corresponding to the following:  the most abundant species is given the value 100 and all other species are normalized relative to 100 and expressed as percent relative abundance.
+
+fractional abundance of Mx=Ax= (abundance Mx) / ∑(i=0..n) abundance Mi, where Mx represents mass isotopomer Mx.
+
+"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000184 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000184 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000184 "mass isotopomer distribution"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000184 "
+            https://www.ncbi.nlm.nih.gov/pubmed/10362629
+"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000184 "mass isotopomer fractional abundance"@en)
+SubClassOf(obo:MSIO_0000184 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000184 ObjectSomeValuesFrom(obo:BFO_0000050 obo:MSIO_0000077))
+
+# Class: obo:MSIO_0000185 (steady state isotopic labeling experiment)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000185 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000185 "steady state labeling experiment is a material processing used in fluxomics studies where cells cultures are grown continuously in the presence of radiolabeled tracer compound throughout multiple platings. The redistribution of the label into metabolic intermediates and end-products is analysed when the system has reached an isotopic and metabolic steady state."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000185 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000185 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000185 "steady state isotopic labeling experiment"@en)
+SubClassOf(obo:MSIO_0000185 obo:MSIO_0000096)
+SubClassOf(obo:MSIO_0000185 ObjectSomeValuesFrom(obo:OBI_0000293 obo:MSIO_0000031))
+
+# Class: obo:MSIO_0000186 (m over z)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000186 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000186 "the m/z notation is used for the independent variable in a mass spectrum. The mass-to-charge ratio (m/Q) is a physical quantity that is most widely used in the electrodynamics of charged particles, e.g. in electron optics and ion optics. It appears in the scientific fields of electron microscopy, cathode ray tubes, accelerator physics, nuclear physics, Auger electron spectroscopy, cosmology and mass spectrometry.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000186 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000186 "adapted from wikipedia:
+https://en.wikipedia.org/wiki/Mass-to-charge_ratio")
+AnnotationAssertion(rdfs:label obo:MSIO_0000186 "m over z")
+SubClassOf(obo:MSIO_0000186 obo:IAO_0000109)
+
+# Class: obo:MSIO_0000187 (corrected m/z)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000187 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000187 "a m over z ratio which underwent a correction data transformation to take into account variations caused by a specific aspects of the data acquisition process.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000187 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000187 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000187 "corrected m/z")
+SubClassOf(obo:MSIO_0000187 obo:MSIO_0000186)
+
+# Class: obo:MSIO_0000188 (reference corrected m/z)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000188 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000188 "a m over z ratio which underwent a correction data transformation that takes into account the signal obtained from a reference compound and its spectral characteristics.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000188 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000188 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000188 "reference corrected m/z")
+SubClassOf(obo:MSIO_0000188 obo:MSIO_0000187)
+
+# Class: obo:MSIO_0000189 (reference and adduct corrected m/z)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000189 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000189 "a m over z ratio which underwent a correction data transformation that takes into account the signal obtained from a reference compound, its spectral characteristics as well as the contributions caused by adducts generated during the ionization process.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000189 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000189 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000189 "reference and adduct corrected m/z")
+SubClassOf(obo:MSIO_0000189 obo:MSIO_0000187)
+
+# Class: obo:MSIO_0000190 (retention time)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000190 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000190 "Retention time (RT) is a measure of the time taken for a solute to pass through a chromatography column. It is calculated as the time from injection to detection.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000190 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000190 "https://www.chromatographytoday.com/news/autosamplers/36/breaking-news/understanding-the-difference-between-retention-time-and-relative-retention-time/31166")
+AnnotationAssertion(rdfs:label obo:MSIO_0000190 "retention time")
+SubClassOf(obo:MSIO_0000190 obo:IAO_0000109)
+SubClassOf(obo:MSIO_0000190 ObjectSomeValuesFrom(obo:IAO_0000039 ObjectUnionOf(obo:UO_0000010 obo:UO_0000031)))
+
+# Class: obo:MSIO_0000191 (peak area)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000191 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000191 "The area of a peak is a kind of data derived from a spectrum which is proportional to the product of its height and its width of a spectrum peak, but the proportionality constant depends on the peak shape.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000191 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000191 "adapted from:
+https://terpconnect.umd.edu/~toh/spectrum/Integration.html")
+AnnotationAssertion(rdfs:label obo:MSIO_0000191 "peak area")
+SubClassOf(obo:MSIO_0000191 obo:MSIO_0000074)
+
+# Class: obo:MSIO_0000192 (normalized corrected peak area)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000192 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000192 "a normalized corrected peak area is a type of peak area which is produced followed a normalization data transformation and correction in order to make spectra comparable.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000192 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000192 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000192 "normalized corrected peak area")
+SubClassOf(obo:MSIO_0000192 obo:MSIO_0000191)
+
+# Class: obo:MSIO_0000193 (total m/z signal intensity integrating over the whole peak with baseline substraction)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000193 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000193 "Signal intensity of all m/z values after integrating the whole peak and subtracting baseline"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000193 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000193 "peak area as signal intensity"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000193 "EU H2020 PhenoMenAl"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000193 "cosmos tracer based metabolomics working group")
+AnnotationAssertion(rdfs:label obo:MSIO_0000193 "total m/z signal intensity integrating over the whole peak with baseline substraction"@en)
+SubClassOf(obo:MSIO_0000193 obo:MSIO_0000074)
+
+# Class: obo:MSIO_0000194 (chemical entity assignment)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000194 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000194 "chemical entity assignment is an annotation which uses spectral information to assign and identify and molecular entity/chemical compound. Various methods manual and computer assisted may be used.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000194 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000194 "")
+AnnotationAssertion(rdfs:label obo:MSIO_0000194 "chemical entity assignment")
+SubClassOf(obo:MSIO_0000194 obo:IAO_0000030)
+
+# Class: obo:MSIO_0000195 (assignment by database search)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000195 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000195 "assignment by database search is a type of chemical entity assignment which relies on probing chemical electronic libraries and chemical databases to determine matching structure and thereby attempt to assign a chemical identity. Searches may rely on InChi string or keys for instance.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000195 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000195 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000195 "assignment by database search")
+SubClassOf(obo:MSIO_0000195 obo:MSIO_0000194)
+
+# Class: obo:MSIO_0000196 (direct assignment to standard)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000196 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000196 "chemical entity assignment by direct assignment to standards is a data transformation process which uses spectral information from a known compound (ie. the standard) to match the signature and affirm identity based on the spectral features found in the sample.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000196 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000196 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000196 "direct assignment to standard")
+SubClassOf(obo:MSIO_0000196 obo:MSIO_0000194)
+
+# Class: obo:MSIO_0000197 (indirect assignment to standard)
+
+AnnotationAssertion(obo:IAO_0000114 obo:MSIO_0000197 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000197 "chemical entity assignment by indirect assignment to standards is a data transformation process which uses spectral information from a known compound (ie. the standard) to infer chemical properties about another compound found in the sample.")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000197 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000197 "MSIO")
+AnnotationAssertion(rdfs:label obo:MSIO_0000197 "indirect assignment to standard")
+SubClassOf(obo:MSIO_0000197 obo:MSIO_0000194)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: obo:MSIO_0000068 (Biocrates AG)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000068 "Biocrates Life Sciences AG, a biotechnology company, develops and markets targeted metabolic phenotyping solutions that support the discovery and validation of biomarkers for complex multifactorial diseases in pre-clinical and clinical research. The company offers mass-spectrometry based reproducible and quantitative kits and services that analyze various endogenous metabolites; and tools for insight into pathways and metabolic signatures of diseases, such as cancer or neurodegenerative diseases. It also offers metabolic phenotyping, and biomarker discovery and development services."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000068 "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000068 "Philippe Rocca-Serra")
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000068 "Biocrates Life Sciences AG"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000068 "https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=20741978"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000068 "Biocrates AG"@en)
+ClassAssertion(obo:OBI_0000245 obo:MSIO_0000068)
+
+# Individual: obo:MSIO_0000093 (Agilent Technologies)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000093 "Agilent Technologies is an American public research, development and manufacturing company established in 1999 as a spin-off from Hewlett-Packard. The resulting IPO of Agilent stock was the largest in the history of Silicon Valley at the time.
+
+The company provides analytical instruments, software, services and consumables for the entire laboratory workflow."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000093 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000093 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000093 "Agilent"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000093 "https://en.wikipedia.org/wiki/Agilent_Technologies"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000093 "Agilent Technologies"@en)
+ClassAssertion(obo:OBI_0000245 obo:MSIO_0000093)
+
+# Individual: obo:MSIO_0000097 (Bruker AG)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000097 "Bruker Corporation is a manufacturer of scientific instruments for molecular and materials research, as well as for industrial and applied analysis. It is headquartered in Billerica, Massachusetts and is the publicly traded parent company of Bruker Scientific Instruments (Bruker AXS, Bruker BioSpin, Bruker Daltonics and Bruker Optics) and Bruker Energy & Supercon Technologies (BEST) divisions."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000097 "Bruker"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:MSIO_0000097 "Bruker Corporation"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000097 "https://en.wikipedia.org/wiki/Bruker"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000097 "Bruker AG"@en)
+ClassAssertion(obo:OBI_0000245 obo:MSIO_0000097)
+
+# Individual: obo:MSIO_0000098 (Thermo Fisher Scientific)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MSIO_0000098 "Thermo Fisher Scientific is an American multinational biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000098 "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:MSIO_0000098 "Philippe Rocca-Serra"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:MSIO_0000098 "https://en.wikipedia.org/wiki/Thermo_Fisher_Scientific"@en)
+AnnotationAssertion(rdfs:label obo:MSIO_0000098 "Thermo Fisher Scientific"@en)
+ClassAssertion(obo:OBI_0000245 obo:MSIO_0000098)
+
+)
